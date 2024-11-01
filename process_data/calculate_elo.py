@@ -181,7 +181,8 @@ if __name__ == "__main__":
     output_df = input_data_df.apply(handle_row, axis=1)
 
     output_df.to_csv(
-        os.path.join(OUTPUT_DIR, 'all_results', f'wphl_elos_{TIMESTAMP}.csv')
+        os.path.join(OUTPUT_DIR, 'all_results', f'wphl_elos_{TIMESTAMP}.csv'),
+        index=False
     )
 
     chartable_df = structure_chartable_df(output_df)
