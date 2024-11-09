@@ -28,11 +28,13 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  color:#333333;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: #333333;
 }
 
 button {
@@ -65,4 +67,30 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.quattrocento-regular {
+  font-family: "Quattrocento", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quattrocento-bold {
+  font-family: "Quattrocento", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.oswald-regular {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oswald-bold {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }

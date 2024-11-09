@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+
+.rating-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+.team-name {
+  text-align: left;
+}
+
+.team-rating {
+  text-align: right;
+}

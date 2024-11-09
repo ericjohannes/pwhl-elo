@@ -197,9 +197,9 @@ if __name__ == "__main__":
             'w'
     ) as f:
         json.dump(current_elo, f)
-    
+
     total_elo = 0
     for key in current_elo.keys():
         total_elo += current_elo[key]
-    
+
     print(f"average final elo is 1300: {total_elo / 6}")
