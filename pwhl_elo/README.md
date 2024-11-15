@@ -1,0 +1,1 @@
+This is a Python package for calculating the Elo of the PWHL.

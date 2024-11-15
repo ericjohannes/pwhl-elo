@@ -1,7 +1,7 @@
 import pytest
 import numpy as np
 
-from process_data.calculate_elo import (
+from pwhl_elo.src.calculate_elo import (
     clean_name,
     actual_result,
     expected_result,

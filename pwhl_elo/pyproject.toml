@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pwhl-elo"
+version = "0.1.0"
+description = "Python package for calculating Elo for the PWHL"
+authors = ["eric <eric.j.blom@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pwhl_elo", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+click = "^8.1.7"
+numpy = "^2.1.3"
+pandas = "^2.2.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pwhlelo = "pwhl_elo.cli:cli"

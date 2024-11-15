@@ -3,7 +3,7 @@ from datetime import datetime
 import os
 import re
 import json
-from process_data.calculate_elo import expected_result
+from pwhl_elo.src.calculate_elo import expected_result
 import numpy as np
 
 
