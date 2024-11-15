@@ -154,6 +154,57 @@ def structure_chartable_df(output_df: pd.DataFrame) -> pd.DataFrame:
     return after_elos_all
 
 
+def handle():
+    TIMESTAMP = datetime.datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
+    OUTPUT_DIR = os.path.join('data', 'output')
+    INPUT_DIR = os.path.join('data', 'input')
+    input_data_df = pd.read_csv(
+        os.path.join(INPUT_DIR, 'wphl_results_clean_data.csv'),
+        header=0
+    )
+    input_data_df['date'] = pd.to_datetime(input_data_df.date)
+
+    # sort by data just to be sure
+    input_data_df = input_data_df.sort_values('date')
+
+    input_data_df['home_team'] = input_data_df['home_team'].apply(clean_name)
+    input_data_df['away_team'] = input_data_df['away_team'].apply(clean_name)
+
+    # make empty columns for new data
+    input_data_df['elo_after_home'] = None
+    input_data_df['elo_after_away'] = None
+    input_data_df['elo_before_home'] = None
+    input_data_df['elo_before_away'] = None
+    input_data_df['expected_win_home'] = None
+    input_data_df['expected_win_away'] = None    
+
+    output_df = input_data_df.apply(handle_row, axis=1)
+
+    output_df.to_csv(
+        os.path.join(OUTPUT_DIR, 'all_results', f'wphl_elos_{TIMESTAMP}.csv'),
+        index=False
+    )
+
+    chartable_df = structure_chartable_df(output_df)
+    # save elos in easier to visualize format
+    chartable_df.to_json(
+        os.path.join(OUTPUT_DIR, 'chartable', 'chartable_wphl_elos.json'),
+        orient='records',
+        date_format='iso'
+    )
+    with open(
+            os.path.join(OUTPUT_DIR, 'pwhl_final_elos.json'), 
+            'w'
+    ) as f:
+        json.dump(current_elo, f)
+
+    total_elo = 0
+    for key in current_elo.keys():
+        total_elo += current_elo[key]
+
+    print(f"average final elo is 1300: {total_elo / 6}")
+
+
 if __name__ == "__main__":
     TIMESTAMP = datetime.datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
     OUTPUT_DIR = os.path.join('data', 'output')

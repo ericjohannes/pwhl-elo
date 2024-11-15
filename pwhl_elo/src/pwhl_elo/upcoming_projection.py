@@ -3,7 +3,7 @@ from datetime import datetime
 import os
 import re
 import json
-from pwhl_elo.src.calculate_elo import expected_result
+from pwhl_elo.calculate_elo import expected_result
 import numpy as np
 
 
@@ -93,7 +93,56 @@ def get_newest_file(input_dir: str):
     file_timestamp = date_times[0].strftime("%Y-%m-%d_%H:%M:%S")
     source_file = f'wphl_elos_{file_timestamp}.csv'
     return os.path.join(results_dir, source_file)
-     
+
+
+def build_upcoming_projects():
+    TIMESTAMP = datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
+    OUTPUT_DIR = os.path.join('data', 'output')
+    INPUT_DIR = os.path.join('data', 'output')
+    OUTPUT_FN = os.path.join(
+        'data',
+        'output',
+        'next_five_projections',
+        f"game_projections_{TIMESTAMP}.json"
+    )
+
+    # get latest elos
+    with open(os.path.join(INPUT_DIR, 'pwhl_final_elos.json'), 'r') as f:
+        latet_elos = json.load(f)
+
+    # get first 5 unplayed games
+    source_path = get_newest_file(INPUT_DIR)
+    source_df = pd.read_csv(source_path)
+
+    # between seasons revert Elos to the means
+    for team in latet_elos.keys():
+        if not check_if_team_played(team, 2025, source_df):
+            latet_elos[team] = revert_elo_to_mean(latet_elos[team])
+
+    unplayed_df = source_df[~source_df['time'].str.contains("Final") ]
+    next_5_df = unplayed_df.sort_values('date').head(5)
+
+    # calculate odds on those 5 based on latest elos
+    handle_row_with_elos = handle_row_wrapper(latet_elos)
+    next_5_df = next_5_df.apply(handle_row_with_elos, axis=1)
+
+    # save results
+    next_5_df[[
+        'date',
+        'away_team',
+        'home_team',
+        'venue',
+        'type',
+        'elo_before_home',
+        'elo_before_away',
+        'expected_win_home',
+        'expected_win_away'
+    ]].to_json(
+        OUTPUT_FN, 
+        orient='records',
+        date_format='iso'
+    )
+
 
 if __name__ == "__main__":
     TIMESTAMP = datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
@@ -142,4 +191,3 @@ if __name__ == "__main__":
         orient='records',
         date_format='iso'
     )
-
