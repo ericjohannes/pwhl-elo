@@ -1,5 +1,5 @@
 import "./App.css"
-import pwhl_final_elos from "./assets/pwhl_final_elos.json"
+import pwhl_final_elos from "./assets/pwhl_latest_elos.json"
 
 
 const compareFn = (a, b) =>{
@@ -12,6 +12,17 @@ const compareFn = (a, b) =>{
   return 0;
 }
 
+const pubDateString = (datetime) =>{
+  const pubDate =  new Date(datetime)
+  console.log('datetime')
+  console.log(datetime)
+  console.log(pubDate)
+  const months = ['Jan.','Feb.','Mar.','April','May','June','July','Aug.','Sept.','Oct.','Nov.','Dec.'];
+  const year = pubDate.getFullYear();
+  const month = months[pubDate.getMonth()];
+  const date = pubDate.getDate();
+  return month + ' ' + date + ' ' + year;
+}
 function convertAndCapitalize(str) {
   // Replace underscores with spaces and split the string into words
   return str
@@ -26,7 +37,7 @@ function App() {
   return (
     <>
       <h1 className="oswald-bold">PWHL Team Elo Ratings</h1>
-      <p className="updated-at quattrocento-regular">Last updated at </p>
+      <p className="updated-at quattrocento-regular">Last updated at {pubDateString(pwhl_final_elos.date)}</p>
       <table className="rating-table">
         <thead className="quattrocento-bold">
           <tr>
@@ -36,8 +47,7 @@ function App() {
         </thead>
         <tbody className="quattrocento-regular">
           {
-            // Object.entries(pwhl_final_elos).map(x=>console.log(x))
-            Object.entries(pwhl_final_elos).sort(compareFn).map((entry, i)=>{
+            Object.entries(pwhl_final_elos.teams).sort(compareFn).map((entry, i)=>{
               return(
                 <tr className="data-row" key={"data-row-" + i}>
                   <td className="team-name table-left-cell" key={"team-name-" + i}>{convertAndCapitalize(entry[0])}</td>

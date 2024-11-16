@@ -14,4 +14,4 @@ def revert_elo_to_mean(season_ending_elo: int) -> int:
 
 
 def time_stamp() -> str:
-    return datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
+    return datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
