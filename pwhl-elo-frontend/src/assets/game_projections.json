@@ -1,1 +1,57 @@
-[{"date":"2024-11-20","away_team":"toronto","home_team":"minnesota","venue":"Ford Performance Centre","type":"preseason","elo_before_home":1313,"elo_before_away":1317,"expected_win_home":0.5658152031,"expected_win_away":0.4341847969},{"date":"2024-11-20","away_team":"montr\u00e9al","home_team":"boston","venue":"Verdun Auditorium","type":"preseason","elo_before_home":1293,"elo_before_away":1297,"expected_win_home":0.5658152031,"expected_win_away":0.4341847969},{"date":"2024-11-21","away_team":"minnesota","home_team":"new_york","venue":"Ford Performance Centre","type":"preseason","elo_before_home":1291,"elo_before_away":1313,"expected_win_home":0.5402082283,"expected_win_away":0.4597917717},{"date":"2024-11-21","away_team":"boston","home_team":"ottawa","venue":"Verdun Auditorium","type":"preseason","elo_before_home":1290,"elo_before_away":1293,"expected_win_home":0.5672288443,"expected_win_away":0.4327711557},{"date":"2024-11-22","away_team":"new_york","home_team":"toronto","venue":"Ford Performance Centre","type":"preseason","elo_before_home":1317,"elo_before_away":1291,"expected_win_home":0.6076610641,"expected_win_away":0.3923389359}]
+[
+    {
+        "date": "2024-11-20",
+        "away_team": "toronto",
+        "home_team": "minnesota",
+        "venue": "Ford Performance Centre",
+        "type": "preseason",
+        "elo_before_home": 1313,
+        "elo_before_away": 1317,
+        "expected_win_home": 0.5658152031,
+        "expected_win_away": 0.4341847969
+    },
+    {
+        "date": "2024-11-20",
+        "away_team": "montr\u00e9al",
+        "home_team": "boston",
+        "venue": "Verdun Auditorium",
+        "type": "preseason",
+        "elo_before_home": 1293,
+        "elo_before_away": 1297,
+        "expected_win_home": 0.5658152031,
+        "expected_win_away": 0.4341847969
+    },
+    {
+        "date": "2024-11-21",
+        "away_team": "minnesota",
+        "home_team": "new_york",
+        "venue": "Ford Performance Centre",
+        "type": "preseason",
+        "elo_before_home": 1291,
+        "elo_before_away": 1313,
+        "expected_win_home": 0.5402082283,
+        "expected_win_away": 0.4597917717
+    },
+    {
+        "date": "2024-11-21",
+        "away_team": "boston",
+        "home_team": "ottawa",
+        "venue": "Verdun Auditorium",
+        "type": "preseason",
+        "elo_before_home": 1290,
+        "elo_before_away": 1293,
+        "expected_win_home": 0.5672288443,
+        "expected_win_away": 0.4327711557
+    },
+    {
+        "date": "2024-11-22",
+        "away_team": "new_york",
+        "home_team": "toronto",
+        "venue": "Ford Performance Centre",
+        "type": "preseason",
+        "elo_before_home": 1317,
+        "elo_before_away": 1291,
+        "expected_win_home": 0.6076610641,
+        "expected_win_away": 0.3923389359
+    }
+]
