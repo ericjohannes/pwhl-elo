@@ -1,1 +1,11 @@
-{"new_york": 1286, "montreal": 1295, "minnesota": 1320, "ottawa": 1285, "boston": 1289, "toronto": 1325}
+{
+    "date": "",
+    "teams": {
+        "new_york": 1286,
+        "montreal": 1295,
+        "minnesota": 1320,
+        "ottawa": 1285,
+        "boston": 1289,
+        "toronto": 1325
+    }
+}

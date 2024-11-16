@@ -19,3 +19,4 @@ repos:
     rev: 5.0.4
     hooks:
     -   id: flake8
+        additional_dependencies: [pyproject-flake8]

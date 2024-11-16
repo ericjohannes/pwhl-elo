@@ -1,3 +1,5 @@
+from datetime import datetime
+
 import numpy as np
 
 
@@ -7,5 +9,9 @@ def revert_elo_to_mean(season_ending_elo: int) -> int:
     """
 
     difference = season_ending_elo - 1300
-    new_elo = season_ending_elo - (difference/3)
+    new_elo = season_ending_elo - (difference / 3)
     return int(np.round(new_elo))
+
+
+def time_stamp() -> str:
+    return datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
