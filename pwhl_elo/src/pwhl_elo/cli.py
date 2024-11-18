@@ -17,15 +17,25 @@ def hi():
     click.echo("Hello World!")
 
 
+# input for now should be wphl_results_clean_data file
+# suggested run like
+#  `pwhlelo calculate --input ../data/input/wphl_results_clean_data.csv --output-dir ../data/output`
 @click.command()
-def calculate():
-    """Calulcates Elos."""
-    handle()
+@click.option("--input", prompt="path/to/file.json", help=".csv file of fixtures with scores.")
+@click.option("--output-dir", prompt="path/to/dir", help="Directory of where to save Elos.")
+def calculate(input, output_dir):
+    """Calulcates Elos and outputs three files:
+    1. wphl_elos_<TIMESTAMP>.csv - file with all fixtures played so far with Elos and
+    projections calculated.
+    2. chartable_wphl_elos.json - file formatted for a chart. Elos for each date for each team.
+    3. pwhl_latest_elos - file with latest calculated Elos for each team and date calculated."""
+    handle(input, output_dir)
 
 
+# run like `pwhlelo projections`
 @click.command()
 def projections():
-    """Builds projections for next 5 fixtures."""
+    """Builds projections for next 5 fixtures based on latest_pwhl_latest_elos.json."""
     build_upcoming_projects()
 
 
@@ -35,6 +45,8 @@ def chart():
     create_charts()
 
 
+# suggested run like
+# `pwhlelo revert --input ../data/output/pwhl_latest_elos.json --output-dir ../data/output`
 @click.command()
 @click.option(
     "--input", prompt="path/to/file.json", help="File of team Elos to revert to the mean."
