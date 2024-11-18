@@ -110,7 +110,7 @@ def build_upcoming_projects():
     # calculate odds on those 5 based on latest elos
     handle_row_with_elos = handle_row_wrapper(latet_elos["teams"])
     next_5_df = next_5_df.apply(handle_row_with_elos, axis=1)
-
+    next_5_df["date"] = pd.to_datetime(next_5_df["date"]).dt.strftime("%b. %d, %Y")
     # save results
     next_5_df[
         [
@@ -124,7 +124,7 @@ def build_upcoming_projects():
             "expected_win_home",
             "expected_win_away",
         ]
-    ].to_json(OUTPUT_FN, orient="records", date_format="iso")
+    ].to_json(OUTPUT_FN, orient="records")
 
 
 if __name__ == "__main__":

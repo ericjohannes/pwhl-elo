@@ -14,12 +14,12 @@ const compareFn = (a, b) =>{
 
 export const projectionTable = ()=>(
     <section>
-        <h1 className="oswald-bold">Projections for Upcoming Games</h1>
+        <h1 className="oswald-bold">Upcoming Game Projections</h1>
         {
             game_projections.sort(compareFn).map((entry, i)=>{
                 return(
                     <>
-                        <h3>{pubDateString(entry.date)}</h3>
+                        <h3>{entry.date}</h3>
                         <table key={"projection-table-" + i } className="rating-table">
                             <thead className="quattrocento-bold" key={"projection-table-head" + i}>
                                 <tr key={"projection-table-header-row" + i}>
