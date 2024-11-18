@@ -1,0 +1,191 @@
+date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_home,elo_after_away,elo_before_home,elo_before_away,expected_win_home,expected_win_away
+2023-12-04,Final SO,montreal,0.0,new_york,4.0,Utica University Nexus Center - Mastrovito Hyundai,2024,preseason,1304.0,1296.0,1300.0,1300.0,0.5714631174083815,0.4285368825916185
+2023-12-04,Final SO,ottawa,4.0,minnesota,8.0,Utica University Nexus Center - Mastrovito Hyundai,2024,preseason,1304.0,1296.0,1300.0,1300.0,0.5714631174083815,0.4285368825916185
+2023-12-04,Final OT,toronto,5.0,boston,2.0,Utica University Nexus Center - Mastrovito Hyundai,2024,preseason,1295.0,1305.0,1300.0,1300.0,0.5714631174083815,0.4285368825916185
+2023-12-05,Final SO,new_york,2.0,ottawa,1.0,Utica University Nexus Center - Mastrovito Hyundai,2024,preseason,1293.0,1307.0,1296.0,1304.0,0.5601501452319031,0.4398498547680969
+2023-12-05,Final OT,boston,1.0,montreal,3.0,Utica University Nexus Center - Mastrovito Hyundai,2024,preseason,1299.0,1292.0,1296.0,1295.0,0.5728722513945046,0.4271277486054954
+2023-12-05,Final OT,minnesota,5.0,toronto,4.0,Utica University Nexus Center - Mastrovito Hyundai,2024,preseason,1302.0,1307.0,1305.0,1304.0,0.5728722513945046,0.4271277486054954
+2023-12-07,Final OT,ottawa,1.0,boston,3.0,Utica University Nexus Center - Mastrovito Hyundai,2024,preseason,1295.0,1290.0,1292.0,1293.0,0.5700528235839882,0.42994717641601177
+2023-12-07,Final,montreal,3.0,minnesota,4.0,Utica University Nexus Center - Mastrovito Hyundai,2024,preseason,1309.0,1297.0,1307.0,1299.0,0.58270188496423,0.41729811503576997
+2023-12-07,Final OT,new_york,6.0,toronto,4.0,Utica University Nexus Center - Mastrovito Hyundai,2024,preseason,1298.0,1311.0,1302.0,1307.0,0.5644004902404212,0.43559950975957884
+2024-01-01,Final,new_york,4.0,toronto,0.0,Mattamy Athletic Centre,2024,regular_season,1292.0,1317.0,1298.0,1311.0,0.5530468951694627,0.4469531048305373
+2024-01-02,Final OT,montreal,3.0,ottawa,2.0,TD Place,2024,regular_season,1287.0,1300.0,1290.0,1297.0,0.561567938973646,0.438432061026354
+2024-01-03,Final,minnesota,3.0,boston,2.0,Tsongas Center,2024,regular_season,1292.0,1312.0,1295.0,1309.0,0.5516235473109605,0.4483764526890395
+2024-01-05,Final,toronto,3.0,new_york,2.0,Total Mortgage Arena,2024,regular_season,1314.0,1295.0,1317.0,1292.0,0.6062878237854282,0.3937121762145718
+2024-01-06,Final,montreal,0.0,minnesota,3.0,Xcel Energy Center,2024,regular_season,1316.0,1296.0,1312.0,1300.0,0.5882899718631627,0.4117100281368373
+2024-01-10,Final,montreal,5.0,new_york,2.0,UBS Arena,2024,regular_season,1308.0,1302.0,1314.0,1296.0,0.596629173305774,0.40337082669422597
+2024-01-10,Final,toronto,1.0,minnesota,3.0,Xcel Energy Center,2024,regular_season,1319.0,1292.0,1316.0,1295.0,0.6007782458900112,0.39922175410998884
+2024-01-13,Final,ottawa,5.0,toronto,1.0,Mattamy Athletic Centre,2024,regular_season,1286.0,1293.0,1292.0,1287.0,0.5784967523447428,0.42150324765525715
+2024-01-13,Final OT,boston,3.0,montreal,2.0,Verdun Auditorium,2024,regular_season,1299.0,1295.0,1302.0,1292.0,0.5854986786718095,0.4145013213281905
+2024-01-14,Final OT,new_york,3.0,minnesota,2.0,Xcel Energy Center,2024,regular_season,1316.0,1311.0,1319.0,1308.0,0.5868950233791,0.41310497662089996
+2024-01-16,Final,new_york,2.0,montreal,3.0,Place Bell,2024,regular_season,1301.0,1309.0,1299.0,1311.0,0.5544693740216761,0.44553062597832394
+2024-01-17,Final,boston,3.0,toronto,2.0,Mattamy Athletic Centre,2024,regular_season,1283.0,1298.0,1286.0,1295.0,0.558731369324761,0.441268630675239
+2024-01-17,Final OT,minnesota,3.0,ottawa,2.0,TD Place,2024,regular_season,1290.0,1319.0,1293.0,1316.0,0.5387780920571715,0.46122190794282847
+2024-01-20,Final SO,toronto,4.0,montreal,3.0,Verdun Auditorium,2024,regular_season,1298.0,1286.0,1301.0,1283.0,0.5966291733057739,0.4033708266942261
+2024-01-20,Final,new_york,4.0,boston,1.0,Tsongas Center,2024,regular_season,1293.0,1314.0,1298.0,1309.0,0.5558909611168532,0.4441090388831468
+2024-01-23,Final,toronto,1.0,ottawa,3.0,TD Place,2024,regular_season,1293.0,1283.0,1290.0,1286.0,0.5770924758253291,0.4229075241746709
+2024-01-24,Final,montreal,2.0,minnesota,1.0,Xcel Energy Center,2024,regular_season,1316.0,1301.0,1319.0,1298.0,0.6007782458900108,0.39922175410998917
+2024-01-24,Final,boston,3.0,ottawa,2.0,TD Place,2024,regular_season,1290.0,1296.0,1293.0,1293.0,0.5714631174083814,0.4285368825916186
+2024-01-26,Final,new_york,0.0,toronto,2.0,Mattamy Athletic Centre,2024,regular_season,1287.0,1310.0,1283.0,1314.0,0.5273159730064928,0.4726840269935072
+2024-01-27,Final OT,ottawa,1.0,montreal,2.0,Place Bell,2024,regular_season,1303.0,1288.0,1301.0,1290.0,0.5868950233791,0.41310497662089996
+2024-01-27,Final OT,minnesota,3.0,boston,4.0,Tsongas Center,2024,regular_season,1298.0,1314.0,1296.0,1316.0,0.5430664920222119,0.4569335079777881
+2024-01-28,Final OT,minnesota,2.0,new_york,1.0,Total Mortgage Arena,2024,regular_season,1307.0,1317.0,1310.0,1314.0,0.565815203069233,0.43418479693076695
+2024-02-03,Final,minnesota,1.0,toronto,4.0,Mattamy Athletic Centre,2024,regular_season,1291.0,1313.0,1287.0,1317.0,0.5287505638922686,0.4712494361077314
+2024-02-04,Final OT,montreal,2.0,boston,1.0,Tsongas Center,2024,regular_season,1295.0,1306.0,1298.0,1303.0,0.5644004902404214,0.4355995097595786
+2024-02-04,Final OT,new_york,4.0,ottawa,3.0,TD Place,2024,regular_season,1285.0,1310.0,1288.0,1307.0,0.5444945730830081,0.4555054269169919
+2024-02-14,Final,toronto,5.0,boston,3.0,Tsongas Center,2024,regular_season,1291.0,1295.0,1295.0,1291.0,0.577092475825329,0.42290752417467103
+2024-02-14,Final,ottawa,1.0,minnesota,2.0,Xcel Energy Center,2024,regular_season,1315.0,1283.0,1313.0,1285.0,0.6104024220946892,0.3895975779053108
+2024-02-16,Final,montreal,0.0,toronto,3.0,Scotiabank Arena,2024,regular_season,1299.0,1302.0,1295.0,1306.0,0.5558909611168529,0.4441090388831471
+2024-02-17,Final OT,new_york,2.0,boston,1.0,Tsongas Center,2024,regular_season,1288.0,1313.0,1291.0,1310.0,0.544494573083008,0.45550542691699203
+2024-02-17,Final,minnesota,2.0,ottawa,1.0,TD Place,2024,regular_season,1280.0,1318.0,1283.0,1315.0,0.525880930891169,0.47411906910883095
+2024-02-18,Final,minnesota,1.0,montreal,2.0,Place Bell,2024,regular_season,1304.0,1316.0,1302.0,1318.0,0.5487743358597419,0.4512256641402581
+2024-02-19,Final,ottawa,4.0,boston,2.0,Tsongas Center,2024,regular_season,1284.0,1284.0,1288.0,1280.0,0.5827018849642301,0.41729811503576986
+2024-02-21,Final SO,montreal,2.0,new_york,3.0,UBS Arena,2024,regular_season,1315.0,1302.0,1313.0,1304.0,0.5841009588136783,0.4158990411863217
+2024-02-21,Final,ottawa,1.0,boston,3.0,Tsongas Center,2024,regular_season,1287.0,1281.0,1284.0,1284.0,0.5714631174083814,0.4285368825916186
+2024-02-23,Final SO,new_york,1.0,toronto,2.0,Mattamy Athletic Centre,2024,regular_season,1301.0,1313.0,1299.0,1315.0,0.5487743358597419,0.4512256641402581
+2024-02-24,Final,ottawa,3.0,montreal,6.0,Verdun Auditorium,2024,regular_season,1306.0,1277.0,1302.0,1281.0,0.6007782458900109,0.39922175410998906
+2024-02-25,Final,boston,2.0,minnesota,0.0,Xcel Energy Center,2024,regular_season,1311.0,1292.0,1316.0,1287.0,0.6117705007810644,0.38822949921893557
+2024-02-27,Final OT,toronto,4.0,minnesota,3.0,3M Arena at Mariucci,2024,regular_season,1308.0,1304.0,1311.0,1301.0,0.5854986786718095,0.4145013213281905
+2024-02-28,Final,new_york,2.0,ottawa,4.0,TD Place,2024,regular_season,1281.0,1309.0,1277.0,1313.0,0.5201367220358163,0.4798632779641837
+2024-03-02,Final,toronto,5.0,ottawa,2.0,TD Place,2024,regular_season,1276.0,1309.0,1281.0,1304.0,0.5387780920571718,0.46122190794282825
+2024-03-02,Final,boston,1.0,montreal,3.0,Verdun Auditorium,2024,regular_season,1309.0,1289.0,1306.0,1292.0,0.5910755963149436,0.40892440368505645
+2024-03-03,Final,minnesota,2.0,new_york,0.0,UBS Arena,2024,regular_season,1305.0,1312.0,1309.0,1308.0,0.5728722513945044,0.4271277486054956
+2024-03-05,Final SO,ottawa,3.0,minnesota,4.0,Xcel Energy Center,2024,regular_season,1314.0,1274.0,1312.0,1276.0,0.6212967231224544,0.37870327687754557
+2024-03-06,Final,boston,1.0,toronto,3.0,Mattamy Athletic Centre,2024,regular_season,1312.0,1286.0,1309.0,1289.0,0.5993967967092566,0.4006032032907434
+2024-03-06,Final,montreal,4.0,new_york,3.0,Total Mortgage Arena,2024,regular_season,1302.0,1312.0,1305.0,1309.0,0.5658152030692334,0.4341847969307666
+2024-03-08,Final,montreal,0.0,toronto,3.0,Mattamy Athletic Centre,2024,regular_season,1316.0,1308.0,1312.0,1312.0,0.5714631174083815,0.4285368825916185
+2024-03-10,Final OT,new_york,2.0,boston,3.0,Tsongas Center,2024,regular_season,1288.0,1300.0,1286.0,1302.0,0.5487743358597418,0.4512256641402582
+2024-03-10,Final,ottawa,4.0,montreal,2.0,Place Bell,2024,regular_season,1303.0,1279.0,1308.0,1274.0,0.6185841220890308,0.3814158779109692
+2024-03-13,Final,boston,0.0,minnesota,4.0,Xcel Energy Center,2024,regular_season,1318.0,1284.0,1314.0,1288.0,0.6076610641268197,0.39233893587318025
+2024-03-16,Final SO,ottawa,1.0,boston,2.0,Little Caesars Arena,2024,regular_season,1286.0,1277.0,1284.0,1279.0,0.5784967523447428,0.42150324765525715
+2024-03-16,Final,new_york,1.0,minnesota,5.0,Xcel Energy Center,2024,regular_season,1322.0,1296.0,1318.0,1300.0,0.596629173305774,0.40337082669422597
+2024-03-17,Final,toronto,2.0,montreal,1.0,PPG Paints Arena,2024,regular_season,1300.0,1319.0,1303.0,1316.0,0.5530468951694625,0.4469531048305375
+2024-03-20,Final,ottawa,3.0,new_york,0.0,Total Mortgage Arena,2024,regular_season,1290.0,1283.0,1296.0,1277.0,0.5980137657693438,0.40198623423065616
+2024-03-20,Final,boston,1.0,toronto,2.0,Mattamy Athletic Centre,2024,regular_season,1321.0,1284.0,1319.0,1286.0,0.6172250309049463,0.3827749690950537
+2024-03-23,Final,toronto,3.0,ottawa,5.0,TD Place,2024,regular_season,1287.0,1317.0,1283.0,1321.0,0.5172625244323761,0.4827374755676239
+2024-03-24,Final SO,montreal,2.0,minnesota,3.0,Xcel Energy Center,2024,regular_season,1324.0,1298.0,1322.0,1300.0,0.602158093174717,0.397841906825283
+2024-03-25,Final,boston,2.0,new_york,3.0,UBS Arena,2024,regular_season,1292.0,1282.0,1290.0,1284.0,0.5798997603578815,0.4201002396421185
+2024-04-18,Final,toronto,1.0,boston,2.0,Tsongas Center,2024,regular_season,1284.0,1315.0,1282.0,1317.0,0.5215733330511456,0.4784266669488544
+2024-04-18,Final,minnesota,3.0,montreal,4.0,Verdun Auditorium,2024,regular_season,1300.0,1322.0,1298.0,1324.0,0.5344839447268315,0.4655160552731685
+2024-04-20,Final,minnesota,0.0,ottawa,4.0,TD Place,2024,regular_season,1292.0,1317.0,1287.0,1322.0,0.5215733330511453,0.4784266669488547
+2024-04-20,Final OT,toronto,3.0,montreal,2.0,Bell Centre,2024,regular_season,1297.0,1318.0,1300.0,1315.0,0.550199353253537,0.44980064674646303
+2024-04-20,Final,boston,2.0,new_york,1.0,Prudential Center,2024,regular_season,1289.0,1287.0,1292.0,1284.0,0.5827018849642301,0.41729811503576986
+2024-04-24,Final,new_york,2.0,montreal,5.0,Verdun Auditorium,2024,regular_season,1301.0,1285.0,1297.0,1289.0,0.5827018849642301,0.41729811503576986
+2024-04-24,Final SO,boston,2.0,ottawa,3.0,TD Place,2024,regular_season,1294.0,1285.0,1292.0,1287.0,0.5784967523447428,0.42150324765525715
+2024-04-27,Final,montreal,2.0,ottawa,0.0,TD Place,2024,regular_season,1290.0,1305.0,1294.0,1301.0,0.561567938973646,0.438432061026354
+2024-04-27,Final,boston,2.0,minnesota,1.0,Xcel Energy Center,2024,regular_season,1314.0,1288.0,1317.0,1285.0,0.615864104253756,0.38413589574624396
+2024-04-28,Final,toronto,6.0,new_york,2.0,UBS Arena,2024,regular_season,1280.0,1323.0,1285.0,1318.0,0.5244454611206614,0.47555453887933863
+2024-04-30,Final,ottawa,3.0,new_york,4.0,Prudential Center,2024,regular_season,1282.0,1288.0,1280.0,1290.0,0.5573116337622929,0.44268836623770713
+2024-05-01,Final,minnesota,1.0,toronto,4.0,Mattamy Athletic Centre,2024,regular_season,1327.0,1310.0,1323.0,1314.0,0.584100958813678,0.41589904118632204
+2024-05-04,Final,montreal,3.0,boston,4.0,Tsongas Center,2024,regular_season,1290.0,1303.0,1288.0,1305.0,0.5473485180458647,0.4526514819541353
+2024-05-04,Final,minnesota,2.0,new_york,5.0,UBS Arena,2024,regular_season,1286.0,1306.0,1282.0,1310.0,0.5316182978281074,0.46838170217189257
+2024-05-05,Final,ottawa,2.0,toronto,5.0,Mattamy Athletic Centre,2024,regular_season,1330.0,1285.0,1327.0,1288.0,0.6253513933075365,0.37464860669246347
+2024-05-08,Final,minnesota,0.0,toronto,4.0,Coca-Cola Coliseum,2024,playoffs,1334.0,1302.0,1330.0,1306.0,0.6049129020079568,0.3950870979920432
+2024-05-09,Final OT,boston,2.0,montreal,1.0,Place Bell,2024,playoffs,1300.0,1293.0,1303.0,1290.0,0.5896835031399499,0.4103164968600501
+2024-05-10,Final,minnesota,0.0,toronto,2.0,Coca-Cola Coliseum,2024,playoffs,1337.0,1299.0,1334.0,1302.0,0.615864104253756,0.38413589574624396
+2024-05-11,Final OT3,boston,2.0,montreal,1.0,Place Bell,2024,playoffs,1297.0,1296.0,1300.0,1293.0,0.581301478368915,0.418698521631085
+2024-05-13,Final,toronto,0.0,minnesota,2.0,Xcel Energy Center,2024,playoffs,1303.0,1333.0,1299.0,1337.0,0.5172625244323764,0.4827374755676236
+2024-05-14,Final OT,montreal,2.0,boston,3.0,Tsongas Center,2024,playoffs,1298.0,1295.0,1296.0,1297.0,0.5700528235839882,0.42994717641601177
+2024-05-15,Final OT2,toronto,0.0,minnesota,1.0,Xcel Energy Center,2024,playoffs,1305.0,1331.0,1303.0,1333.0,0.5287505638922685,0.4712494361077315
+2024-05-17,Final,minnesota,4.0,toronto,1.0,Coca-Cola Coliseum,2024,playoffs,1325.0,1311.0,1331.0,1305.0,0.6076610641268197,0.39233893587318025
+2024-05-19,Final,minnesota,3.0,boston,4.0,Tsongas Center,2024,playoffs,1300.0,1309.0,1298.0,1311.0,0.5530468951694627,0.4469531048305373
+2024-05-21,Final,minnesota,3.0,boston,0.0,Tsongas Center,2024,playoffs,1295.0,1314.0,1300.0,1309.0,0.558731369324761,0.441268630675239
+2024-05-24,Final,boston,1.0,minnesota,4.0,Xcel Energy Center,2024,playoffs,1318.0,1291.0,1314.0,1295.0,0.5980137657693437,0.40198623423065627
+2024-05-26,Final OT2,boston,1.0,minnesota,0.0,Xcel Energy Center,2024,playoffs,1315.0,1294.0,1318.0,1291.0,0.6090326034042394,0.39096739659576063
+2024-05-29,Final,minnesota,3.0,boston,0.0,Tsongas Center,2024,playoffs,1289.0,1320.0,1294.0,1315.0,0.5416377027147633,0.4583622972852367
+2024-11-20,2:15 pm EST,toronto,,minnesota,,Ford Performance Centre,2025,preseason,,,,,,
+2024-11-20,2:00 pm EST,montréal,,boston,,Verdun Auditorium,2025,preseason,,,,,,
+2024-11-21,2:30 pm EST,minnesota,,new_york,,Ford Performance Centre,2025,preseason,,,,,,
+2024-11-21,2:00 pm EST,boston,,ottawa,,Verdun Auditorium,2025,preseason,,,,,,
+2024-11-22,2:30 pm EST,new_york,,toronto,,Ford Performance Centre,2025,preseason,,,,,,
+2024-11-22,2:00 pm EST,ottawa,,montréal,,Verdun Auditorium,2025,preseason,,,,,,
+2024-11-30,5:00 pm EST,ottawa,,montréal,,Place Bell,2025,regular_season,,,,,,
+2024-11-30,2:00 pm EST,boston,,toronto,,Coca-Cola Coliseum,2025,regular_season,,,,,,
+2024-12-01,5:00 pm CST,new_york,,minnesota,,Xcel Energy Center,2025,regular_season,,,,,,
+2024-12-03,7:00 pm EST,toronto,,ottawa,,TD Place,2025,regular_season,,,,,,
+2024-12-04,7:00 pm EST,minnesota,,boston,,Tsongas Center,2025,regular_season,,,,,,
+2024-12-04,7:00 pm EST,new_york,,montréal,,Place Bell,2025,regular_season,,,,,,
+2024-12-06,TBD,montréal,,ottawa,,TBD,2025,regular_season,,,,,,
+2024-12-07,2:00 pm EST,minnesota,,toronto,,Coca-Cola Coliseum,2025,regular_season,,,,,,
+2024-12-08,4:00 pm EST,new_york,,boston,,Tsongas Center,2025,regular_season,,,,,,
+2024-12-17,7:00 pm EST,ottawa,,boston,,Tsongas Center,2025,regular_season,,,,,,
+2024-12-18,7:00 pm EST,toronto,,new_york,,Prudential Center,2025,regular_season,,,,,,
+2024-12-19,7:00 pm CST,ottawa,,minnesota,,Xcel Energy Center,2025,regular_season,,,,,,
+2024-12-21,2:00 pm EST,montréal,,toronto,,Coca-Cola Coliseum,2025,regular_season,,,,,,
+2024-12-22,12:00 pm EST,minnesota,,new_york,,Prudential Center,2025,regular_season,,,,,,
+2024-12-27,7:00 pm EST,boston,,toronto,,Coca-Cola Coliseum,2025,regular_season,,,,,,
+2024-12-28,1:00 pm CST,montréal,,minnesota,,Xcel Energy Center,2025,regular_season,,,,,,
+2024-12-29,1:00 pm EST,ottawa,,new_york,,Prudential Center,2025,regular_season,,,,,,
+2024-12-30,7:00 pm EST,boston,,montréal,,Place Bell,2025,regular_season,,,,,,
+2024-12-31,7:00 pm EST,ottawa,,toronto,,Coca-Cola Coliseum,2025,regular_season,,,,,,
+2025-01-01,6:30 pm CST,boston,,minnesota,,Xcel Energy Center,2025,regular_season,,,,,,
+2025-01-03,1:00 pm CST,new_york,,minnesota,,Xcel Energy Center,2025,regular_season,,,,,,
+2025-01-04,TBD,montréal,,boston,,TBD,2025,regular_season,,,,,,
+2025-01-06,7:00 pm EST,ottawa,,new_york,,Prudential Center,2025,regular_season,,,,,,
+2025-01-07,TBD,montréal,,toronto,,TBD,2025,regular_season,,,,,,
+2025-01-07,6:30 pm CST,boston,,minnesota,,Xcel Energy Center,2025,regular_season,,,,,,
+2025-01-10,2:00 pm EST,boston,,ottawa,,TD Place,2025,regular_season,,,,,,
+2025-01-11,12:00 pm EST,toronto,,new_york,,Prudential Center,2025,regular_season,,,,,,
+2025-01-11,TBD,montréal,,minnesota,,TBD,2025,regular_season,,,,,,
+2025-01-13,7:00 pm EST,toronto,,ottawa,,TD Place,2025,regular_season,,,,,,
+2025-01-14,7:00 pm EST,minnesota,,new_york,,Prudential Center,2025,regular_season,,,,,,
+2025-01-16,7:00 pm EST,minnesota,,montréal,,Place Bell,2025,regular_season,,,,,,
+2025-01-18,TBD,ottawa,,montréal,,TBD,2025,regular_season,,,,,,
+2025-01-20,6:00 pm CST,ottawa,,minnesota,,Xcel Energy Center,2025,regular_season,,,,,,
+2025-01-21,7:00 pm EST,toronto,,boston,,Tsongas Center,2025,regular_season,,,,,,
+2025-01-24,TBD,new_york,,toronto,,TBD,2025,regular_season,,,,,,
+2025-01-25,2:00 pm CST,boston,,minnesota,,Xcel Energy Center,2025,regular_season,,,,,,
+2025-01-26,7:00 pm EST,new_york,,ottawa,,TD Place,2025,regular_season,,,,,,
+2025-01-27,6:00 pm CST,toronto,,minnesota,,Xcel Energy Center,2025,regular_season,,,,,,
+2025-01-28,7:00 pm EST,ottawa,,montréal,,Place Bell,2025,regular_season,,,,,,
+2025-01-29,7:00 pm EST,toronto,,montréal,,Place Bell,2025,regular_season,,,,,,
+2025-01-30,7:00 pm EST,new_york,,boston,,Tsongas Center,2025,regular_season,,,,,,
+2025-01-31,2:00 pm EST,ottawa,,toronto,,Coca-Cola Coliseum,2025,regular_season,,,,,,
+2025-02-01,1:00 pm EST,montréal,,new_york,,Prudential Center,2025,regular_season,,,,,,
+2025-02-10,7:00 pm EST,minnesota,,toronto,,Coca-Cola Coliseum,2025,regular_season,,,,,,
+2025-02-11,7:00 pm EST,boston,,new_york,,Prudential Center,2025,regular_season,,,,,,
+2025-02-12,7:00 pm EST,minnesota,,ottawa,,TD Place,2025,regular_season,,,,,,
+2025-02-13,7:00 pm EST,boston,,toronto,,Coca-Cola Coliseum,2025,regular_season,,,,,,
+2025-02-14,2:00 pm EST,new_york,,montréal,,Place Bell,2025,regular_season,,,,,,
+2025-02-15,1:00 pm EST,minnesota,,boston,,Tsongas Center,2025,regular_season,,,,,,
+2025-02-15,TBD,toronto,,ottawa,,TBD,2025,regular_season,,,,,,
+2025-02-16,4:00 pm EST,boston,,new_york,,Prudential Center,2025,regular_season,,,,,,
+2025-02-17,7:00 pm EST,minnesota,,montréal,,Place Bell,2025,regular_season,,,,,,
+2025-02-18,7:00 pm EST,toronto,,new_york,,Prudential Center,2025,regular_season,,,,,,
+2025-02-19,7:00 pm EST,boston,,ottawa,,TD Place,2025,regular_season,,,,,,
+2025-02-21,2:00 pm EST,montréal,,ottawa,,TD Place,2025,regular_season,,,,,,
+2025-02-22,TBD,boston,,new_york,,TBD,2025,regular_season,,,,,,
+2025-02-22,12:30 pm CST,toronto,,minnesota,,Xcel Energy Center,2025,regular_season,,,,,,
+2025-02-24,7:00 pm EST,toronto,,montréal,,Place Bell,2025,regular_season,,,,,,
+2025-02-25,7:00 pm EST,new_york,,ottawa,,TD Place,2025,regular_season,,,,,,
+2025-03-01,TBD,boston,,montréal,,TBD,2025,regular_season,,,,,,
+2025-03-04,7:00 pm EST,minnesota,,montréal,,Place Bell,2025,regular_season,,,,,,
+2025-03-05,7:00 pm EST,new_york,,boston,,Tsongas Center,2025,regular_season,,,,,,
+2025-03-06,7:00 pm EST,montréal,,toronto,,Coca-Cola Coliseum,2025,regular_season,,,,,,
+2025-03-07,TBD,ottawa,,minnesota,,TBD,2025,regular_season,,,,,,
+2025-03-08,TBD,montréal,,boston,,TBD,2025,regular_season,,,,,,
+2025-03-09,1:00 pm EDT,minnesota,,toronto,,Coca-Cola Coliseum,2025,regular_season,,,,,,
+2025-03-11,7:00 pm EDT,minnesota,,ottawa,,TD Place,2025,regular_season,,,,,,
+2025-03-12,7:00 pm EDT,montréal,,new_york,,Prudential Center,2025,regular_season,,,,,,
+2025-03-15,2:00 pm EDT,boston,,ottawa,,TD Place,2025,regular_season,,,,,,
+2025-03-16,TBD,minnesota,,new_york,,TBD,2025,regular_season,,,,,,
+2025-03-18,7:00 pm EDT,montréal,,boston,,Tsongas Center,2025,regular_season,,,,,,
+2025-03-19,7:00 pm EDT,new_york,,toronto,,Coca-Cola Coliseum,2025,regular_season,,,,,,
+2025-03-22,12:00 pm EDT,ottawa,,new_york,,Prudential Center,2025,regular_season,,,,,,
+2025-03-23,12:00 pm EDT,toronto,,montréal,,Place Bell,2025,regular_season,,,,,,
+2025-03-25,7:00 pm EDT,new_york,,ottawa,,TD Place,2025,regular_season,,,,,,
+2025-03-26,TBD,toronto,,boston,,TBD,2025,regular_season,,,,,,
+2025-03-26,7:00 pm CDT,montréal,,minnesota,,Xcel Energy Center,2025,regular_season,,,,,,
+2025-03-29,TBD,ottawa,,boston,,TBD,2025,regular_season,,,,,,
+2025-03-30,12:00 pm CDT,toronto,,minnesota,,Xcel Energy Center,2025,regular_season,,,,,,
+2025-04-01,7:00 pm EDT,new_york,,montréal,,Place Bell,2025,regular_season,,,,,,
+2025-04-02,7:00 pm EDT,ottawa,,boston,,Tsongas Center,2025,regular_season,,,,,,
+2025-04-26,TBD,toronto,,boston,,Tsongas Center,2025,regular_season,,,,,,
+2025-04-26,TBD,new_york,,minnesota,,Xcel Energy Center,2025,regular_season,,,,,,
+2025-04-26,TBD,montréal,,ottawa,,TD Place,2025,regular_season,,,,,,
+2025-04-28,TBD,boston,,montréal,,Place Bell,2025,regular_season,,,,,,
+2025-04-29,7:00 pm EDT,new_york,,toronto,,Coca-Cola Coliseum,2025,regular_season,,,,,,
+2025-04-30,TBD,minnesota,,ottawa,,TD Place,2025,regular_season,,,,,,
+2025-05-02,TBD,montréal,,new_york,,Prudential Center,2025,regular_season,,,,,,
+2025-05-03,TBD,minnesota,,boston,,Tsongas Center,2025,regular_season,,,,,,
+2025-05-03,TBD,ottawa,,toronto,,Coca-Cola Coliseum,2025,regular_season,,,,,,
