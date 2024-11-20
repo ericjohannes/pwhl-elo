@@ -15,3 +15,16 @@ def revert_elo_to_mean(season_ending_elo: int) -> int:
 
 def time_stamp() -> str:
     return datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def expected_result(elo_home: int, elo_away: int) -> [np.float64, np.float64]:
+    # 538 uses 50 for nfl https://fivethirtyeight.com/methodology/how-our-nhl-predictions-work/
+    HOME_ADVANTAGE = 50
+
+    # TODO: see if playoff adjustment of 1.25 should go here per
+    # https://fivethirtyeight.com/methodology/how-our-nhl-predictions-work/
+    rating_home = 10 ** ((elo_home + HOME_ADVANTAGE) / 400)
+    rating_away = 10 ** (elo_away / 400)
+    expected_score_home = rating_home / (rating_home + rating_away)
+
+    return [expected_score_home, 1 - expected_score_home]
