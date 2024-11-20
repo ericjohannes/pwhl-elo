@@ -6,7 +6,7 @@ from datetime import datetime
 import numpy as np
 import pandas as pd
 
-from pwhl_elo.calculate_elo import expected_result
+from pwhl_elo.utils import expected_result
 
 
 def clean_montreal(team: str) -> str:
