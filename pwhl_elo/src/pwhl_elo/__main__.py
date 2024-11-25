@@ -1,7 +1,5 @@
 # from pwhl_elo.cli import cli
-from pwhl_elo.update_elo import update_elo
+from pwhl_elo.upcoming_projection import build_upcoming_projects
 
-update_elo(
-    "./data/output/all_results/wphl_elos_2024-11-18_15:12:34.csv", "./data/output/all_results"
-)
+build_upcoming_projects()
 # cli()
