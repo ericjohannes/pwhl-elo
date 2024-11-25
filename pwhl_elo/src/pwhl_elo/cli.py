@@ -4,6 +4,7 @@ from pwhl_elo.calculate_elo import handle
 from pwhl_elo.chart_elos import create_charts
 from pwhl_elo.revert_elo import revert_elo_file
 from pwhl_elo.upcoming_projection import build_upcoming_projects
+from pwhl_elo.update_elo import update_elo
 
 
 @click.group()
@@ -60,8 +61,21 @@ def revert(input, output_dir):
     click.echo(f"Save new file: {new_file}")
 
 
+@click.command()
+@click.option(
+    "--input", prompt="path/to/file.json", help="Previous file of fixtures, scores and Elos."
+)
+def update(input):
+    """Takes new fixture results from clean results file, input file of last calculated Elos and
+    latest Elos for each team. Adds new Elo scores for new played fixtures and saves new latest Elos
+     and new file of all fixtures with Elo scores."""
+    new_file = update_elo(input)
+    click.echo(f"Saved new file: {new_file}")
+
+
 cli.add_command(hi)
 cli.add_command(calculate)
 cli.add_command(projections)
 cli.add_command(chart)
 cli.add_command(revert)
+cli.add_command(update)

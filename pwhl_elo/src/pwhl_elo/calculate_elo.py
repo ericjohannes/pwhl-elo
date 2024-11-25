@@ -93,21 +93,22 @@ def handle_row(row):
     """
 
     # skip games that don't have scores yet
-    if "Final" not in row["time" ""]:
+    if "Final" not in row["time"]:
         return row
 
     home = row["home_team"]
     away = row["away_team"]
 
     # in case these are new teams
-    if home not in current_elo.keys():
+    # TODO: this should be ```
+    if home not in current_elo["teams"]:
         current_elo[home] = 1300
 
-    if away not in current_elo.keys():
+    if away not in current_elo["teams"]:
         current_elo[away] = 1300
 
-    start_elo_home = current_elo[home]
-    start_elo_away = current_elo[away]
+    start_elo_home = current_elo["teams"][home]
+    start_elo_away = current_elo["teams"][away]
 
     # how many times out of 100 would each team win
     expected_win_home, expected_win_away = expected_result(start_elo_home, start_elo_away)
@@ -121,8 +122,8 @@ def handle_row(row):
         row["away_score"],
     )
 
-    current_elo[home] = elo_new_home
-    current_elo[away] = elo_new_away
+    current_elo["teams"][home] = elo_new_home
+    current_elo["teams"][away] = elo_new_away
 
     row["elo_after_home"] = elo_new_home
     row["elo_after_away"] = elo_new_away

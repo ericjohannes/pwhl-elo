@@ -9,13 +9,6 @@ import pandas as pd
 from pwhl_elo.utils import expected_result
 
 
-def clean_montreal(team: str) -> str:
-    """
-    removes accent from montréal
-    """
-    return team.replace("é", "e")
-
-
 def revert_elo_to_mean(season_ending_elo: int) -> int:
     """
     To account for revversion to mean, new players, coach etc. Bring an Elo 1/3 back to 1300
@@ -50,8 +43,8 @@ def handle_row_wrapper(current_elo: dict):
         """
         Calculate expected result for each row in a pandas dataframe and add to row
         """
-        home = clean_montreal(row["home_team"])
-        away = clean_montreal(row["away_team"])
+        home = row["home_team"]
+        away = row["away_team"]
 
         start_elo_home = current_elo[home]
         start_elo_away = current_elo[away]
