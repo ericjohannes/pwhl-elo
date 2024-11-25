@@ -84,12 +84,12 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type
 5/24/2024,Final,Boston,1,Minnesota,4,Xcel Energy Center,2024,playoffs
 5/26/2024,Final OT2,Boston,1,Minnesota,0,Xcel Energy Center,2024,playoffs
 5/29/2024,Final,Minnesota,3,Boston,0,Tsongas Center,2024,playoffs
-11/20/2024,2:00 pm EST,Montréal,,Boston,,Verdun Auditorium,2025,preseason
-11/20/2024,2:15 pm EST,Toronto,,Minnesota,,Ford Performance Centre,2025,preseason
-11/21/2024,2:00 pm EST,Boston,,Ottawa,,Verdun Auditorium,2025,preseason
-11/21/2024,2:30 pm EST,Minnesota,,New York,,Ford Performance Centre,2025,preseason
-11/22/2024,2:00 pm EST,Ottawa,,Montréal,,Verdun Auditorium,2025,preseason
-11/22/2024,2:30 pm EST,New York,,Toronto,,Ford Performance Centre,2025,preseason
+11/20/2024,Final,Montréal,1,Boston,3,Verdun Auditorium,2025,preseason
+11/20/2024,Final,Toronto,1,Minnesota,3,Ford Performance Centre,2025,preseason
+11/21/2024,Final,Boston,1,Ottawa,6,Verdun Auditorium,2025,preseason
+11/21/2024,Final OT,Minnesota,4,New York,3,Ford Performance Centre,2025,preseason
+11/22/2024,Final,Ottawa,3,Montréal,6,Verdun Auditorium,2025,preseason
+11/22/2024,Final,New York,5,Toronto,2,Ford Performance Centre,2025,preseason
 11/30/2024,2:00 pm EST,Boston,,Toronto,,Coca-Cola Coliseum,2025,regular_season
 11/30/2024,5:00 pm EST,Ottawa,,Montréal,,Place Bell,2025,regular_season
 12/1/2024,5:00 pm CST,New York,,Minnesota,,Xcel Energy Center,2025,regular_season
