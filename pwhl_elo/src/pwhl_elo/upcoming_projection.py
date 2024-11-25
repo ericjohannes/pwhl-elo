@@ -95,9 +95,11 @@ def build_upcoming_projects():
 
     # get first 5 unplayed games
     source_path = get_newest_file(INPUT_DIR)
+    print(source_path)
     source_df = pd.read_csv(source_path)
 
-    unplayed_df = source_df[~source_df["time"].str.contains("Final")]
+    source_df["time"] = source_df["time"].str.lower()
+    unplayed_df = source_df[~source_df["time"].str.contains("final")]
     next_5_df = unplayed_df.sort_values("date").head(5)
 
     # calculate odds on those 5 based on latest elos
@@ -137,9 +139,9 @@ if __name__ == "__main__":
     source_df = pd.read_csv(source_path)
 
     # between seasons revert Elos to the means
-    for team in latet_elos.keys():
-        if not check_if_team_played(team, 2025, source_df):
-            latet_elos[team] = revert_elo_to_mean(latet_elos[team])
+    # for team in latet_elos.keys():
+    #     if not check_if_team_played(team, 2025, source_df):
+    #         latet_elos[team] = revert_elo_to_mean(latet_elos[team])
 
     unplayed_df = source_df[~source_df["time"].str.contains("Final")]
     next_5_df = unplayed_df.sort_values("date").head(5)
