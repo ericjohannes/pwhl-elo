@@ -122,4 +122,19 @@ def structure_chartable_df(output_df: pd.DataFrame) -> pd.DataFrame:
     ].rename(columns={"away_team": "team", "elo_after_away": "elo"})
     after_elos_all = pd.concat([after_elos_home_df, after_elos_away_df])
     after_elos_all = after_elos_all.sort_values("date")
-    return after_elos_all
+
+    pivoted_elo_df = after_elos_all.pivot(index="date", columns="team")
+    pivoted_elo_df.columns = [y for x, y in pivoted_elo_df.columns]
+    return pivoted_elo_df
+
+
+def drop_nans(input_dict: dict) -> dict:
+    """
+    drop key-values pairs if value is NaN two levels in
+    """
+    input_dict.items()
+    output_dict = {
+        k: {k1: v1 for k1, v1 in sub_dict.items() if not math.isnan(v1)}
+        for k, sub_dict in input_dict.items()
+    }
+    return output_dict
