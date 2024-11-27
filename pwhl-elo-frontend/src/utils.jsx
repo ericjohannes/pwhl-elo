@@ -20,5 +20,5 @@ export const convertAndCapitalize = (str) => {
 }
 
 export const roundProjection = (num) => {
-    return (num*100).toFixed(1) + "%";
+    return (num*100).toFixed(0);
 }

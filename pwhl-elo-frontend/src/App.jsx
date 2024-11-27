@@ -20,19 +20,19 @@ function App() {
       <h1 className="oswald-bold">PWHL Team Elo Ratings</h1>
       <p className="updated-at quattrocento-regular">Last updated at {pubDateString(pwhl_final_elos.date)}</p>
       <table className="rating-table">
-        <thead className="quattrocento-bold">
+        <thead className="fira-code-bold">
           <tr>
             <th className="team-name table-head-cell">Team</th>
             <th className="num-col table-head-cell">Rating</th>
           </tr>
         </thead>
-        <tbody className="quattrocento-regular">
+        <tbody className="fira-code-regular">
           {
             Object.entries(pwhl_final_elos.teams).sort(compareFn).map((entry, i)=>{
               return(
                 <tr className="data-row" key={"data-row-" + i}>
-                  <td className="team-name table-left-cell" key={"team-name-" + i}>{convertAndCapitalize(entry[0])}</td>
-                  <td className="num-col" key={"team-score-" + i}>{entry[1]}</td>
+                  <td className="team-name table-left-cell fira-code-regular" key={"team-name-" + i}>{convertAndCapitalize(entry[0])}</td>
+                  <td className="num-col fira-code-regular" key={"team-score-" + i}>{entry[1]}</td>
 
                 </tr>
               )
