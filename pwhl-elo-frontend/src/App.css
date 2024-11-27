@@ -74,3 +74,8 @@
 .projection-table tr td:last-child, .projection-table tr th:last-child {
   width: 65px;
 }
+
+/* puts space between games on same day */
+.not-first-game td {
+  padding-top: 15px;
+}
