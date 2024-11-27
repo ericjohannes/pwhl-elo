@@ -44,7 +44,6 @@
 .rating-table {
   margin-left: auto;
   margin-right: auto;
-  width: 300px;
 }
 .team-name {
   text-align: left;
@@ -52,4 +51,26 @@
 
 .num-col {
   text-align: right;
+}
+
+.date-header {
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+.projection-table {
+  width: 300px;
+
+}
+
+.projection-table tr td:first-child, .projection-table th td:first-child {
+  width: 110px;
+}
+.projection-table tr td:nth-child(2), .projection-table tr th:nth-child(2) {
+  width: 60px;
+}
+.projection-table tr td:nth-child(3), .projection-table tr th:nth-child(3) {
+  width: 65px;
+}
+.projection-table tr td:last-child, .projection-table tr th:last-child {
+  width: 65px;
 }

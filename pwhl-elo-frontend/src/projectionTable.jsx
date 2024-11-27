@@ -19,14 +19,14 @@ export const projectionTable = ()=>(
             game_projections.sort(compareFn).map((date, j)=>{
                 return (
                     <>
-                    <h3 key={"date-label" + j} className="quattrocento-regular">{date.date}</h3>
+                    <h3 key={"date-label" + j} className="quattrocento-regular date-header">{date.date}</h3>
                     {
                         date.games.map((entry, i)=>{
                     
                             return(
                                 <>
                                     
-                                    <table key={"projection-table-" + i } className="rating-table">
+                                    <table key={"projection-table-" + i } className="rating-table projection-table ">
                                         <thead className="fira-code-bold" key={"projection-table-head" + i}>
                                             <tr key={"projection-table-header-row" + i}>
                                                 <th key={"projection-table-teams-head" + i} className="team-name table-head-cell">Teams</th>
