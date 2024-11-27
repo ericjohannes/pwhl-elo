@@ -106,8 +106,8 @@ def build_upcoming_projects():
     handle_row_with_elos = handle_row_wrapper(latet_elos["teams"])
     next_5_df = next_5_df.apply(handle_row_with_elos, axis=1)
     next_5_df["date"] = pd.to_datetime(next_5_df["date"]).dt.strftime("%b. %d, %Y")
-    # save results
-    next_5_df[
+
+    next_5 = next_5_df[
         [
             "date",
             "away_team",
@@ -119,7 +119,20 @@ def build_upcoming_projects():
             "expected_win_home",
             "expected_win_away",
         ]
-    ].to_json(OUTPUT_FN, orient="records")
+    ].to_dict(orient="records")
+
+    # group by date
+    grouped_next_5 = []
+    for game in next_5:
+        if game["date"] in [n["date"] for n in grouped_next_5]:
+            filtered_dates = filter(lambda row: row["date"] == game.pop("date"), grouped_next_5)
+            list(filtered_dates)[0]["games"].append({**game})
+        else:
+            grouped_next_5.append({"date": game.pop("date"), "games": [{**game}]})
+
+    # save results
+    with open(OUTPUT_FN, "w") as f:
+        json.dump(grouped_next_5, f)
 
 
 if __name__ == "__main__":
