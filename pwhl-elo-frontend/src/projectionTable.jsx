@@ -29,56 +29,53 @@ export const projectionTable = ()=>(
                                 <th key={"projection-table-proj-head" + j} className="team-rating table-head-cell num-col">Win%</th>
                             </tr>
                         </thead>
-                        <tbody className="fira-code-regular">
+                        <tbody key={"projection-table-body" + j} className="fira-code-regular">
                     {
                         date.games.map((entry, i)=>{
                             const notFirstClass = i > 0 ? " not-first-game" : "";
                             const homeFavored = entry.expected_win_home > entry.expected_win_away;
+                            const keySuffix = String(i) + "-" + String(j)
                             return(
                                 <>
                                     {/* away team */}
                                     <tr 
-                                        key={"projection-table-away-row" + i}
+                                        key={"projection-table-away-row" + keySuffix}
                                         className={"data-row" + notFirstClass}
                                     >
                                         <td 
                                             className="team-name table-left-cell" 
-                                            key={"team-name-" + i}>{convertAndCapitalize(entry.away_team)}
+                                            key={"away-team-name-" + keySuffix}>{convertAndCapitalize(entry.away_team)}
                                         </td>
-                                        <td className="team-rating" key={"is-away" + i}>Away</td>
+                                        <td className="team-rating" key={"is-away" + keySuffix}>Away</td>
                                         <td 
                                             className="team-name num-col" 
-                                            key={"away-rating-" + i}>{entry.elo_before_away}
+                                            key={"away-rating-" + keySuffix}>{entry.elo_before_away}
                                         </td>
                                         <td 
                                             className={"team-name num-col" + (homeFavored ? "" : " fira-code-bold")}
-                                            key={"away-projection-" + i}>{roundProjection(entry.expected_win_away)}
+                                            key={"away-projection-" + keySuffix}>{roundProjection(entry.expected_win_away)}
                                         </td>
 
                                     </tr>
                                     {/* home team */}
-                                    <tr key={"projection-table-home-row" + i} className="data-row">
+                                    <tr key={"projection-table-home-row" + keySuffix} className="data-row">
                                         <td 
                                             className="team-name table-left-cell" 
-                                            key={"team-name-" + i}>{convertAndCapitalize(entry.home_team)}
+                                            key={"home-team-name-" + keySuffix}>{convertAndCapitalize(entry.home_team)}
                                         </td>
-                                        <td className="team-rating" key={"is-home" + i}>Home</td>
+                                        <td className="team-rating" key={"is-home" + keySuffix}>Home</td>
                                         <td 
                                             className="team-name num-col" 
-                                            key={"away-rating-" + i}>{entry.elo_before_home}
+                                            key={"home-rating-" + keySuffix}>{entry.elo_before_home}
                                         </td>
                                         <td 
                                             className={"team-name num-col" + (homeFavored ? " fira-code-bold" : "")}
-                                            key={"away-projection-" + i}>{roundProjection(entry.expected_win_home)}
+                                            key={"home-projection-" + keySuffix}>{roundProjection(entry.expected_win_home)}
                                         </td>
-
                                     </tr>
-
-                                    
                                 </>
                             )
                         })
-                        
                     }
                     </tbody>
                     </table>

@@ -1,8 +1,5 @@
 export const pubDateString = (datetime) => {
     const pubDate =  new Date(datetime)
-    console.log('datetime')
-    console.log(datetime)
-    console.log(pubDate)
     const months = ['Jan.','Feb.','Mar.','April','May','June','July','Aug.','Sept.','Oct.','Nov.','Dec.'];
     const year = pubDate.getFullYear();
     const month = months[pubDate.getMonth()];

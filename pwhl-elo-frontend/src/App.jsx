@@ -31,9 +31,11 @@ function App() {
             Object.entries(pwhl_final_elos.teams).sort(compareFn).map((entry, i)=>{
               return(
                 <tr className="data-row" key={"data-row-" + i}>
-                  <td className="team-name table-left-cell fira-code-regular" key={"team-name-" + i}>{convertAndCapitalize(entry[0])}</td>
+                  <td 
+                    className="team-name table-left-cell fira-code-regular"
+                    key={"team-name-" + i}>{convertAndCapitalize(entry[0])}
+                    </td>
                   <td className="num-col fira-code-regular" key={"team-score-" + i}>{entry[1]}</td>
-
                 </tr>
               )
             })
