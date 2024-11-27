@@ -1,6 +1,7 @@
 import click
 
 from pwhl_elo.calculate_elo import handle
+from pwhl_elo.chart_data import create_chart_data
 from pwhl_elo.chart_elos import create_charts
 from pwhl_elo.revert_elo import revert_elo_file
 from pwhl_elo.upcoming_projection import build_upcoming_projects
@@ -73,9 +74,25 @@ def update(input):
     click.echo(f"Saved new file: {new_file}")
 
 
+# like pwhlelo chartable --input ../data/output/all_results/wphl_elos_2024-11-24_19:37:35.csv /
+# --output-dir ../data/output
+@click.command()
+@click.option(
+    "--input", prompt="path/to/file.json", help="File of Elos to convert to chart format."
+)
+@click.option(
+    "--output-dir", prompt="path/to/dir", help="Directory of where to save chartable Elos."
+)
+def chartable(input, output_dir):
+    """Reverts all latest team Elo's to the mean for the start of a new season."""
+    new_file = create_chart_data(input, output_dir)
+    click.echo(f"Save new chart data file: {new_file}")
+
+
 cli.add_command(hi)
 cli.add_command(calculate)
 cli.add_command(projections)
 cli.add_command(chart)
 cli.add_command(revert)
 cli.add_command(update)
+cli.add_command(chartable)

@@ -3,6 +3,7 @@ from datetime import datetime
 from typing import List
 
 import numpy as np
+import pandas as pd
 
 
 def revert_elo_to_mean(season_ending_elo: int) -> int:
@@ -99,3 +100,26 @@ def clean_montreal(team: str) -> str:
     removes accent from montréal
     """
     return team.replace("é", "e")
+
+
+def structure_chartable_df(output_df: pd.DataFrame) -> pd.DataFrame:
+    # make df with all "after" elos over time so it's easier to work with
+
+    filtered_df = output_df[output_df["time"].str.lower().str.contains("final")]
+    after_elos_home_df = filtered_df[
+        [
+            "date",
+            "home_team",
+            "elo_after_home",
+        ]
+    ].rename(columns={"home_team": "team", "elo_after_home": "elo"})
+    after_elos_away_df = filtered_df[
+        [
+            "date",
+            "away_team",
+            "elo_after_away",
+        ]
+    ].rename(columns={"away_team": "team", "elo_after_away": "elo"})
+    after_elos_all = pd.concat([after_elos_home_df, after_elos_away_df])
+    after_elos_all = after_elos_all.sort_values("date")
+    return after_elos_all
