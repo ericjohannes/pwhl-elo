@@ -2,6 +2,7 @@ import "./App.css"
 import pwhl_final_elos from "./assets/pwhl_latest_elos.json"
 import {convertAndCapitalize, pubDateString} from "./utils"
 import {projectionTable} from "./projectionTable"
+import {eloHistoryChart} from "./eloHistoryChart"
 
 const compareFn = (a, b) =>{
   if (a[1] > b[1]) {
@@ -43,6 +44,8 @@ function App() {
         </tbody>
       </table>
       {projectionTable()}
+      {eloHistoryChart()}
+
       <p className="quattrocento-regular">See the <a href="https://github.com/ericjohannes/pwhl-elo">code for this project</a>.</p>
       <p className="quattrocento-regular">Created with 🧮 by <a href="https://ericjblom.com/">Eric Blom</a>.</p>
     </>
