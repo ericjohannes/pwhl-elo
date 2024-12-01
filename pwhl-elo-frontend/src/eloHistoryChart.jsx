@@ -95,7 +95,7 @@ export const eloHistoryChart = () => {
 
     return (
         <section>
-            <h1 className="oswald-bold">History of WPHL Ratings</h1>
+            <h1 className="oswald-bold">History of WPHL Elo Ratings</h1>
 
             {LineChart({width:width, height:height, data:chartableWphlElos})}
         </section>
