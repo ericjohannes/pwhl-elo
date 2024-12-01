@@ -1,5 +1,4 @@
 # from pwhl_elo.cli import cli
-from pwhl_elo.upcoming_projection import build_upcoming_projects
+from pwhl_elo.chart_data import create_chart_data
 
-build_upcoming_projects()
-# cli()
+create_chart_data("./data/output/all_results/wphl_elos_2024-11-24_19:37:35.csv", "./data/output")
