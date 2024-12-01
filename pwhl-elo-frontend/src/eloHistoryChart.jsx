@@ -74,6 +74,7 @@ const LineChart = ({ width, height, data }) => {
                         const linePath = lineBuilder(team.games);                        
                         return(
                             <path
+                                key={team.team + "elo"}
                                 d={linePath}
                                 stroke={colors[team.team]}
                                 fill="none"
