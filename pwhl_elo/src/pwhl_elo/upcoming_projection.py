@@ -83,8 +83,8 @@ def get_newest_file(input_dir: str):
 
 def build_upcoming_projects():
     TIMESTAMP = datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
-    OUTPUT_DIR = os.path.join("..", "data", "output")
-    INPUT_DIR = os.path.join("..", "data", "output")
+    OUTPUT_DIR = os.path.join("data", "output")
+    INPUT_DIR = os.path.join("data", "output")
     OUTPUT_FN = os.path.join(
         OUTPUT_DIR, "next_five_projections", f"game_projections_{TIMESTAMP}.json"
     )

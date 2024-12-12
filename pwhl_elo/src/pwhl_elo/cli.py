@@ -66,11 +66,14 @@ def revert(input, output_dir):
 @click.option(
     "--input", prompt="path/to/file.json", help="Previous file of fixtures, scores and Elos."
 )
-def update(input):
+@click.option(
+    "--output-dir", prompt="path/to/dir", help="Directory of where to save new Elo results."
+)
+def update(input, output_dir):
     """Takes new fixture results from clean results file, input file of last calculated Elos and
     latest Elos for each team. Adds new Elo scores for new played fixtures and saves new latest Elos
      and new file of all fixtures with Elo scores."""
-    new_file = update_elo(input)
+    new_file = update_elo(input, output_dir)
     click.echo(f"Saved new file: {new_file}")
 
 

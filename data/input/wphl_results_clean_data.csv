@@ -1,82 +1,82 @@
 date,time,away_team,away_score,home_team,home_score,venue,season,type
 1/1/2024,Final,New York,4,Toronto,0,Mattamy Athletic Centre,2024,regular_season
-1/2/2024,Final OT,Montreal,3,Ottawa,2,TD Place,2024,regular_season
+1/2/2024,Final OT,Montréal,3,Ottawa,2,TD Place,2024,regular_season
 1/3/2024,Final,Minnesota,3,Boston,2,Tsongas Center,2024,regular_season
 1/5/2024,Final,Toronto,3,New York,2,Total Mortgage Arena,2024,regular_season
-1/6/2024,Final,Montreal,0,Minnesota,3,Xcel Energy Center,2024,regular_season
-1/10/2024,Final,Montreal,5,New York,2,UBS Arena,2024,regular_season
+1/6/2024,Final,Montréal,0,Minnesota,3,Xcel Energy Center,2024,regular_season
+1/10/2024,Final,Montréal,5,New York,2,UBS Arena,2024,regular_season
 1/10/2024,Final,Toronto,1,Minnesota,3,Xcel Energy Center,2024,regular_season
 1/13/2024,Final,Ottawa,5,Toronto,1,Mattamy Athletic Centre,2024,regular_season
-1/13/2024,Final OT,Boston,3,Montreal,2,Verdun Auditorium,2024,regular_season
+1/13/2024,Final OT,Boston,3,Montréal,2,Verdun Auditorium,2024,regular_season
 1/14/2024,Final OT,New York,3,Minnesota,2,Xcel Energy Center,2024,regular_season
-1/16/2024,Final,New York,2,Montreal,3,Place Bell,2024,regular_season
+1/16/2024,Final,New York,2,Montréal,3,Place Bell,2024,regular_season
 1/17/2024,Final OT,Minnesota,3,Ottawa,2,TD Place,2024,regular_season
 1/17/2024,Final,Boston,3,Toronto,2,Mattamy Athletic Centre,2024,regular_season
 1/20/2024,Final,New York,4,Boston,1,Tsongas Center,2024,regular_season
-1/20/2024,Final SO,Toronto,4,Montreal,3,Verdun Auditorium,2024,regular_season
+1/20/2024,Final SO,Toronto,4,Montréal,3,Verdun Auditorium,2024,regular_season
 1/23/2024,Final,Toronto,1,Ottawa,3,TD Place,2024,regular_season
 1/24/2024,Final,Boston,3,Ottawa,2,TD Place,2024,regular_season
-1/24/2024,Final,Montreal,2,Minnesota,1,Xcel Energy Center,2024,regular_season
+1/24/2024,Final,Montréal,2,Minnesota,1,Xcel Energy Center,2024,regular_season
 1/26/2024,Final,New York,0,Toronto,2,Mattamy Athletic Centre,2024,regular_season
-1/27/2024,Final OT,Ottawa,1,Montreal,2,Place Bell,2024,regular_season
+1/27/2024,Final OT,Ottawa,1,Montréal,2,Place Bell,2024,regular_season
 1/27/2024,Final OT,Minnesota,3,Boston,4,Tsongas Center,2024,regular_season
 1/28/2024,Final OT,Minnesota,2,New York,1,Total Mortgage Arena,2024,regular_season
 2/3/2024,Final,Minnesota,1,Toronto,4,Mattamy Athletic Centre,2024,regular_season
 2/4/2024,Final OT,New York,4,Ottawa,3,TD Place,2024,regular_season
-2/4/2024,Final OT,Montreal,2,Boston,1,Tsongas Center,2024,regular_season
+2/4/2024,Final OT,Montréal,2,Boston,1,Tsongas Center,2024,regular_season
 2/14/2024,Final,Toronto,5,Boston,3,Tsongas Center,2024,regular_season
 2/14/2024,Final,Ottawa,1,Minnesota,2,Xcel Energy Center,2024,regular_season
-2/16/2024,Final,Montreal,0,Toronto,3,Scotiabank Arena,2024,regular_season
+2/16/2024,Final,Montréal,0,Toronto,3,Scotiabank Arena,2024,regular_season
 2/17/2024,Final,Minnesota,2,Ottawa,1,TD Place,2024,regular_season
 2/17/2024,Final OT,New York,2,Boston,1,Tsongas Center,2024,regular_season
-2/18/2024,Final,Minnesota,1,Montreal,2,Place Bell,2024,regular_season
+2/18/2024,Final,Minnesota,1,Montréal,2,Place Bell,2024,regular_season
 2/19/2024,Final,Ottawa,4,Boston,2,Tsongas Center,2024,regular_season
 2/21/2024,Final,Ottawa,1,Boston,3,Tsongas Center,2024,regular_season
-2/21/2024,Final SO,Montreal,2,New York,3,UBS Arena,2024,regular_season
+2/21/2024,Final SO,Montréal,2,New York,3,UBS Arena,2024,regular_season
 2/23/2024,Final SO,New York,1,Toronto,2,Mattamy Athletic Centre,2024,regular_season
-2/24/2024,Final,Ottawa,3,Montreal,6,Verdun Auditorium,2024,regular_season
+2/24/2024,Final,Ottawa,3,Montréal,6,Verdun Auditorium,2024,regular_season
 2/25/2024,Final,Boston,2,Minnesota,0,Xcel Energy Center,2024,regular_season
 2/27/2024,Final OT,Toronto,4,Minnesota,3,3M Arena at Mariucci,2024,regular_season
 2/28/2024,Final,New York,2,Ottawa,4,TD Place,2024,regular_season
 3/2/2024,Final,Toronto,5,Ottawa,2,TD Place,2024,regular_season
-3/2/2024,Final,Boston,1,Montreal,3,Verdun Auditorium,2024,regular_season
+3/2/2024,Final,Boston,1,Montréal,3,Verdun Auditorium,2024,regular_season
 3/3/2024,Final,Minnesota,2,New York,0,UBS Arena,2024,regular_season
 3/5/2024,Final SO,Ottawa,3,Minnesota,4,Xcel Energy Center,2024,regular_season
-3/6/2024,Final,Montreal,4,New York,3,Total Mortgage Arena,2024,regular_season
+3/6/2024,Final,Montréal,4,New York,3,Total Mortgage Arena,2024,regular_season
 3/6/2024,Final,Boston,1,Toronto,3,Mattamy Athletic Centre,2024,regular_season
-3/8/2024,Final,Montreal,0,Toronto,3,Mattamy Athletic Centre,2024,regular_season
+3/8/2024,Final,Montréal,0,Toronto,3,Mattamy Athletic Centre,2024,regular_season
 3/10/2024,Final OT,New York,2,Boston,3,Tsongas Center,2024,regular_season
-3/10/2024,Final,Ottawa,4,Montreal,2,Place Bell,2024,regular_season
+3/10/2024,Final,Ottawa,4,Montréal,2,Place Bell,2024,regular_season
 3/13/2024,Final,Boston,0,Minnesota,4,Xcel Energy Center,2024,regular_season
 3/16/2024,Final,New York,1,Minnesota,5,Xcel Energy Center,2024,regular_season
 3/16/2024,Final SO,Ottawa,1,Boston,2,Little Caesars Arena,2024,regular_season
-3/17/2024,Final,Toronto,2,Montreal,1,PPG Paints Arena,2024,regular_season
+3/17/2024,Final,Toronto,2,Montréal,1,PPG Paints Arena,2024,regular_season
 3/20/2024,Final,Ottawa,3,New York,0,Total Mortgage Arena,2024,regular_season
 3/20/2024,Final,Boston,1,Toronto,2,Mattamy Athletic Centre,2024,regular_season
 3/23/2024,Final,Toronto,3,Ottawa,5,TD Place,2024,regular_season
-3/24/2024,Final SO,Montreal,2,Minnesota,3,Xcel Energy Center,2024,regular_season
+3/24/2024,Final SO,Montréal,2,Minnesota,3,Xcel Energy Center,2024,regular_season
 3/25/2024,Final,Boston,2,New York,3,UBS Arena,2024,regular_season
 4/18/2024,Final,Toronto,1,Boston,2,Tsongas Center,2024,regular_season
-4/18/2024,Final,Minnesota,3,Montreal,4,Verdun Auditorium,2024,regular_season
-4/20/2024,Final OT,Toronto,3,Montreal,2,Bell Centre,2024,regular_season
+4/18/2024,Final,Minnesota,3,Montréal,4,Verdun Auditorium,2024,regular_season
+4/20/2024,Final OT,Toronto,3,Montréal,2,Bell Centre,2024,regular_season
 4/20/2024,Final,Boston,2,New York,1,Prudential Center,2024,regular_season
 4/20/2024,Final,Minnesota,0,Ottawa,4,TD Place,2024,regular_season
-4/24/2024,Final,New York,2,Montreal,5,Verdun Auditorium,2024,regular_season
+4/24/2024,Final,New York,2,Montréal,5,Verdun Auditorium,2024,regular_season
 4/24/2024,Final SO,Boston,2,Ottawa,3,TD Place,2024,regular_season
-4/27/2024,Final,Montreal,2,Ottawa,0,TD Place,2024,regular_season
+4/27/2024,Final,Montréal,2,Ottawa,0,TD Place,2024,regular_season
 4/27/2024,Final,Boston,2,Minnesota,1,Xcel Energy Center,2024,regular_season
 4/28/2024,Final,Toronto,6,New York,2,UBS Arena,2024,regular_season
 4/30/2024,Final,Ottawa,3,New York,4,Prudential Center,2024,regular_season
 5/1/2024,Final,Minnesota,1,Toronto,4,Mattamy Athletic Centre,2024,regular_season
 5/4/2024,Final,Minnesota,2,New York,5,UBS Arena,2024,regular_season
-5/4/2024,Final,Montreal,3,Boston,4,Tsongas Center,2024,regular_season
+5/4/2024,Final,Montréal,3,Boston,4,Tsongas Center,2024,regular_season
 5/5/2024,Final,Ottawa,2,Toronto,5,Mattamy Athletic Centre,2024,regular_season
 5/8/2024,Final,Minnesota,0,Toronto,4,Coca-Cola Coliseum,2024,playoffs
-5/9/2024,Final OT,Boston,2,Montreal,1,Place Bell,2024,playoffs
+5/9/2024,Final OT,Boston,2,Montréal,1,Place Bell,2024,playoffs
 5/10/2024,Final,Minnesota,0,Toronto,2,Coca-Cola Coliseum,2024,playoffs
-5/11/2024,Final OT3,Boston,2,Montreal,1,Place Bell,2024,playoffs
+5/11/2024,Final OT3,Boston,2,Montréal,1,Place Bell,2024,playoffs
 5/13/2024,Final,Toronto,0,Minnesota,2,Xcel Energy Center,2024,playoffs
-5/14/2024,Final OT,Montreal,2,Boston,3,Tsongas Center,2024,playoffs
+5/14/2024,Final OT,Montréal,2,Boston,3,Tsongas Center,2024,playoffs
 5/15/2024,Final OT2,Toronto,0,Minnesota,1,Xcel Energy Center,2024,playoffs
 5/17/2024,Final,Minnesota,4,Toronto,1,Coca-Cola Coliseum,2024,playoffs
 5/19/2024,Final,Minnesota,3,Boston,4,Tsongas Center,2024,playoffs
@@ -90,15 +90,15 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type
 11/21/2024,Final OT,Minnesota,4,New York,3,Ford Performance Centre,2025,preseason
 11/22/2024,Final,Ottawa,3,Montréal,6,Verdun Auditorium,2025,preseason
 11/22/2024,Final,New York,5,Toronto,2,Ford Performance Centre,2025,preseason
-11/30/2024,2:00 pm EST,Boston,,Toronto,,Coca-Cola Coliseum,2025,regular_season
-11/30/2024,5:00 pm EST,Ottawa,,Montréal,,Place Bell,2025,regular_season
-12/1/2024,5:00 pm CST,New York,,Minnesota,,Xcel Energy Center,2025,regular_season
-12/3/2024,7:00 pm EST,Toronto,,Ottawa,,TD Place,2025,regular_season
-12/4/2024,7:00 pm EST,Minnesota,,Boston,,Tsongas Center,2025,regular_season
-12/4/2024,7:00 pm EST,New York,,Montréal,,Place Bell,2025,regular_season
-12/6/2024,TBD,Montréal,,Ottawa,,TBD,2025,regular_season
-12/7/2024,2:00 pm EST,Minnesota,,Toronto,,Coca-Cola Coliseum,2025,regular_season
-12/8/2024,4:00 pm EST,New York,,Boston,,Tsongas Center,2025,regular_season
+11/30/2024,Final,Boston,1,Toronto,3,Coca-Cola Coliseum,2025,regular_season
+11/30/2024,Final SO,Ottawa,3,Montréal,4,Place Bell,2025,regular_season
+12/1/2024,Final OT,New York,4,Minnesota,3,Xcel Energy Center,2025,regular_season
+12/3/2024,Final,Toronto,2,Ottawa,3,TD Place,2025,regular_season
+12/4/2024,Final,Minnesota,2,Boston,1,Tsongas Center,2025,regular_season
+12/4/2024,Final,New York,4,Montréal,1,Place Bell,2025,regular_season
+12/6/2024,Final,Montréal,2,Ottawa,1,Place Bell,2025,regular_season
+12/7/2024,Final,Minnesota,6,Toronto,3,Coca-Cola Coliseum,2025,regular_season
+12/8/2024,Final,New York,2,Boston,4,Tsongas Center,2025,regular_season
 12/17/2024,7:00 pm EST,Ottawa,,Boston,,Tsongas Center,2025,regular_season
 12/18/2024,7:00 pm EST,Toronto,,New York,,Prudential Center,2025,regular_season
 12/19/2024,7:00 pm CST,Ottawa,,Minnesota,,Xcel Energy Center,2025,regular_season
@@ -182,10 +182,10 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type
 5/3/2025,TBD,Ottawa,,Toronto,,Coca-Cola Coliseum,2025,regular_season
 12/4/2023,Final OT,Toronto,5,Boston,2,Utica University Nexus Center - Mastrovito Hyundai,2024,preseason
 12/4/2023,Final SO,Ottawa,4,Minnesota,8,Utica University Nexus Center - Mastrovito Hyundai,2024,preseason
-12/4/2023,Final SO,Montreal,0,New York,4,Utica University Nexus Center - Mastrovito Hyundai,2024,preseason
+12/4/2023,Final SO,Montréal,0,New York,4,Utica University Nexus Center - Mastrovito Hyundai,2024,preseason
 12/5/2023,Final OT,Minnesota,5,Toronto,4,Utica University Nexus Center - Mastrovito Hyundai,2024,preseason
-12/5/2023,Final OT,Boston,1,Montreal,3,Utica University Nexus Center - Mastrovito Hyundai,2024,preseason
+12/5/2023,Final OT,Boston,1,Montréal,3,Utica University Nexus Center - Mastrovito Hyundai,2024,preseason
 12/5/2023,Final SO,New York,2,Ottawa,1,Utica University Nexus Center - Mastrovito Hyundai,2024,preseason
-12/7/2023,Final,Montreal,3,Minnesota,4,Utica University Nexus Center - Mastrovito Hyundai,2024,preseason
+12/7/2023,Final,Montréal,3,Minnesota,4,Utica University Nexus Center - Mastrovito Hyundai,2024,preseason
 12/7/2023,Final OT,New York,6,Toronto,4,Utica University Nexus Center - Mastrovito Hyundai,2024,preseason
 12/7/2023,Final OT,Ottawa,1,Boston,3,Utica University Nexus Center - Mastrovito Hyundai,2024,preseason

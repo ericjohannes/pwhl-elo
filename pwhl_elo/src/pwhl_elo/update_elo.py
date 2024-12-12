@@ -102,7 +102,7 @@ def update_elo(input: str, output_dir: str):
     merged_df["time_r"] = merged_df["time_r"].str.lower()
     merged_df["time_i"] = merged_df["time_i"].str.lower()
     new_scores_df = merged_df[
-        merged_df.time_r.str.contains("final") & ~merged_df.time_i.str.contains("final")
+        merged_df.time_r.str.contains("final") & (~merged_df.time_i.str.contains("final"))
     ]
 
     # sort by data just to be sure
