@@ -5,7 +5,8 @@ import chartableWphlElos from "./assets/chartable_wphl_elos.json"
 import {convertAndCapitalize} from "./utils"
 
 
-const NUMTICKS = 8;
+const NUMTICKSH = 6;
+const NUMTICKSV = 6;
 
 // create a time parser function that works for our time format
 const customTimeParser = d3.timeParse("%Y-%m-%dT%H:%M:%S.%fZ");
@@ -76,10 +77,10 @@ const LineChart = ({ width, height, data }) => {
         svgElement
             .append("g")
             .attr("transform", "translate(0," + boundsHeight + ")")
-            .call(xAxisGenerator.ticks(NUMTICKS)); // How many ticks are targeted
+            .call(xAxisGenerator.ticks(NUMTICKSH)); // How many ticks are targeted
 
         const yAxisGenerator = d3.axisLeft(yScale);
-        svgElement.append("g").call(yAxisGenerator);
+        svgElement.append("g").call(yAxisGenerator.ticks(NUMTICKSV));
     }, [xScale, yScale, boundsHeight]);
 
     // build the lines

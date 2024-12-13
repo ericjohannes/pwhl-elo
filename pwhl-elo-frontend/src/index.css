@@ -115,3 +115,10 @@ button:focus-visible {
   font-weight: 700;
   font-style: normal;
 }
+
+text {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
