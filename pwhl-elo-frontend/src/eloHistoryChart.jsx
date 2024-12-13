@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef } from "react";
 import * as d3 from "d3";
 
 import chartableWphlElos from "./assets/chartable_wphl_elos.json"
+import {convertAndCapitalize} from "./utils"
 
 
 const NUMTICKS = 8;
@@ -18,6 +19,29 @@ const colors = {
     "toronto": "#fcc60d",
     "ottawa": "#ee2f09",
 }
+
+const legendItem = (key, color, i) =>{
+    // returns one item for a legend. color should be a hex code
+    return (
+        <div key={"legendItem" + i} className="legend-item">
+            <p key={"legendLabel" + i} className="legend-label">{convertAndCapitalize(key)}</p>
+            <div key={"colorSwatch" + i} className="color-swatch" style={{"background-color": color}}></div>
+        </div>
+    )
+
+}
+const legend = (colorMap)=>{
+    return (
+        <div className="line-chart-legend">
+       {
+            Object.entries(colorMap).map((entry,i)=>{
+                return(legendItem(entry[0], entry[1], i))
+            })
+        }
+        </div>
+    )
+}
+
 const LineChart = ({ width, height, data }) => {
 
     // TODO: should be max of data
@@ -85,6 +109,7 @@ const LineChart = ({ width, height, data }) => {
                     })
                 }
             </svg>
+            {legend(colors)}
         </div>
     );
 };
