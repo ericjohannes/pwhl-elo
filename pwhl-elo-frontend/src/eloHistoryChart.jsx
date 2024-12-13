@@ -77,7 +77,7 @@ const LineChart = ({ width, height, data }) => {
         svgElement
             .append("g")
             .attr("transform", "translate(0," + boundsHeight + ")")
-            .call(xAxisGenerator.ticks(NUMTICKSH)); // How many ticks are targeted
+            .call(xAxisGenerator.ticks(NUMTICKSH, "%b %e, %Y")); // How many ticks are targeted
 
         const yAxisGenerator = d3.axisLeft(yScale);
         svgElement.append("g").call(yAxisGenerator.ticks(NUMTICKSV));

@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <h1 className="oswald-bold">PWHL Team Elo Ratings</h1>
-      <p className="updated-at quattrocento-regular">Last updated at {pubDateString(pwhl_final_elos.date)}</p>
+      <h3 className="updated-at quattrocento-regular">Last updated {pubDateString(pwhl_final_elos.date)}</h3>
       <table className="rating-table">
         <thead className="fira-code-bold">
           <tr>
