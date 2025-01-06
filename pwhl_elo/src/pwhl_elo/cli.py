@@ -3,6 +3,7 @@ import click
 from pwhl_elo.calculate_elo import handle
 from pwhl_elo.chart_data import create_chart_data
 from pwhl_elo.chart_elos import create_charts
+from pwhl_elo.get_games import get_games
 from pwhl_elo.revert_elo import revert_elo_file
 from pwhl_elo.upcoming_projection import build_upcoming_projects
 from pwhl_elo.update_elo import update_elo
@@ -92,6 +93,14 @@ def chartable(input, output_dir):
     click.echo(f"Save new chart data file: {new_file}")
 
 
+@click.command()
+@click.option("--season-id", help="ID # of season. 5 = 2025 regular season, etc.")
+def getgames(season_id):
+    """Gets latest data on games played"""
+    new_file = get_games(season_id)
+    click.echo(f"Saved new file: {new_file}")
+
+
 cli.add_command(hi)
 cli.add_command(calculate)
 cli.add_command(projections)
@@ -99,3 +108,4 @@ cli.add_command(chart)
 cli.add_command(revert)
 cli.add_command(update)
 cli.add_command(chartable)
+cli.add_command(getgames)
