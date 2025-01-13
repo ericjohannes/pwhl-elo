@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "wphlapp"
+version = "0.1.0"
+description = "working with wphl data"
+authors = ["eric <eric.j.blom@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+pwhl_elo = {path = "../pwhl_elo", develop = true}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

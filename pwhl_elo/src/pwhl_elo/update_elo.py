@@ -141,9 +141,8 @@ def update_elo(input: str, output_dir: str):
         ]
 
     all_results_ts = datetime.datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
-    wphl_elos_df.to_csv(
-        os.path.join(output_dir, "all_results", f"wphl_elos_{all_results_ts}.csv"), index=False
-    )
+    output_fn = os.path.join(output_dir, "all_results", f"wphl_elos_{all_results_ts}.csv")
+    wphl_elos_df.to_csv(output_fn, index=False)
 
     # save latest elos
     latest_elos = {

@@ -1,3 +1,4 @@
+import json
 import math
 from datetime import datetime
 from typing import List
@@ -138,3 +139,34 @@ def drop_nans(input_dict: dict) -> dict:
         for k, sub_dict in input_dict.items()
     }
     return output_dict
+
+
+class Pwhl:
+    """
+    Class to hold configuration of PWHL app.
+    """
+
+    def __init__(self, config, output_path=None):
+        self.configpath = config
+        # first get values from config file
+        self.read_config(config)
+        # overright with ones from command line
+        if output_path:
+            self.output_path = output_path
+        self.valid = self.validate_config()
+
+    def read_config(self, config_fp: str) -> dict:
+        """
+        reads in the config data and returns it as a dict
+        """
+        with open(config_fp, "r") as f:
+            config_data = json.load(f)
+            for k, v in config_data.items():
+                setattr(self, k, v)
+
+    def validate_config(self):
+        required_properties = ["output_path"]
+        for property in required_properties:
+            if not hasattr(self, property):
+                raise Exception(f"{property} must be defined from command line or in config")
+        return True

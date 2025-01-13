@@ -1,5 +1,4 @@
 import math
-import os
 
 import pandas as pd
 import requests
@@ -99,7 +98,7 @@ key_cols_map = {
     "home_goal_count": "home_score",
     "visiting_goal_count": "away_score",
     "venue_name": "venue",
-    "date_played": "date",
+    # "date_played": "date",
 }
 drop_cols = ["home_team", "date"]
 use_cols = [
@@ -126,8 +125,7 @@ params = {
 }
 
 
-def get_games(season_id: int) -> str:
-    output_path = os.path.join("data", "input", "results", "wphl_results_clean_data")
+def get_games(season_id: int, output_path: str) -> str:
     # setting "season_id" parameter changes what season it gets games for.
     # 5 = 2024-2025 regular eason
     # 4 = 2024-2025 preseason.
@@ -145,7 +143,8 @@ def get_games(season_id: int) -> str:
     # add season and type cols based on season_id
     schedule_df["type"] = season_type_from_id(season_id)
     schedule_df["season"] = season_year_from_id(season_id)
-
+    # create date time column
+    schedule_df["date"] = pd.to_datetime(schedule_df.GameDateISO8601, utc=True)
     # save csv of data with only use_cols included
-    schedule_df[use_cols].to_csv(output_path, index=False)
+    schedule_df[use_cols].to_csv(output_path, index=False, date_format="%Y/%m/%d")
     return output_path

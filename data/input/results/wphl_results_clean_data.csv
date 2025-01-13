@@ -1,0 +1,91 @@
+date,time,away_team,away_score,home_team,home_score,venue,season,type
+2024/11/30,Final,Boston,1,Toronto,3,Coca-Cola Coliseum,2025,regular_season
+2024/11/30,Final SO,Ottawa,3,Montréal,4,Place Bell,2025,regular_season
+2024/12/01,Final OT,New York,4,Minnesota,3,Xcel Energy Center,2025,regular_season
+2024/12/04,Final,Toronto,2,Ottawa,3,TD Place,2025,regular_season
+2024/12/05,Final,Minnesota,2,Boston,1,Tsongas Center,2025,regular_season
+2024/12/05,Final,New York,4,Montréal,1,Place Bell,2025,regular_season
+2024/12/07,Final,Montréal,2,Ottawa,1,Canadian Tire Centre,2025,regular_season
+2024/12/07,Final,Minnesota,6,Toronto,3,Coca-Cola Coliseum,2025,regular_season
+2024/12/08,Final,New York,2,Boston,4,Tsongas Center,2025,regular_season
+2024/12/18,Final,Ottawa,2,Boston,3,Tsongas Center,2025,regular_season
+2024/12/19,Final,Toronto,2,New York,4,Prudential Center,2025,regular_season
+2024/12/20,Final,Ottawa,2,Minnesota,5,Xcel Energy Center,2025,regular_season
+2024/12/21,Final OT,Montréal,4,Toronto,3,Coca-Cola Coliseum,2025,regular_season
+2024/12/22,Final SO,Minnesota,4,New York,3,Prudential Center,2025,regular_season
+2024/12/28,Final,Boston,2,Toronto,4,Coca-Cola Coliseum,2025,regular_season
+2024/12/28,Final,Montréal,3,Minnesota,2,Xcel Energy Center,2025,regular_season
+2024/12/29,Final,Ottawa,3,New York,1,Prudential Center,2025,regular_season
+2024/12/31,Final,Boston,1,Montréal,3,Place Bell,2025,regular_season
+2025/01/01,Final,Ottawa,2,Toronto,1,Coca-Cola Coliseum,2025,regular_season
+2025/01/03,Final OT,Boston,3,Minnesota,4,Xcel Energy Center,2025,regular_season
+2025/01/04,Final,New York,5,Minnesota,0,Xcel Energy Center,2025,regular_season
+2025/01/05,Final SO,Montréal,2,Boston,3,Climate Pledge Arena,2025,regular_season
+2025/01/08,7:00 pm EST,Ottawa,0,New York,0,Prudential Center,2025,regular_season
+2025/01/09,6:30 pm CST,Boston,0,Minnesota,0,Xcel Energy Center,2025,regular_season
+2025/01/09,7:00 pm PST,Montréal,0,Toronto,0,Rogers Arena,2025,regular_season
+2025/01/11,2:00 pm EST,Boston,0,Ottawa,0,TD Place,2025,regular_season
+2025/01/12,12:00 pm EST,Toronto,0,New York,0,Prudential Center,2025,regular_season
+2025/01/12,1:00 pm MST,Montréal,0,Minnesota,0,Ball Arena,2025,regular_season
+2025/01/15,7:00 pm EST,Toronto,0,Ottawa,0,TD Place,2025,regular_season
+2025/01/16,7:00 pm EST,Minnesota,0,New York,0,Prudential Center,2025,regular_season
+2025/01/18,7:00 pm EST,Minnesota,0,Montréal,0,Place Bell,2025,regular_season
+2025/01/19,1:00 pm EST,Ottawa,0,Montréal,0,Videotron Centre,2025,regular_season
+2025/01/22,6:00 pm CST,Ottawa,0,Minnesota,0,Xcel Energy Center,2025,regular_season
+2025/01/23,7:00 pm EST,Toronto,0,Boston,0,Tsongas Center,2025,regular_season
+2025/01/25,2:00 pm EST,New York,0,Toronto,0,Scotiabank Arena,2025,regular_season
+2025/01/26,2:00 pm CST,Boston,0,Minnesota,0,Xcel Energy Center,2025,regular_season
+2025/01/28,7:00 pm EST,New York,0,Ottawa,0,TD Place,2025,regular_season
+2025/01/29,6:00 pm CST,Toronto,0,Minnesota,0,Xcel Energy Center,2025,regular_season
+2025/01/30,7:00 pm EST,Ottawa,0,Montréal,0,Place Bell,2025,regular_season
+2025/01/31,7:00 pm EST,Toronto,0,Montréal,0,Place Bell,2025,regular_season
+2025/02/01,7:00 pm EST,New York,0,Boston,0,Tsongas Center,2025,regular_season
+2025/02/01,2:00 pm EST,Ottawa,0,Toronto,0,Coca-Cola Coliseum,2025,regular_season
+2025/02/02,1:00 pm EST,Montréal,0,New York,0,Prudential Center,2025,regular_season
+2025/02/12,7:00 pm EST,Minnesota,0,Toronto,0,Coca-Cola Coliseum,2025,regular_season
+2025/02/13,7:00 pm EST,Boston,0,New York,0,Prudential Center,2025,regular_season
+2025/02/14,7:00 pm EST,Minnesota,0,Ottawa,0,TD Place,2025,regular_season
+2025/02/15,7:00 pm EST,Boston,0,Toronto,0,Coca-Cola Coliseum,2025,regular_season
+2025/02/15,2:00 pm EST,New York,0,Montréal,0,Place Bell,2025,regular_season
+2025/02/16,1:00 pm EST,Minnesota,0,Boston,0,Tsongas Center,2025,regular_season
+2025/02/16,2:00 pm MST,Toronto,0,Ottawa,0,Rogers Place,2025,regular_season
+2025/02/17,4:00 pm EST,Boston,0,New York,0,Prudential Center,2025,regular_season
+2025/02/19,7:00 pm EST,Minnesota,0,Montréal,0,Place Bell,2025,regular_season
+2025/02/20,7:00 pm EST,Toronto,0,New York,0,Prudential Center,2025,regular_season
+2025/02/21,7:00 pm EST,Boston,0,Ottawa,0,TD Place,2025,regular_season
+2025/02/22,2:00 pm EST,Montréal,0,Ottawa,0,TD Place,2025,regular_season
+2025/02/23,12:30 pm CST,Toronto,0,Minnesota,0,Xcel Energy Center,2025,regular_season
+2025/02/23,4:00 pm EST,Boston,0,New York,0,KeyBank Centre,2025,regular_season
+2025/02/26,7:00 pm EST,Toronto,0,Montréal,0,Place Bell,2025,regular_season
+2025/02/27,7:00 pm EST,New York,0,Ottawa,0,TD Place,2025,regular_season
+2025/03/01,TBD,Boston,0,Montréal,0,TBD,2025,regular_season
+2025/03/05,7:00 pm EST,Minnesota,0,Montréal,0,Place Bell,2025,regular_season
+2025/03/06,7:00 pm EST,New York,0,Boston,0,Tsongas Center,2025,regular_season
+2025/03/07,7:00 pm EST,Montréal,0,Toronto,0,Coca-Cola Coliseum,2025,regular_season
+2025/03/08,7:00 pm EST,Ottawa,0,Minnesota,0,Lenovo Center,2025,regular_season
+2025/03/08,TBD,Montréal,0,Boston,0,TBD,2025,regular_season
+2025/03/09,1:00 pm EDT,Minnesota,0,Toronto,0,Coca-Cola Coliseum,2025,regular_season
+2025/03/11,7:00 pm EDT,Minnesota,0,Ottawa,0,TD Place,2025,regular_season
+2025/03/12,7:00 pm EDT,Montréal,0,New York,0,Prudential Center,2025,regular_season
+2025/03/15,2:00 pm EDT,Boston,0,Ottawa,0,TD Place,2025,regular_season
+2025/03/16,7:30 pm EDT,Minnesota,0,New York,0,Little Caesars Arena,2025,regular_season
+2025/03/18,7:00 pm EDT,Montréal,0,Boston,0,Tsongas Center,2025,regular_season
+2025/03/19,7:00 pm EDT,New York,0,Toronto,0,Coca-Cola Coliseum,2025,regular_season
+2025/03/22,12:00 pm EDT,Ottawa,0,New York,0,Prudential Center,2025,regular_season
+2025/03/23,12:00 pm EDT,Toronto,0,Montréal,0,Place Bell,2025,regular_season
+2025/03/25,7:00 pm EDT,New York,0,Ottawa,0,TD Place,2025,regular_season
+2025/03/26,TBD,Toronto,0,Boston,0,TBD,2025,regular_season
+2025/03/27,7:00 pm CDT,Montréal,0,Minnesota,0,Xcel Energy Center,2025,regular_season
+2025/03/29,1:00 pm CDT,Ottawa,0,Boston,0,Enterprise Center,2025,regular_season
+2025/03/30,12:00 pm CDT,Toronto,0,Minnesota,0,Xcel Energy Center,2025,regular_season
+2025/04/01,7:00 pm EDT,New York,0,Montréal,0,Place Bell,2025,regular_season
+2025/04/02,7:00 pm EDT,Ottawa,0,Boston,0,Tsongas Center,2025,regular_season
+2025/04/26,TBD,Toronto,0,Boston,0,Tsongas Center,2025,regular_season
+2025/04/26,TBD,Montréal,0,Ottawa,0,TD Place,2025,regular_season
+2025/04/26,TBD,New York,0,Minnesota,0,Xcel Energy Center,2025,regular_season
+2025/04/28,TBD,Boston,0,Montréal,0,Place Bell,2025,regular_season
+2025/04/29,7:00 pm EDT,New York,0,Toronto,0,Coca-Cola Coliseum,2025,regular_season
+2025/04/30,TBD,Minnesota,0,Ottawa,0,TD Place,2025,regular_season
+2025/05/02,TBD,Montréal,0,New York,0,Prudential Center,2025,regular_season
+2025/05/03,TBD,Minnesota,0,Boston,0,Tsongas Center,2025,regular_season
+2025/05/03,TBD,Ottawa,0,Toronto,0,Coca-Cola Coliseum,2025,regular_season

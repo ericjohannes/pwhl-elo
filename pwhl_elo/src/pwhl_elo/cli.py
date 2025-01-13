@@ -3,10 +3,13 @@ import click
 from pwhl_elo.calculate_elo import handle
 from pwhl_elo.chart_data import create_chart_data
 from pwhl_elo.chart_elos import create_charts
+from pwhl_elo.clean_seasons import handle as handle_clean_seasons
 from pwhl_elo.get_games import get_games
+from pwhl_elo.get_season import handle as handle_get_season
 from pwhl_elo.revert_elo import revert_elo_file
 from pwhl_elo.upcoming_projection import build_upcoming_projects
 from pwhl_elo.update_elo import update_elo
+from pwhl_elo.utils import Pwhl
 
 
 @click.group()
@@ -39,7 +42,8 @@ def calculate(input, output_dir):
 @click.command()
 def projections():
     """Builds projections for next 5 fixtures based on latest_pwhl_latest_elos.json."""
-    build_upcoming_projects()
+    new_file = build_upcoming_projects()
+    print(new_file)
 
 
 @click.command()
@@ -60,7 +64,7 @@ def chart():
 def revert(input, output_dir):
     """Reverts all latest team Elo's to the mean for the start of a new season."""
     new_file = revert_elo_file(input, output_dir)
-    click.echo(f"Save new file: {new_file}")
+    click.echo(f"{new_file}")
 
 
 @click.command()
@@ -75,7 +79,7 @@ def update(input, output_dir):
     latest Elos for each team. Adds new Elo scores for new played fixtures and saves new latest Elos
      and new file of all fixtures with Elo scores."""
     new_file = update_elo(input, output_dir)
-    click.echo(f"Saved new file: {new_file}")
+    click.echo(f"{new_file}")
 
 
 # like pwhlelo chartable --input ../data/output/all_results/wphl_elos_2024-11-24_19:37:35.csv /
@@ -90,15 +94,44 @@ def update(input, output_dir):
 def chartable(input, output_dir):
     """Reverts all latest team Elo's to the mean for the start of a new season."""
     new_file = create_chart_data(input, output_dir)
-    click.echo(f"Save new chart data file: {new_file}")
+    click.echo(f"{new_file}")
 
 
 @click.command()
 @click.option("--season-id", help="ID # of season. 5 = 2025 regular season, etc.")
-def getgames(season_id):
+@click.option("--output-path", prompt="path/to/output", help="Path to save new data to.")
+def getgames(season_id, output_path):
     """Gets latest data on games played"""
-    new_file = get_games(season_id)
-    click.echo(f"Saved new file: {new_file}")
+    new_file = get_games(season_id, output_path)
+    click.echo(f"{new_file}")
+
+
+@click.command()
+@click.argument("seasonid")
+@click.option(
+    "--config",
+    default="pwhl.config",
+    help="Path to config file containing paths and data about seasons.",
+)
+@click.option("--output-path", help="Path to save new data to.")
+def getseason(seasonid, config, output_path):
+    """Gets all data for season with id SEASONID"""
+    pwhl = Pwhl(config=config, output_path=output_path)
+    new_file = handle_get_season(seasonid, pwhl)
+    print(new_file)
+
+
+@click.command()
+@click.option(
+    "--config",
+    default="pwhl.config",
+    help="Path to config file containing paths and data about seasons.",
+)
+def cleandata(config):
+    """Combaines all data of seasons into clean csv for analysis."""
+    pwhl = Pwhl(config=config)
+    new_file = handle_clean_seasons(pwhl)
+    print(new_file)
 
 
 cli.add_command(hi)
@@ -109,3 +142,5 @@ cli.add_command(revert)
 cli.add_command(update)
 cli.add_command(chartable)
 cli.add_command(getgames)
+cli.add_command(getseason)
+cli.add_command(cleandata)

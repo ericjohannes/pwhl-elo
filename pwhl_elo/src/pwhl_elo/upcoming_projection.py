@@ -133,6 +133,7 @@ def build_upcoming_projects():
     # save results
     with open(OUTPUT_FN, "w") as f:
         json.dump(grouped_next_5, f)
+    return OUTPUT_FN
 
 
 if __name__ == "__main__":

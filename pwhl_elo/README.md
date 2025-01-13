@@ -20,5 +20,5 @@ pwhlelo projections
 ```
 4.
 ```
-chartable --input ./data/output/all_results/wphl_elos_2024-12-12_15:29:31.csv" --output-dir ./data/output
+pwhlelo chartable --input ./data/output/all_results/wphl_elos_2024-12-12_15:29:31.csv" --output-dir ./data/output
 ```

@@ -1,0 +1,191 @@
+date,time,away_team,away_score,home_team,home_score,venue,season,type
+2024/11/20,Final,Montréal,1,Boston,3,Verdun Auditorium,2025,pre
+2024/11/20,Final,Toronto,1,Minnesota,3,Ford Performance Centre,2025,pre
+2024/11/21,Final,Boston,1,Ottawa,6,Verdun Auditorium,2025,pre
+2024/11/21,Final OT,Minnesota,4,New York,3,Ford Performance Centre,2025,pre
+2024/11/22,Final,Ottawa,3,Montréal,6,Verdun Auditorium,2025,pre
+2024/11/22,Final,New York,5,Toronto,2,Ford Performance Centre,2025,pre
+2024/11/30,Final,Boston,1,Toronto,3,Coca-Cola Coliseum,2025,regular
+2024/11/30,Final SO,Ottawa,3,Montréal,4,Place Bell,2025,regular
+2024/12/01,Final OT,New York,4,Minnesota,3,Xcel Energy Center,2025,regular
+2024/12/04,Final,Toronto,2,Ottawa,3,TD Place,2025,regular
+2024/12/05,Final,Minnesota,2,Boston,1,Tsongas Center,2025,regular
+2024/12/05,Final,New York,4,Montréal,1,Place Bell,2025,regular
+2024/12/07,Final,Montréal,2,Ottawa,1,Canadian Tire Centre,2025,regular
+2024/12/07,Final,Minnesota,6,Toronto,3,Coca-Cola Coliseum,2025,regular
+2024/12/08,Final,New York,2,Boston,4,Tsongas Center,2025,regular
+2024/12/18,Final,Ottawa,2,Boston,3,Tsongas Center,2025,regular
+2024/12/19,Final,Toronto,2,New York,4,Prudential Center,2025,regular
+2024/12/20,Final,Ottawa,2,Minnesota,5,Xcel Energy Center,2025,regular
+2024/12/21,Final OT,Montréal,4,Toronto,3,Coca-Cola Coliseum,2025,regular
+2024/12/22,Final SO,Minnesota,4,New York,3,Prudential Center,2025,regular
+2024/12/28,Final,Boston,2,Toronto,4,Coca-Cola Coliseum,2025,regular
+2024/12/28,Final,Montréal,3,Minnesota,2,Xcel Energy Center,2025,regular
+2024/12/29,Final,Ottawa,3,New York,1,Prudential Center,2025,regular
+2024/12/31,Final,Boston,1,Montréal,3,Place Bell,2025,regular
+2025/01/01,Final,Ottawa,2,Toronto,1,Coca-Cola Coliseum,2025,regular
+2025/01/03,Final OT,Boston,3,Minnesota,4,Xcel Energy Center,2025,regular
+2025/01/04,Final,New York,5,Minnesota,0,Xcel Energy Center,2025,regular
+2025/01/05,Final SO,Montréal,2,Boston,3,Climate Pledge Arena,2025,regular
+2025/01/08,Final,Ottawa,3,New York,2,Prudential Center,2025,regular
+2025/01/09,Final OT,Boston,1,Minnesota,2,Xcel Energy Center,2025,regular
+2025/01/09,Final,Montréal,4,Toronto,2,Rogers Arena,2025,regular
+2025/01/11,Final OT,Boston,2,Ottawa,1,TD Place,2025,regular
+2025/01/12,Final OT,Toronto,0,New York,1,Prudential Center,2025,regular
+2025/01/12,Final,Montréal,2,Minnesota,4,Ball Arena,2025,regular
+2025/01/15,7:00 pm EST,Toronto,0,Ottawa,0,TD Place,2025,regular
+2025/01/16,7:00 pm EST,Minnesota,0,New York,0,Prudential Center,2025,regular
+2025/01/18,7:00 pm EST,Minnesota,0,Montréal,0,Place Bell,2025,regular
+2025/01/19,1:00 pm EST,Ottawa,0,Montréal,0,Videotron Centre,2025,regular
+2025/01/22,6:00 pm CST,Ottawa,0,Minnesota,0,Xcel Energy Center,2025,regular
+2025/01/23,7:00 pm EST,Toronto,0,Boston,0,Tsongas Center,2025,regular
+2025/01/25,2:00 pm EST,New York,0,Toronto,0,Scotiabank Arena,2025,regular
+2025/01/26,2:00 pm CST,Boston,0,Minnesota,0,Xcel Energy Center,2025,regular
+2025/01/28,7:00 pm EST,New York,0,Ottawa,0,TD Place,2025,regular
+2025/01/29,6:00 pm CST,Toronto,0,Minnesota,0,Xcel Energy Center,2025,regular
+2025/01/30,7:00 pm EST,Ottawa,0,Montréal,0,Place Bell,2025,regular
+2025/01/31,7:00 pm EST,Toronto,0,Montréal,0,Place Bell,2025,regular
+2025/02/01,7:00 pm EST,New York,0,Boston,0,Tsongas Center,2025,regular
+2025/02/01,2:00 pm EST,Ottawa,0,Toronto,0,Coca-Cola Coliseum,2025,regular
+2025/02/02,1:00 pm EST,Montréal,0,New York,0,Prudential Center,2025,regular
+2025/02/12,7:00 pm EST,Minnesota,0,Toronto,0,Coca-Cola Coliseum,2025,regular
+2025/02/13,7:00 pm EST,Boston,0,New York,0,Prudential Center,2025,regular
+2025/02/14,7:00 pm EST,Minnesota,0,Ottawa,0,TD Place,2025,regular
+2025/02/15,7:00 pm EST,Boston,0,Toronto,0,Coca-Cola Coliseum,2025,regular
+2025/02/15,2:00 pm EST,New York,0,Montréal,0,Place Bell,2025,regular
+2025/02/16,1:00 pm EST,Minnesota,0,Boston,0,Tsongas Center,2025,regular
+2025/02/16,2:00 pm MST,Toronto,0,Ottawa,0,Rogers Place,2025,regular
+2025/02/17,4:00 pm EST,Boston,0,New York,0,Prudential Center,2025,regular
+2025/02/19,7:00 pm EST,Minnesota,0,Montréal,0,Place Bell,2025,regular
+2025/02/20,7:00 pm EST,Toronto,0,New York,0,Prudential Center,2025,regular
+2025/02/21,7:00 pm EST,Boston,0,Ottawa,0,TD Place,2025,regular
+2025/02/22,2:00 pm EST,Montréal,0,Ottawa,0,TD Place,2025,regular
+2025/02/23,12:30 pm CST,Toronto,0,Minnesota,0,Xcel Energy Center,2025,regular
+2025/02/23,4:00 pm EST,Boston,0,New York,0,KeyBank Centre,2025,regular
+2025/02/26,7:00 pm EST,Toronto,0,Montréal,0,Place Bell,2025,regular
+2025/02/27,7:00 pm EST,New York,0,Ottawa,0,TD Place,2025,regular
+2025/03/01,TBD,Boston,0,Montréal,0,TBD,2025,regular
+2025/03/05,7:00 pm EST,Minnesota,0,Montréal,0,Place Bell,2025,regular
+2025/03/06,7:00 pm EST,New York,0,Boston,0,Tsongas Center,2025,regular
+2025/03/07,7:00 pm EST,Montréal,0,Toronto,0,Coca-Cola Coliseum,2025,regular
+2025/03/08,7:00 pm EST,Ottawa,0,Minnesota,0,Lenovo Center,2025,regular
+2025/03/08,TBD,Montréal,0,Boston,0,TBD,2025,regular
+2025/03/09,1:00 pm EDT,Minnesota,0,Toronto,0,Coca-Cola Coliseum,2025,regular
+2025/03/11,7:00 pm EDT,Minnesota,0,Ottawa,0,TD Place,2025,regular
+2025/03/12,7:00 pm EDT,Montréal,0,New York,0,Prudential Center,2025,regular
+2025/03/15,2:00 pm EDT,Boston,0,Ottawa,0,TD Place,2025,regular
+2025/03/16,7:30 pm EDT,Minnesota,0,New York,0,Little Caesars Arena,2025,regular
+2025/03/18,7:00 pm EDT,Montréal,0,Boston,0,Tsongas Center,2025,regular
+2025/03/19,7:00 pm EDT,New York,0,Toronto,0,Coca-Cola Coliseum,2025,regular
+2025/03/22,12:00 pm EDT,Ottawa,0,New York,0,Prudential Center,2025,regular
+2025/03/23,12:00 pm EDT,Toronto,0,Montréal,0,Place Bell,2025,regular
+2025/03/25,7:00 pm EDT,New York,0,Ottawa,0,TD Place,2025,regular
+2025/03/26,TBD,Toronto,0,Boston,0,TBD,2025,regular
+2025/03/27,7:00 pm CDT,Montréal,0,Minnesota,0,Xcel Energy Center,2025,regular
+2025/03/29,1:00 pm CDT,Ottawa,0,Boston,0,Enterprise Center,2025,regular
+2025/03/30,12:00 pm CDT,Toronto,0,Minnesota,0,Xcel Energy Center,2025,regular
+2025/04/01,7:00 pm EDT,New York,0,Montréal,0,Place Bell,2025,regular
+2025/04/02,7:00 pm EDT,Ottawa,0,Boston,0,Tsongas Center,2025,regular
+2025/04/26,TBD,Toronto,0,Boston,0,Tsongas Center,2025,regular
+2025/04/26,TBD,Montréal,0,Ottawa,0,TD Place,2025,regular
+2025/04/26,TBD,New York,0,Minnesota,0,Xcel Energy Center,2025,regular
+2025/04/28,TBD,Boston,0,Montréal,0,Place Bell,2025,regular
+2025/04/29,7:00 pm EDT,New York,0,Toronto,0,Coca-Cola Coliseum,2025,regular
+2025/04/30,TBD,Minnesota,0,Ottawa,0,TD Place,2025,regular
+2025/05/02,TBD,Montréal,0,New York,0,Prudential Center,2025,regular
+2025/05/03,TBD,Minnesota,0,Boston,0,Tsongas Center,2025,regular
+2025/05/03,TBD,Ottawa,0,Toronto,0,Coca-Cola Coliseum,2025,regular
+2023/12/04,Final OT,Toronto,5,Boston,2,Utica University Nexus Center - Mastrovito Hyundai,2024,regular
+2023/12/04,Final SO,Ottawa,4,Minnesota,8,Utica University Nexus Center - Mastrovito Hyundai,2024,regular
+2023/12/05,Final SO,Montreal,0,New York,4,Utica University Nexus Center - Mastrovito Hyundai,2024,regular
+2023/12/05,Final OT,Minnesota,5,Toronto,4,Utica University Nexus Center - Mastrovito Hyundai,2024,regular
+2023/12/05,Final OT,Boston,1,Montreal,3,Utica University Nexus Center - Mastrovito Hyundai,2024,regular
+2023/12/06,Final SO,New York,2,Ottawa,1,Utica University Nexus Center - Mastrovito Hyundai,2024,regular
+2023/12/07,Final,Montreal,3,Minnesota,4,Utica University Nexus Center - Mastrovito Hyundai,2024,regular
+2023/12/07,Final OT,New York,6,Toronto,4,Utica University Nexus Center - Mastrovito Hyundai,2024,regular
+2023/12/07,Final OT,Ottawa,1,Boston,3,Utica University Nexus Center - Mastrovito Hyundai,2024,regular
+2024/05/08,Final,Minnesota,0,Toronto,4,Coca-Cola Coliseum,2024,post
+2024/05/09,Final OT,Boston,2,Montreal,1,Place Bell,2024,post
+2024/05/10,Final,Minnesota,0,Toronto,2,Coca-Cola Coliseum,2024,post
+2024/05/11,Final OT3,Boston,2,Montreal,1,Place Bell,2024,post
+2024/05/14,Final,Toronto,0,Minnesota,2,Xcel Energy Center,2024,post
+2024/05/14,Final OT,Montreal,2,Boston,3,Tsongas Center,2024,post
+2024/05/16,Final OT2,Toronto,0,Minnesota,1,Xcel Energy Center,2024,post
+2024/05/17,Final,Minnesota,4,Toronto,1,Coca-Cola Coliseum,2024,post
+2024/05/19,Final,Minnesota,3,Boston,4,Tsongas Center,2024,post
+2024/05/21,Final,Minnesota,3,Boston,0,Tsongas Center,2024,post
+2024/05/24,Final,Boston,1,Minnesota,4,Xcel Energy Center,2024,post
+2024/05/26,Final OT2,Boston,1,Minnesota,0,Xcel Energy Center,2024,post
+2024/05/29,Final,Minnesota,3,Boston,0,Tsongas Center,2024,post
+2024/01/01,Final,New York,4,Toronto,0,Mattamy Athletic Centre,2024,pre
+2024/01/03,Final OT,Montreal,3,Ottawa,2,TD Place,2024,pre
+2024/01/04,Final,Minnesota,3,Boston,2,Tsongas Center,2024,pre
+2024/01/06,Final,Toronto,3,New York,2,Total Mortgage Arena,2024,pre
+2024/01/06,Final,Montreal,0,Minnesota,3,Xcel Energy Center,2024,pre
+2024/01/11,Final,Montreal,5,New York,2,UBS Arena,2024,pre
+2024/01/11,Final,Toronto,1,Minnesota,3,Xcel Energy Center,2024,pre
+2024/01/13,Final,Ottawa,5,Toronto,1,Mattamy Athletic Centre,2024,pre
+2024/01/13,Final OT,Boston,3,Montreal,2,Verdun Auditorium,2024,pre
+2024/01/14,Final OT,New York,3,Minnesota,2,Xcel Energy Center,2024,pre
+2024/01/17,Final,New York,2,Montreal,3,Place Bell,2024,pre
+2024/01/18,Final,Boston,3,Toronto,2,Mattamy Athletic Centre,2024,pre
+2024/01/18,Final OT,Minnesota,3,Ottawa,2,TD Place,2024,pre
+2024/01/20,Final,New York,4,Boston,1,Tsongas Center,2024,pre
+2024/01/21,Final SO,Toronto,4,Montreal,3,Verdun Auditorium,2024,pre
+2024/01/24,Final,Toronto,1,Ottawa,3,TD Place,2024,pre
+2024/01/25,Final,Boston,3,Ottawa,2,TD Place,2024,pre
+2024/01/25,Final,Montreal,2,Minnesota,1,Xcel Energy Center,2024,pre
+2024/01/27,Final,New York,0,Toronto,2,Mattamy Athletic Centre,2024,pre
+2024/01/27,Final OT,Ottawa,1,Montreal,2,Place Bell,2024,pre
+2024/01/27,Final OT,Minnesota,3,Boston,4,Tsongas Center,2024,pre
+2024/01/28,Final OT,Minnesota,2,New York,1,Total Mortgage Arena,2024,pre
+2024/02/03,Final,Minnesota,1,Toronto,4,Mattamy Athletic Centre,2024,pre
+2024/02/04,Final OT,New York,4,Ottawa,3,TD Place,2024,pre
+2024/02/04,Final OT,Montreal,2,Boston,1,Tsongas Center,2024,pre
+2024/02/15,Final,Toronto,5,Boston,3,Tsongas Center,2024,pre
+2024/02/15,Final,Ottawa,1,Minnesota,2,Xcel Energy Center,2024,pre
+2024/02/17,Final,Montreal,0,Toronto,3,Scotiabank Arena,2024,pre
+2024/02/17,Final,Minnesota,2,Ottawa,1,TD Place,2024,pre
+2024/02/17,Final OT,New York,2,Boston,1,Tsongas Center,2024,pre
+2024/02/18,Final,Minnesota,1,Montreal,2,Place Bell,2024,pre
+2024/02/19,Final,Ottawa,4,Boston,2,Tsongas Center,2024,pre
+2024/02/22,Final,Ottawa,1,Boston,3,Tsongas Center,2024,pre
+2024/02/22,Final SO,Montreal,2,New York,3,UBS Arena,2024,pre
+2024/02/24,Final SO,New York,1,Toronto,2,Mattamy Athletic Centre,2024,pre
+2024/02/24,Final,Ottawa,3,Montreal,6,Verdun Auditorium,2024,pre
+2024/02/25,Final,Boston,2,Minnesota,0,Xcel Energy Center,2024,pre
+2024/02/28,Final OT,Toronto,4,Minnesota,3,3M Arena at Mariucci,2024,pre
+2024/02/29,Final,New York,2,Ottawa,4,TD Place,2024,pre
+2024/03/02,Final,Toronto,5,Ottawa,2,TD Place,2024,pre
+2024/03/02,Final,Boston,1,Montreal,3,Verdun Auditorium,2024,pre
+2024/03/03,Final,Minnesota,2,New York,0,UBS Arena,2024,pre
+2024/03/06,Final SO,Ottawa,3,Minnesota,4,Xcel Energy Center,2024,pre
+2024/03/07,Final,Montreal,4,New York,3,Total Mortgage Arena,2024,pre
+2024/03/07,Final,Boston,1,Toronto,3,Mattamy Athletic Centre,2024,pre
+2024/03/09,Final,Montreal,0,Toronto,3,Mattamy Athletic Centre,2024,pre
+2024/03/10,Final OT,New York,2,Boston,3,Tsongas Center,2024,pre
+2024/03/10,Final,Ottawa,4,Montreal,2,Place Bell,2024,pre
+2024/03/14,Final,Boston,0,Minnesota,4,Xcel Energy Center,2024,pre
+2024/03/16,Final,New York,1,Minnesota,5,Xcel Energy Center,2024,pre
+2024/03/16,Final SO,Ottawa,1,Boston,2,Little Caesars Arena,2024,pre
+2024/03/17,Final,Toronto,2,Montreal,1,PPG Paints Arena,2024,pre
+2024/03/20,Final,Ottawa,3,New York,0,Total Mortgage Arena,2024,pre
+2024/03/20,Final,Boston,1,Toronto,2,Mattamy Athletic Centre,2024,pre
+2024/03/23,Final,Toronto,3,Ottawa,5,TD Place,2024,pre
+2024/03/24,Final SO,Montreal,2,Minnesota,3,Xcel Energy Center,2024,pre
+2024/03/25,Final,Boston,2,New York,3,UBS Arena,2024,pre
+2024/04/18,Final,Minnesota,3,Montreal,4,Verdun Auditorium,2024,pre
+2024/04/18,Final,Toronto,1,Boston,2,Tsongas Center,2024,pre
+2024/04/20,Final OT,Toronto,3,Montreal,2,Bell Centre,2024,pre
+2024/04/20,Final,Boston,2,New York,1,Prudential Center,2024,pre
+2024/04/20,Final,Minnesota,0,Ottawa,4,TD Place,2024,pre
+2024/04/24,Final SO,Boston,2,Ottawa,3,TD Place,2024,pre
+2024/04/24,Final,New York,2,Montreal,5,Verdun Auditorium,2024,pre
+2024/04/27,Final,Montreal,2,Ottawa,0,TD Place,2024,pre
+2024/04/27,Final,Boston,2,Minnesota,1,Xcel Energy Center,2024,pre
+2024/04/28,Final,Toronto,6,New York,2,UBS Arena,2024,pre
+2024/04/30,Final,Ottawa,3,New York,4,Prudential Center,2024,pre
+2024/05/01,Final,Minnesota,1,Toronto,4,Mattamy Athletic Centre,2024,pre
+2024/05/04,Final,Minnesota,2,New York,5,UBS Arena,2024,pre
+2024/05/04,Final,Montreal,3,Boston,4,Tsongas Center,2024,pre
+2024/05/05,Final,Ottawa,2,Toronto,5,Mattamy Athletic Centre,2024,pre
