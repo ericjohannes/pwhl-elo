@@ -1,6 +1,6 @@
 import click
 
-from pwhl_elo.calculate_elo import handle
+from pwhl_elo.calculate_elo import handle as handle_calculate_elo
 from pwhl_elo.chart_data import create_chart_data
 from pwhl_elo.chart_elos import create_charts
 from pwhl_elo.clean_seasons import handle as handle_clean_seasons
@@ -27,15 +27,20 @@ def hi():
 # suggested run like
 #  `pwhlelo calculate --input ../data/input/wphl_results_clean_data.csv --output-dir ../data/output`
 @click.command()
-@click.option("--input", prompt="path/to/file.json", help=".csv file of fixtures with scores.")
-@click.option("--output-dir", prompt="path/to/dir", help="Directory of where to save Elos.")
-def calculate(input, output_dir):
+@click.option(
+    "--config",
+    default="pwhl.config",
+    help="Path to config file containing paths and data about seasons.",
+)
+def calculate(config):
     """Calulcates Elos and outputs three files:
     1. wphl_elos_<TIMESTAMP>.csv - file with all fixtures played so far with Elos and
     projections calculated.
     2. chartable_wphl_elos.json - file formatted for a chart. Elos for each date for each team.
     3. pwhl_latest_elos - file with latest calculated Elos for each team and date calculated."""
-    handle(input, output_dir)
+    pwhl = Pwhl(config=config)
+    new_file = handle_calculate_elo(pwhl)
+    print(new_file)
 
 
 # run like `pwhlelo projections`

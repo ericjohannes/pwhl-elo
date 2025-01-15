@@ -1,4 +1,3 @@
-import datetime
 import json
 import math
 import os
@@ -6,14 +5,11 @@ import os
 import numpy as np
 import pandas as pd
 
-from pwhl_elo.utils import expected_result, time_stamp
+from pwhl_elo.utils import expected_result, revert_current_elo_to_mean
 
 # followed the steps here https://grant592.github.io/elo-ratings/
 # got a lot of pointers from 538
 # https://fivethirtyeight.com/methodology/how-our-nhl-predictions-work/
-
-# save a "current elo" file and a file with fixtuers plus elo beofre and after
-current_elo = dict()
 
 
 def clean_name(name: str) -> str:
@@ -86,12 +82,11 @@ def calculate_elo(
     return [int(np.round(elo_new_home)), int(np.round(elo_new_away))]
 
 
-def handle_row(row):
+def handle_row(row, current_season: int, current_elo):
     """
     Get current elos for teams. Calculate elo changes from one fixture. Save those results and save
     new currenty elo.
     """
-
     # skip games that don't have scores yet
     if "Final" not in row["time"]:
         return row
@@ -100,12 +95,19 @@ def handle_row(row):
     away = row["away_team"]
 
     # in case these are new teams
-    # TODO: this should be ```
     if home not in current_elo["teams"]:
-        current_elo[home] = 1300
+        current_elo["teams"][home] = 1300
 
     if away not in current_elo["teams"]:
-        current_elo[away] = 1300
+        current_elo["teams"][away] = 1300
+
+    # if season changes revert to mean and update season
+    if row["season"] > current_season:
+        current_elo = revert_current_elo_to_mean(current_elo)
+        current_season = row["season"]
+
+    elif row["season"] < current_season:
+        raise Exception("Games out of order.")
 
     start_elo_home = current_elo["teams"][home]
     start_elo_away = current_elo["teams"][away]
@@ -134,6 +136,8 @@ def handle_row(row):
     row["expected_win_home"] = expected_win_home
     row["expected_win_away"] = expected_win_away
 
+    # update date of current elo to date of latest game, ie this row
+    current_elo["date"] = row["date"].strftime("%Y-%m-%d_%H:%M:%S")
     return row
 
 
@@ -160,9 +164,21 @@ def structure_chartable_df(output_df: pd.DataFrame) -> pd.DataFrame:
     return after_elos_all
 
 
-def handle(input: str, output_dir: str):
-    TIMESTAMP = datetime.datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
-    input_data_df = pd.read_csv(input, header=0)
+def get_earliest_season(input_data_df) -> int:
+    """
+    Takes df of all results and returns the earliest season it finds.
+    """
+    input_data_df = input_data_df.sort_values("date")
+    return input_data_df["season"].iloc[0]
+
+
+def handle(pwhl):
+    # the running "current elo". Save it as a file well at the end for the front end?
+    current_elo = {"date": None, "teams": dict()}
+    output_path = os.path.join(pwhl.elos_output_path, "pwhl_all_results_with_elos.csv")
+    output_path_latest_elos = os.path.join(pwhl.elos_output_path, "latest_elos.json")
+    input_path = os.path.join(pwhl.clean_output_path, "pwhl_all_results.csv")
+    input_data_df = pd.read_csv(input_path)
     input_data_df["date"] = pd.to_datetime(input_data_df.date)
 
     # sort by data just to be sure
@@ -179,30 +195,27 @@ def handle(input: str, output_dir: str):
     input_data_df["expected_win_home"] = None
     input_data_df["expected_win_away"] = None
 
-    output_df = input_data_df.apply(handle_row, axis=1)
+    current_season = get_earliest_season(input_data_df)
 
-    output_df.to_csv(
-        os.path.join(output_dir, "all_results", f"wphl_elos_{TIMESTAMP}.csv"), index=False
-    )
+    output_df = input_data_df.apply(handle_row, args=(current_season, current_elo), axis=1)
 
-    chartable_df = structure_chartable_df(output_df)
-    # save elos in easier to visualize format
-    chartable_df.to_json(
-        os.path.join(output_dir, "chartable", "chartable_wphl_elos.json"),
-        orient="records",
-        date_format="iso",
-    )
+    output_df.to_csv(os.path.join(output_path), index=False)
+
+    # chartable_df = structure_chartable_df(output_df)
+    # # save elos in easier to visualize format
+    # chartable_df.to_json(
+    #     os.path.join(output_dir, "chartable", "chartable_wphl_elos.json"),
+    #     orient="records",
+    #     date_format="iso",
+    # )
 
     # save latest elos
-    latest_elos = {
-        "date": time_stamp(),
-        "teams": current_elo,
-    }
-    with open(os.path.join(output_dir, "pwhl_latest_elos.json"), "w") as f:
-        json.dump(latest_elos, f)
+    with open(output_path_latest_elos, "w") as f:
+        json.dump(current_elo, f)
 
-    total_elo = 0
-    for key in current_elo.keys():
-        total_elo += current_elo[key]
+    print(output_path)
+    # total_elo = 0
+    # for key in current_elo.keys():
+    #     total_elo += current_elo[key]
 
-    print(f"average final elo is 1300: {total_elo / 6}")
+    # print(f"average final elo is 1300: {total_elo / 6}")

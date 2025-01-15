@@ -9,12 +9,21 @@ import pandas as pd
 
 def revert_elo_to_mean(season_ending_elo: int) -> int:
     """
-    To account for revversion to mean, new players, coach etc. Bring an Elo 1/3 back to 1300
+    To account for reversion to mean, new players, coach etc. Bring an Elo 1/3 back to 1300
     """
 
     difference = season_ending_elo - 1300
     new_elo = season_ending_elo - (difference / 3)
     return int(np.round(new_elo))
+
+
+def revert_current_elo_to_mean(current_elo: dict):
+    """
+    Takes current elo dict and reverts all elo to the mean
+    """
+    for team, elo in current_elo["teams"].items():
+        current_elo["teams"][team] = revert_elo_to_mean(elo)
+    return current_elo
 
 
 def time_stamp() -> str:
