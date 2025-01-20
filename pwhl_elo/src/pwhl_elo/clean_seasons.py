@@ -10,7 +10,7 @@ key_cols_map = {
     "home_goal_count": "home_score",
     "visiting_goal_count": "away_score",
     "venue_name": "venue",
-    # "date_played": "date",
+    "date_played": "date",
 }
 drop_cols = ["home_team", "date"]
 use_cols = [
@@ -38,8 +38,6 @@ def clean_season(file_data, seasonid, pwhl):
     # add season and type cols based on season_id
     schedule_df["type"] = pwhl.seasons[seasonid]["type"]
     schedule_df["season"] = pwhl.seasons[seasonid]["year"]
-    # create date time column
-    schedule_df["date"] = pd.to_datetime(schedule_df.GameDateISO8601, utc=True)
     return schedule_df
 
 

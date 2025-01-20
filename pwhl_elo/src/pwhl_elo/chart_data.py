@@ -4,20 +4,22 @@ import os
 
 import pandas as pd
 
-from pwhl_elo.utils import structure_chartable_df
+from pwhl_elo.utils import CHART_DATA_FN, RESULTS_ELOS_FN, structure_chartable_df
 
 
-def create_chart_data(input: str, output_dir: str) -> str:
+def handle(pwhl) -> str:
     """
     Creates a json data file of every date and elo that can be used to create a chart of Elos.
     """
 
     wphl_elos_df = pd.read_csv(
-        input, header=0, parse_dates=["date"]  # input here should be that latest file
+        os.path.join(pwhl.elos_output_path, RESULTS_ELOS_FN),
+        header=0,
+        parse_dates=["date"],  # input here should be that latest file
     )
 
     chartable_df = structure_chartable_df(wphl_elos_df)
-    output_path = os.path.join(output_dir, "chartable", "chartable_wphl_elos.json")
+    output_path = os.path.join(pwhl.chart_data_output_path, CHART_DATA_FN)
     max_date = max(chartable_df.index).strftime("%Y-%m-%dT%H:%M:%S.%fZ")
     min_date = min(chartable_df.index).strftime("%Y-%m-%dT%H:%M:%S.%fZ")
 

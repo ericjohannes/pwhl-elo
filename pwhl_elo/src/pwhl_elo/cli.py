@@ -1,7 +1,7 @@
 import click
 
 from pwhl_elo.calculate_elo import handle as handle_calculate_elo
-from pwhl_elo.chart_data import create_chart_data
+from pwhl_elo.chart_data import handle as handle_chart_data
 from pwhl_elo.chart_elos import create_charts
 from pwhl_elo.clean_seasons import handle as handle_clean_seasons
 from pwhl_elo.get_games import get_games
@@ -45,9 +45,15 @@ def calculate(config):
 
 # run like `pwhlelo projections`
 @click.command()
-def projections():
+@click.option(
+    "--config",
+    default="pwhl.config",
+    help="Path to config file containing paths and data about seasons.",
+)
+def projections(config):
     """Builds projections for next 5 fixtures based on latest_pwhl_latest_elos.json."""
-    new_file = build_upcoming_projects()
+    pwhl = Pwhl(config=config)
+    new_file = build_upcoming_projects(pwhl)
     print(new_file)
 
 
@@ -91,15 +97,15 @@ def update(input, output_dir):
 # --output-dir ../data/output
 @click.command()
 @click.option(
-    "--input", prompt="path/to/file.json", help="File of Elos to convert to chart format."
+    "--config",
+    default="pwhl.config",
+    help="Path to config file containing paths and data about seasons.",
 )
-@click.option(
-    "--output-dir", prompt="path/to/dir", help="Directory of where to save chartable Elos."
-)
-def chartable(input, output_dir):
+def chartable(config):
     """Reverts all latest team Elo's to the mean for the start of a new season."""
-    new_file = create_chart_data(input, output_dir)
-    click.echo(f"{new_file}")
+    pwhl = Pwhl(config=config)
+    new_file = handle_chart_data(pwhl)
+    click.echo(new_file)
 
 
 @click.command()

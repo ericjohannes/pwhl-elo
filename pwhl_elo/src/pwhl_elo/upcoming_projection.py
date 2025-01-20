@@ -6,12 +6,17 @@ from datetime import datetime
 import numpy as np
 import pandas as pd
 
-from pwhl_elo.utils import expected_result
+from pwhl_elo.utils import (
+    GAME_PROJECTIONS_FN,
+    LATEST_ELOS_FN,
+    RESULTS_ELOS_FN,
+    expected_result,
+)
 
 
 def revert_elo_to_mean(season_ending_elo: int) -> int:
     """
-    To account for revversion to mean, new players, coach etc. Bring an Elo 1/3 back to 1300
+    To account for reversion to mean, new players, coach etc. Bring an Elo 1/3 back to 1300
     """
 
     difference = season_ending_elo - 1300
@@ -81,22 +86,17 @@ def get_newest_file(input_dir: str):
     return os.path.join(results_dir, source_file)
 
 
-def build_upcoming_projects():
-    TIMESTAMP = datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
-    OUTPUT_DIR = os.path.join("data", "output")
-    INPUT_DIR = os.path.join("data", "output")
-    OUTPUT_FN = os.path.join(
-        OUTPUT_DIR, "next_five_projections", f"game_projections_{TIMESTAMP}.json"
-    )
+def build_upcoming_projects(pwhl):
+    # TIMESTAMP = datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
+    output_path = os.path.join(pwhl.projections_output_path, GAME_PROJECTIONS_FN)
 
     # get latest elos
-    with open(os.path.join(INPUT_DIR, "pwhl_latest_elos.json"), "r") as f:
+    with open(os.path.join(pwhl.elos_output_path, LATEST_ELOS_FN), "r") as f:
         latet_elos = json.load(f)
 
-    # get first 5 unplayed games
-    source_path = get_newest_file(INPUT_DIR)
-    print(source_path)
-    source_df = pd.read_csv(source_path)
+    source_df = pd.read_csv(
+        os.path.join(pwhl.elos_output_path, RESULTS_ELOS_FN)
+    )  # results+elos file
 
     source_df["time"] = source_df["time"].str.lower()
     unplayed_df = source_df[~source_df["time"].str.contains("final")]
@@ -131,50 +131,51 @@ def build_upcoming_projects():
             grouped_next_5.append({"date": game.pop("date"), "games": [{**game}]})
 
     # save results
-    with open(OUTPUT_FN, "w") as f:
+    with open(output_path, "w") as f:
         json.dump(grouped_next_5, f)
-    return OUTPUT_FN
+    return output_path
 
 
-if __name__ == "__main__":
-    TIMESTAMP = datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
-    OUTPUT_DIR = os.path.join("data", "output")
-    INPUT_DIR = os.path.join("data", "output")
-    OUTPUT_FN = os.path.join(
-        "data", "output", "next_five_projections", f"game_projections_{TIMESTAMP}.json"
-    )
+# if __name__ == "__main__":
+#     TIMESTAMP = datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
 
-    # get latest elos
-    with open(os.path.join(INPUT_DIR, "pwhl_final_elos.json"), "r") as f:
-        latet_elos = json.load(f)
+#     OUTPUT_DIR = os.path.join("data", "output")
+#     INPUT_DIR = os.path.join("data", "output")
+#     OUTPUT_FN = os.path.join(
+#         "data", "output", "next_five_projections", f"game_projections_{TIMESTAMP}.json"
+#     )
 
-    # get first 5 unplayed games
-    source_path = get_newest_file(INPUT_DIR)
-    source_df = pd.read_csv(source_path)
+#     # get latest elos
+#     with open(os.path.join(INPUT_DIR, "pwhl_final_elos.json"), "r") as f:
+#         latet_elos = json.load(f)
 
-    # between seasons revert Elos to the means
-    # for team in latet_elos.keys():
-    #     if not check_if_team_played(team, 2025, source_df):
-    #         latet_elos[team] = revert_elo_to_mean(latet_elos[team])
+#     # get first 5 unplayed games
+#     source_path = get_newest_file(INPUT_DIR)
+#     source_df = pd.read_csv(source_path)
 
-    unplayed_df = source_df[~source_df["time"].str.contains("Final")]
-    next_5_df = unplayed_df.sort_values("date").head(5)
+#     # between seasons revert Elos to the means
+#     # for team in latet_elos.keys():
+#     #     if not check_if_team_played(team, 2025, source_df):
+#     #         latet_elos[team] = revert_elo_to_mean(latet_elos[team])
 
-    # calculate odds on those 5 based on latest elos
-    handle_row_with_elos = handle_row_wrapper(latet_elos)
-    next_5_df = next_5_df.apply(handle_row_with_elos, axis=1)
+#     unplayed_df = source_df[~source_df["time"].str.contains("Final")]
+#     next_5_df = unplayed_df.sort_values("date").head(5)
 
-    # save results
-    next_5_df[
-        [
-            "date",
-            "away_team",
-            "home_team",
-            "venue",
-            "type",
-            "elo_before_home",
-            "elo_before_away",
-            "expected_win_home",
-            "expected_win_away",
-        ]
-    ].to_json(OUTPUT_FN, orient="records", date_format="iso")
+#     # calculate odds on those 5 based on latest elos
+#     handle_row_with_elos = handle_row_wrapper(latet_elos)
+#     next_5_df = next_5_df.apply(handle_row_with_elos, axis=1)
+
+#     # save results
+#     next_5_df[
+#         [
+#             "date",
+#             "away_team",
+#             "home_team",
+#             "venue",
+#             "type",
+#             "elo_before_home",
+#             "elo_before_away",
+#             "expected_win_home",
+#             "expected_win_away",
+#         ]
+#     ].to_json(OUTPUT_FN, orient="records", date_format="iso")

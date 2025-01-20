@@ -6,6 +6,11 @@ from typing import List
 import numpy as np
 import pandas as pd
 
+RESULTS_ELOS_FN = "pwhl_all_results_with_elos.csv"
+CHART_DATA_FN = "chartable_wphl_elos.json"
+LATEST_ELOS_FN = "latest_elos.json"
+GAME_PROJECTIONS_FN = "game_projections.json"
+
 
 def revert_elo_to_mean(season_ending_elo: int) -> int:
     """
@@ -17,12 +22,13 @@ def revert_elo_to_mean(season_ending_elo: int) -> int:
     return int(np.round(new_elo))
 
 
-def revert_current_elo_to_mean(current_elo: dict):
+def revert_current_elo_to_mean(current_elo: dict, current_season: int):
     """
     Takes current elo dict and reverts all elo to the mean
     """
     for team, elo in current_elo["teams"].items():
         current_elo["teams"][team] = revert_elo_to_mean(elo)
+    current_elo["current_season"] = current_season
     return current_elo
 
 
@@ -130,7 +136,8 @@ def structure_chartable_df(output_df: pd.DataFrame) -> pd.DataFrame:
             "elo_after_away",
         ]
     ].rename(columns={"away_team": "team", "elo_after_away": "elo"})
-    after_elos_all = pd.concat([after_elos_home_df, after_elos_away_df])
+    after_elos_all = pd.concat([after_elos_home_df, after_elos_away_df], ignore_index=True)
+
     after_elos_all = after_elos_all.sort_values("date")
 
     pivoted_elo_df = after_elos_all.pivot(index="date", columns="team")
