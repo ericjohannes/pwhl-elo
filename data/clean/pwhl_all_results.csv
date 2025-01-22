@@ -35,9 +35,9 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type
 2025-01-12,Final,Montréal,2,Minnesota,4,Ball Arena,2025,regular
 2025-01-14,Final,Toronto,4,Ottawa,2,TD Place,2025,regular
 2025-01-15,Final SO,Minnesota,2,New York,3,Prudential Center,2025,regular
-2025-01-17,7:00 pm EST,Minnesota,0,Montréal,0,Place Bell,2025,regular
-2025-01-19,1:00 pm EST,Ottawa,0,Montréal,0,Videotron Centre,2025,regular
-2025-01-21,6:00 pm CST,Ottawa,0,Minnesota,0,Xcel Energy Center,2025,regular
+2025-01-17,Final,Minnesota,2,Montréal,4,Place Bell,2025,regular
+2025-01-19,Final,Ottawa,1,Montréal,2,Videotron Centre,2025,regular
+2025-01-21,00:00 1st,Ottawa,1,Minnesota,0,Xcel Energy Center,2025,regular
 2025-01-22,7:00 pm EST,Toronto,0,Boston,0,Tsongas Center,2025,regular
 2025-01-25,2:00 pm EST,New York,0,Toronto,0,Scotiabank Arena,2025,regular
 2025-01-26,2:00 pm CST,Boston,0,Minnesota,0,Xcel Energy Center,2025,regular
@@ -69,7 +69,7 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type
 2025-03-05,7:00 pm EST,New York,0,Boston,0,Tsongas Center,2025,regular
 2025-03-06,7:00 pm EST,Montréal,0,Toronto,0,Coca-Cola Coliseum,2025,regular
 2025-03-07,7:00 pm EST,Ottawa,0,Minnesota,0,Lenovo Center,2025,regular
-2025-03-08,TBD,Montréal,0,Boston,0,TBD,2025,regular
+2025-03-08,2:00 pm EST,Montréal,0,Boston,0,Agganis Arena,2025,regular
 2025-03-09,1:00 pm EDT,Minnesota,0,Toronto,0,Coca-Cola Coliseum,2025,regular
 2025-03-11,7:00 pm EDT,Minnesota,0,Ottawa,0,TD Place,2025,regular
 2025-03-12,7:00 pm EDT,Montréal,0,New York,0,Prudential Center,2025,regular
@@ -80,7 +80,7 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type
 2025-03-22,12:00 pm EDT,Ottawa,0,New York,0,Prudential Center,2025,regular
 2025-03-23,12:00 pm EDT,Toronto,0,Montréal,0,Place Bell,2025,regular
 2025-03-25,7:00 pm EDT,New York,0,Ottawa,0,TD Place,2025,regular
-2025-03-26,TBD,Toronto,0,Boston,0,TBD,2025,regular
+2025-03-26,7:00 pm EDT,Toronto,0,Boston,0,Agganis Arena,2025,regular
 2025-03-26,7:00 pm CDT,Montréal,0,Minnesota,0,Xcel Energy Center,2025,regular
 2025-03-29,1:00 pm CDT,Ottawa,0,Boston,0,Enterprise Center,2025,regular
 2025-03-30,12:00 pm CDT,Toronto,0,Minnesota,0,Xcel Energy Center,2025,regular
