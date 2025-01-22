@@ -8,6 +8,7 @@ import pandas as pd
 from pwhl_elo.utils import (
     LATEST_ELOS_FN,
     RESULTS_ELOS_FN,
+    clean_name,
     expected_result,
     revert_current_elo_to_mean,
 )
@@ -16,10 +17,6 @@ from pwhl_elo.utils import (
 # got a lot of pointers from 538
 # https://fivethirtyeight.com/methodology/how-our-nhl-predictions-work/
 current_season = None
-
-
-def clean_name(name: str) -> str:
-    return name.strip().replace(" ", "_").lower()
 
 
 def k_value() -> int:

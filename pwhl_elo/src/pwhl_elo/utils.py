@@ -50,7 +50,10 @@ def expected_result(elo_home: int, elo_away: int) -> List[np.float64]:
 
 
 def clean_name(name: str) -> str:
-    return name.strip().replace(" ", "_").lower()
+    name = name.strip().replace(" ", "_").lower()
+    if name == "montreal":
+        name = standardize_montreal(name)
+    return name
 
 
 def k_value() -> int:
@@ -111,11 +114,11 @@ def calculate_elo(
     return [int(np.round(elo_new_home)), int(np.round(elo_new_away))]
 
 
-def clean_montreal(team: str) -> str:
+def standardize_montreal(team: str) -> str:
     """
-    removes accent from montréal
+    adds accent to montréal
     """
-    return team.replace("é", "e")
+    return team.replace("e", "é")
 
 
 def structure_chartable_df(output_df: pd.DataFrame) -> pd.DataFrame:

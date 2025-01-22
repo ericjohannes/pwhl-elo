@@ -33,11 +33,10 @@ def hi():
     help="Path to config file containing paths and data about seasons.",
 )
 def calculate(config):
-    """Calulcates Elos and outputs three files:
-    1. wphl_elos_<TIMESTAMP>.csv - file with all fixtures played so far with Elos and
+    """Calulcates Elos and outputs 3 files:
+    1. pwhl_all_results_with_elos.csv - file with all fixtures played so far with Elos and
     projections calculated.
-    2. chartable_wphl_elos.json - file formatted for a chart. Elos for each date for each team.
-    3. pwhl_latest_elos - file with latest calculated Elos for each team and date calculated."""
+    2. pwhl_latest_elos - file with latest calculated Elos for each team and date calculated."""
     pwhl = Pwhl(config=config)
     new_file = handle_calculate_elo(pwhl)
     print(new_file)
@@ -51,7 +50,7 @@ def calculate(config):
     help="Path to config file containing paths and data about seasons.",
 )
 def projections(config):
-    """Builds projections for next 5 fixtures based on latest_pwhl_latest_elos.json."""
+    """Builds projections for next 5 fixtures based on latest_elos.json."""
     pwhl = Pwhl(config=config)
     new_file = build_upcoming_projects(pwhl)
     print(new_file)
@@ -102,7 +101,7 @@ def update(input, output_dir):
     help="Path to config file containing paths and data about seasons.",
 )
 def chartable(config):
-    """Reverts all latest team Elo's to the mean for the start of a new season."""
+    """Creates a json file of each team's Elo over time, suitable for a line chart."""
     pwhl = Pwhl(config=config)
     new_file = handle_chart_data(pwhl)
     click.echo(new_file)

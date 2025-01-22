@@ -24,7 +24,10 @@ pwhlelo chartable --input ./data/output/all_results/wphl_elos_2024-12-12_15:29:3
 ```
 
 # TODO:
-1. fix bug where 2024 regular season games get labeled "pre" and preseason games get labeled "regular"
-2. fix bug where montreal is spelled with and without an accent
-3. fix bug where reversions don't work right, maybe are reverted twice
-4. fix bug where the starting elo is not the last ending elo in the second season
+1. fix bug where 2024 regular season games get labeled "pre" and preseason games get labeled "regular" DONE
+    so:
+    a. season 1 is getting labeled regular
+    b, season 2 is getting labeled pre
+2. fix bug where montreal is spelled with and without an accent DONE
+3. fix bug where reversions don't work right, maybe are reverted twice DONE
+4. fix bug where the starting elo is not the last ending elo in the second season DONE
