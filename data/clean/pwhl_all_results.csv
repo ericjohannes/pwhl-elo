@@ -37,9 +37,9 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type
 2025-01-15,Final SO,Minnesota,2,New York,3,Prudential Center,2025,regular
 2025-01-17,Final,Minnesota,2,Montréal,4,Place Bell,2025,regular
 2025-01-19,Final,Ottawa,1,Montréal,2,Videotron Centre,2025,regular
-2025-01-21,00:00 1st,Ottawa,1,Minnesota,0,Xcel Energy Center,2025,regular
-2025-01-22,7:00 pm EST,Toronto,0,Boston,0,Tsongas Center,2025,regular
-2025-01-25,2:00 pm EST,New York,0,Toronto,0,Scotiabank Arena,2025,regular
+2025-01-21,Final,Ottawa,1,Minnesota,0,Xcel Energy Center,2025,regular
+2025-01-22,Final,Toronto,1,Boston,4,Tsongas Center,2025,regular
+2025-01-25,17:40 1st,New York,0,Toronto,0,Scotiabank Arena,2025,regular
 2025-01-26,2:00 pm CST,Boston,0,Minnesota,0,Xcel Energy Center,2025,regular
 2025-01-27,7:00 pm EST,New York,0,Ottawa,0,TD Place,2025,regular
 2025-01-28,6:00 pm CST,Toronto,0,Minnesota,0,Xcel Energy Center,2025,regular
@@ -64,7 +64,7 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type
 2025-02-23,4:00 pm EST,Boston,0,New York,0,KeyBank Centre,2025,regular
 2025-02-25,7:00 pm EST,Toronto,0,Montréal,0,Place Bell,2025,regular
 2025-02-26,7:00 pm EST,New York,0,Ottawa,0,TD Place,2025,regular
-2025-03-01,TBD,Boston,0,Montréal,0,TBD,2025,regular
+2025-03-01,2:00 pm EST,Boston,0,Montréal,0,Bell Centre,2025,regular
 2025-03-04,7:00 pm EST,Minnesota,0,Montréal,0,Place Bell,2025,regular
 2025-03-05,7:00 pm EST,New York,0,Boston,0,Tsongas Center,2025,regular
 2025-03-06,7:00 pm EST,Montréal,0,Toronto,0,Coca-Cola Coliseum,2025,regular
