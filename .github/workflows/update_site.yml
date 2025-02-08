@@ -22,6 +22,7 @@ jobs:
         python-version: "3.13"
     - name: Fetch latest data
       run: |-
+        pip install poetry==1.8.4
         cd app
         poetry install
         poetry shell
