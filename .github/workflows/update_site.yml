@@ -1,0 +1,50 @@
+name: Scrape latest data
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron:  '22 4 * * *'
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    strategy:
+        matrix:
+          node-version: [18.14.0]
+          # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+    steps:
+    - name: Check out this repo
+      uses: actions/checkout@v4
+    - name: Set up Python 3.13
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.13"
+    - name: Fetch latest data
+      run: |-
+        cd app
+        poetry install
+        poetry shell
+        ./update.sh
+        deactivate
+        cd ..
+        ./move_data.sh
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - name: publish site
+      run: |-
+        cd pwhl-elo-frontend
+        npm ci
+        npm run deploy
+        cd ..
+    - name: Commit and push
+      run: |-
+        git config user.name "Automated"
+        git config user.email "actions@users.noreply.github.com"
+        git add -A
+        timestamp=$(date -u)
+        git commit -m "Latest data: ${timestamp}" || exit 0
+        git push
