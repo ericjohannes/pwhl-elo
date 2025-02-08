@@ -133,15 +133,15 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2025-01-19,Final,ottawa,1,montréal,2,Videotron Centre,2025,regular,1311.0,1285.0,1309.0,1287.0,0.602158093174717,0.397841906825283
 2025-01-21,Final,ottawa,1,minnesota,0,Xcel Energy Center,2025,regular,1319.0,1288.0,1322.0,1285.0,0.6226501957872623,0.37734980421273767
 2025-01-22,Final,toronto,1,boston,4,Tsongas Center,2025,regular,1289.0,1292.0,1285.0,1296.0,0.555890961116853,0.444109038883147
-2025-01-25,17:40 1st,new_york,0,toronto,0,Scotiabank Arena,2025,regular,,,,,,
-2025-01-26,2:00 pm CST,boston,0,minnesota,0,Xcel Energy Center,2025,regular,,,,,,
-2025-01-27,7:00 pm EST,new_york,0,ottawa,0,TD Place,2025,regular,,,,,,
-2025-01-28,6:00 pm CST,toronto,0,minnesota,0,Xcel Energy Center,2025,regular,,,,,,
-2025-01-29,7:00 pm EST,ottawa,0,montréal,0,Place Bell,2025,regular,,,,,,
-2025-01-30,7:00 pm EST,toronto,0,montréal,0,Place Bell,2025,regular,,,,,,
-2025-01-31,7:00 pm EST,new_york,0,boston,0,Tsongas Center,2025,regular,,,,,,
-2025-02-01,2:00 pm EST,ottawa,0,toronto,0,Coca-Cola Coliseum,2025,regular,,,,,,
-2025-02-02,1:00 pm EST,montréal,0,new_york,0,Prudential Center,2025,regular,,,,,,
+2025-01-25,Final,new_york,2,toronto,4,Scotiabank Arena,2025,regular,1295.0,1299.0,1292.0,1302.0,0.5573116337622929,0.44268836623770713
+2025-01-26,Final,boston,2,minnesota,5,Xcel Energy Center,2025,regular,1323.0,1285.0,1319.0,1289.0,0.6131368201531429,0.38686317984685714
+2025-01-27,Final,new_york,3,ottawa,0,TD Place,2025,regular,1283.0,1304.0,1288.0,1299.0,0.5558909611168532,0.4441090388831468
+2025-01-28,Final SO,toronto,3,minnesota,4,Xcel Energy Center,2025,regular,1325.0,1293.0,1323.0,1295.0,0.6104024220946891,0.3895975779053109
+2025-01-29,Final,ottawa,1,montréal,4,Place Bell,2025,regular,1315.0,1279.0,1311.0,1283.0,0.6104024220946889,0.38959757790531113
+2025-01-30,Final SO,toronto,3,montréal,4,Place Bell,2025,regular,1317.0,1291.0,1315.0,1293.0,0.602158093174717,0.397841906825283
+2025-01-31,Final SO,new_york,2,boston,3,Tsongas Center,2025,regular,1287.0,1302.0,1285.0,1304.0,0.5444945730830081,0.4555054269169919
+2025-02-01,Final,ottawa,2,toronto,4,Coca-Cola Coliseum,2025,regular,1294.0,1276.0,1291.0,1279.0,0.588289971863163,0.411710028136837
+2025-02-02,Final,montréal,2,new_york,1,Prudential Center,2025,regular,1299.0,1320.0,1302.0,1317.0,0.550199353253537,0.44980064674646303
 2025-02-11,7:00 pm EST,minnesota,0,toronto,0,Coca-Cola Coliseum,2025,regular,,,,,,
 2025-02-12,7:00 pm EST,boston,0,new_york,0,Prudential Center,2025,regular,,,,,,
 2025-02-13,7:00 pm EST,minnesota,0,ottawa,0,TD Place,2025,regular,,,,,,
