@@ -17,17 +17,15 @@ def handle(pwhl) -> str:
         header=0,
         parse_dates=["date"],  # input here should be that latest file
     )
-
-    chartable_df = structure_chartable_df(wphl_elos_df)
     output_path = os.path.join(pwhl.chart_data_output_path, CHART_DATA_FN)
-    max_date = max(chartable_df.index).strftime("%Y-%m-%dT%H:%M:%S.%fZ")
-    min_date = min(chartable_df.index).strftime("%Y-%m-%dT%H:%M:%S.%fZ")
 
-    max_elo = int(max([chartable_df[c].max() for c in chartable_df.columns]))
-    min_elo = int(min([chartable_df[c].min() for c in chartable_df.columns]))
+    # get max dates and elos from games played
+    games_played = wphl_elos_df[wphl_elos_df["time"].str.lower().str.contains("final")]
+    max_date = max(games_played.date).strftime("%Y-%m-%dT%H:%M:%S.%fZ")
+    min_date = min(games_played.date).strftime("%Y-%m-%dT%H:%M:%S.%fZ")
 
-    chartable_df.index = chartable_df.index.strftime("%Y-%m-%dT%H:%M:%S.%fZ")
-    chartable_dict = chartable_df.to_dict(orient="dict", index=True)
+    min_elo = int(min(pd.concat([games_played.elo_after_home, games_played.elo_after_away])))
+    max_elo = int(max(pd.concat([games_played.elo_after_home, games_played.elo_after_away])))
 
     export_data = {
         "data": [],
@@ -36,14 +34,19 @@ def handle(pwhl) -> str:
         "min_elo": min_elo,
         "max_elo": max_elo,
     }
+    for season in wphl_elos_df.season.unique():
+        season_data = wphl_elos_df[wphl_elos_df["season"] == season]
+        chartable_df = structure_chartable_df(season_data)
+        chartable_df.index = chartable_df.index.strftime("%Y-%m-%dT%H:%M:%S.%fZ")
+        chartable_dict = chartable_df.to_dict(orient="dict", index=True)
 
-    # structure data in easier to visualize format
-    for team in chartable_dict:
-        team_data = {"team": team, "games": []}
-        for k, v in chartable_dict[team].items():
-            if not math.isnan(v):
-                team_data["games"].append({"date": k, "elo": int(v)})
-        export_data["data"].append(team_data)
+        # structure data in easier to visualize format
+        for team in chartable_dict:
+            team_data = {"team": team, "games": [], "season": str(season)}
+            for k, v in chartable_dict[team].items():
+                if not math.isnan(v):
+                    team_data["games"].append({"date": k, "elo": int(v)})
+            export_data["data"].append(team_data)
 
     with open(output_path, "w") as f:
         json.dump(export_data, f)
