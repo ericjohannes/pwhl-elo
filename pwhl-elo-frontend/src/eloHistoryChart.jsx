@@ -50,9 +50,9 @@ const LineChart = ({ width, height, data }) => {
     const end = new Date(data.max_date);
     const start = new Date(data.min_date); // make this the min of the data
 
-    const offseasonBuffer = 1;
+    const offseasonBuffer = 10;
     const offseasonStart = new Date(2024, 4, 30);
-    const offseasonEnd = new Date(2024, 10, 29);
+    const offseasonEnd = new Date(2024, 10, 20);
     console.log("offseasonStart start", offseasonStart)
     console.log("offseasonEnd start", offseasonEnd)
     const offseasonStartBuffed = new Date(offseasonStart.setDate(offseasonStart.getDate() + offseasonBuffer));
