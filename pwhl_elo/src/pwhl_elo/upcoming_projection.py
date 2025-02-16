@@ -125,7 +125,8 @@ def build_upcoming_projects(pwhl):
     grouped_next_5 = []
     for game in next_5:
         if game["date"] in [n["date"] for n in grouped_next_5]:
-            filtered_dates = filter(lambda row: row["date"] == game.pop("date"), grouped_next_5)
+            needle_date = game.pop("date")
+            filtered_dates = filter(lambda row: row["date"] == needle_date, grouped_next_5)
             list(filtered_dates)[0]["games"].append({**game})
         else:
             grouped_next_5.append({"date": game.pop("date"), "games": [{**game}]})
