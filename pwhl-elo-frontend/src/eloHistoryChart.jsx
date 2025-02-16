@@ -3,10 +3,11 @@ import * as d3 from "d3";
 import { scaleDiscontinuous, discontinuityRange } from "@d3fc/d3fc-discontinuous-scale";
 
 import chartableWphlElos from "./assets/chartable_wphl_elos.json"
+
 import {convertAndCapitalize} from "./utils"
 
 
-const NUMTICKSH = 8;
+const NUMTICKSH = 9;
 const NUMTICKSV = 6;
 
 // create a time parser function that works for our time format
@@ -53,14 +54,8 @@ const LineChart = ({ width, height, data }) => {
     const offseasonBuffer = 10;
     const offseasonStart = new Date(2024, 4, 30);
     const offseasonEnd = new Date(2024, 10, 20);
-    console.log("offseasonStart start", offseasonStart)
-    console.log("offseasonEnd start", offseasonEnd)
     const offseasonStartBuffed = new Date(offseasonStart.setDate(offseasonStart.getDate() + offseasonBuffer));
     const offseasonEndBuffed = new Date(offseasonEnd.setDate(offseasonEnd.getDate() - offseasonBuffer));
-
-    console.log("offseasonStart with buffer", offseasonStart)
-    console.log("offseasonEnd with buffer", offseasonEnd)
-
     const domain =[data.min_elo, data.max_elo] // should be [dataMin, dataMax]
     const axesRef = useRef(null);
     const boundsWidth = width - MARGIN.right - MARGIN.left;
@@ -85,14 +80,14 @@ const LineChart = ({ width, height, data }) => {
 
     const lineBuilder = d3
         .line()
-        .x((d) => xDiscontinuousScale(new Date(d.date)))
-        .y((d) => yScale(d.elo))
-        .defined(function(d) { 
-            if(new Date(d.date) > offseasonStart && new Date(d.date) < offseasonEnd){
-                return false;
-            }
-            return true;
-        });;
+        .x((d) => {
+            console.log(xDiscontinuousScale(new Date(d.date)))
+            return xDiscontinuousScale(new Date(d.date))
+        }).y((d) => {
+            // console.log(yScale(d.elo))
+            return yScale(d.elo)
+        });
+        
 
     // Render the X and Y axis using d3.js, not react
     useEffect(() => {
@@ -102,7 +97,12 @@ const LineChart = ({ width, height, data }) => {
         svgElement
             .append("g")
             .attr("transform", "translate(0," + boundsHeight + ")")
-            .call(xAxisGenerator.ticks(NUMTICKSH, "%m/%d/%y")); // How many ticks are targeted
+            .call(xAxisGenerator.ticks(NUMTICKSH, "%m/%d/%y"))
+            .selectAll("text")  
+            .style("text-anchor", "start")
+            .attr("dx", "5px")
+            .attr("dy", "5px")
+            .attr("transform", "rotate(45)"); // How many ticks are targeted
 
         const yAxisGenerator = d3.axisLeft(yScale);
         svgElement.append("g").call(yAxisGenerator.ticks(NUMTICKSV));
@@ -124,7 +124,7 @@ const LineChart = ({ width, height, data }) => {
                         const linePath = lineBuilder(team.games);                        
                         return(
                             <path
-                                key={team.team + "elo"}
+                                key={team.team + team.season + "elo"}
                                 d={linePath}
                                 stroke={colors[team.team]}
                                 fill="none"
