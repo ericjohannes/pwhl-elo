@@ -42,6 +42,7 @@ jobs:
       run: |-
         git config --global user.name 'eric'
         git config --global user.email 'ericjohannes@users.noreply.github.com'
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
         cd pwhl-elo-frontend
         npm ci
         npm run deploy
@@ -51,6 +52,7 @@ jobs:
         git config --global user.name 'eric'
         git config --global user.email 'ericjohannes@users.noreply.github.com'
         git add -A
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
         timestamp=$(date -u)
         git commit -m "Latest data: ${timestamp}" || exit 0
         git push
