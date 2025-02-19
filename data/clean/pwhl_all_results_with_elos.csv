@@ -148,9 +148,9 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2025-02-14,Final,boston,1,toronto,3,Coca-Cola Coliseum,2025,regular,1299.0,1290.0,1296.0,1293.0,0.5756869523764298,0.42431304762357025
 2025-02-15,Final,new_york,2,montréal,6,Place Bell,2025,regular,1324.0,1289.0,1320.0,1293.0,0.6090326034042395,0.3909673965957605
 2025-02-16,Final,minnesota,2,boston,4,Tsongas Center,2025,regular,1294.0,1313.0,1290.0,1317.0,0.5330513938844411,0.4669486061155589
-2025-02-16,20:00 1st,toronto,0,ottawa,0,Rogers Place,2025,regular,,,,,,
-2025-02-17,4:00 pm EST,boston,0,new_york,0,Prudential Center,2025,regular,,,,,,
-2025-02-18,7:00 pm EST,minnesota,0,montréal,0,Place Bell,2025,regular,,,,,,
+2025-02-16,Final OT,toronto,3,ottawa,2,Rogers Place,2025,regular,1279.0,1302.0,1282.0,1299.0,0.5473485180458647,0.4526514819541353
+2025-02-17,Final,boston,4,new_york,1,Prudential Center,2025,regular,1284.0,1299.0,1289.0,1294.0,0.5644004902404214,0.4355995097595786
+2025-02-18,Final,minnesota,4,montréal,0,Place Bell,2025,regular,1318.0,1319.0,1324.0,1313.0,0.5868950233791,0.41310497662089996
 2025-02-19,7:00 pm EST,toronto,0,new_york,0,Prudential Center,2025,regular,,,,,,
 2025-02-20,7:00 pm EST,boston,0,ottawa,0,TD Place,2025,regular,,,,,,
 2025-02-22,2:00 pm EST,montréal,0,ottawa,0,TD Place,2025,regular,,,,,,
