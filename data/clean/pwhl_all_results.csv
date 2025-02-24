@@ -139,8 +139,8 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type
 2025-02-19,Final,Toronto,4,New York,1,Prudential Center,2025,regular
 2025-02-20,Final OT,Boston,3,Ottawa,2,TD Place,2025,regular
 2025-02-22,Final,Montréal,1,Ottawa,3,TD Place,2025,regular
-2025-02-23,12:30 pm CST,Toronto,0,Minnesota,0,Xcel Energy Center,2025,regular
-2025-02-23,4:00 pm EST,Boston,0,New York,0,KeyBank Center,2025,regular
+2025-02-23,Final,Toronto,2,Minnesota,1,Xcel Energy Center,2025,regular
+2025-02-23,Final SO,Boston,3,New York,2,KeyBank Center,2025,regular
 2025-02-25,7:00 pm EST,Toronto,0,Montréal,0,Place Bell,2025,regular
 2025-02-26,7:00 pm EST,New York,0,Ottawa,0,TD Place,2025,regular
 2025-03-01,2:00 pm EST,Boston,0,Montréal,0,Bell Centre,2025,regular
