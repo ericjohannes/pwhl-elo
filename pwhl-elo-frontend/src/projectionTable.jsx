@@ -1,6 +1,7 @@
 import "./App.css"
 import {convertAndCapitalize, pubDateString, roundProjection} from "./utils"
 import game_projections from "./assets/game_projections.json"
+import React, { Fragment } from 'react'
 
 const compareFn = (a, b) =>{
     if (a.date < b.date) {
@@ -18,15 +19,36 @@ export const projectionTable = ()=>(
         {
             game_projections.sort(compareFn).map((date, j)=>{
                 return (
-                    <>
-                    <h3 key={"date-label" + j} className="quattrocento-regular date-header">{date.date}</h3>
-                    <table key={"projection-table-" + j} className="rating-table projection-table ">
-                        <thead className="fira-code-bold" key={"projection-table-head" + j}>
+                    <Fragment key={"date-header"+j}>
+                    <h3
+                        key={"date-label" + j}
+                        className="quattrocento-regular date-header"
+                    >{date.date}</h3>
+                    <table
+                        key={"projection-table-" + j}
+                        className="rating-table projection-table "
+                    >
+                        <thead 
+                            key={"projection-table-head" + j}
+                            className="fira-code-bold"
+                        >
                             <tr key={"projection-table-header-row" + j}>
-                                <th key={"projection-table-teams-head" + j} className="team-name table-head-cell">Teams</th>
-                                <th key={"projection-table-home-head" + j} className="team-rating table-head-cell">Home</th>
-                                <th key={"projection-table-rating-head" + j} className="team-rating table-head-cell num-col">Rating</th>
-                                <th key={"projection-table-proj-head" + j} className="team-rating table-head-cell num-col">Win%</th>
+                                <th
+                                    key={"projection-table-teams-head" + j}
+                                    className="team-name table-head-cell"
+                                >Teams</th>
+                                <th
+                                    key={"projection-table-home-head" + j}
+                                    className="team-rating table-head-cell"
+                                >Home</th>
+                                <th
+                                    key={"projection-table-rating-head" + j}
+                                    className="team-rating table-head-cell num-col"
+                                >Rating</th>
+                                <th
+                                    key={"projection-table-proj-head" + j}
+                                    className="team-rating table-head-cell num-col"
+                                >Win%</th>
                             </tr>
                         </thead>
                         <tbody key={"projection-table-body" + j} className="fira-code-regular">
@@ -36,7 +58,7 @@ export const projectionTable = ()=>(
                             const homeFavored = entry.expected_win_home > entry.expected_win_away;
                             const keySuffix = String(i) + "-" + String(j)
                             return(
-                                <>
+                                <Fragment key={"game-proj-header" + keySuffix}>
                                     {/* away team */}
                                     <tr 
                                         key={"projection-table-away-row" + keySuffix}
@@ -73,13 +95,13 @@ export const projectionTable = ()=>(
                                             key={"home-projection-" + keySuffix}>{roundProjection(entry.expected_win_home)}
                                         </td>
                                     </tr>
-                                </>
+                                </Fragment>
                             )
                         })
                     }
                     </tbody>
                     </table>
-                    </>
+                    </Fragment>
                 )
             })
         }
