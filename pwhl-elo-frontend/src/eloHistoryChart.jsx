@@ -28,7 +28,7 @@ const legendItem = (key, color, i) =>{
     return (
         <div key={"legendItem" + i} className="legend-item">
             <p key={"legendLabel" + i} className="legend-label">{convertAndCapitalize(key)}</p>
-            <div key={"colorSwatch" + i} className="color-swatch" style={{"background-color": color}}></div>
+            <div key={"colorSwatch" + i} className="color-swatch" style={{"backgroundColor": color}}></div>
         </div>
     )
 
