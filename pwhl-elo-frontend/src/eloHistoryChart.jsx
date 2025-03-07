@@ -81,10 +81,8 @@ const LineChart = ({ width, height, data }) => {
     const lineBuilder = d3
         .line()
         .x((d) => {
-            console.log(xDiscontinuousScale(new Date(d.date)))
             return xDiscontinuousScale(new Date(d.date))
         }).y((d) => {
-            // console.log(yScale(d.elo))
             return yScale(d.elo)
         });
         
