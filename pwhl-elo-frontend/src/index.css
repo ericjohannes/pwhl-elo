@@ -35,6 +35,7 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
   /* color: #333333; */
+ 
 }
 
 button {
@@ -121,4 +122,11 @@ text {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+}
+
+th, td {
+  font-size: 1.4em;
+}
+th {
+  letter-spacing: -1px;
 }
