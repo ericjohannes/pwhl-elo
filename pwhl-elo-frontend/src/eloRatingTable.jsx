@@ -11,7 +11,7 @@ const compareFn = (a, b) =>{
   return 0;
 }
 
-export const ratingTable = ()=>{
+export const eloRatingTable = ()=>{
   return(
     <>
       <h1 className="oswald-bold">PWHL Team Elo Ratings</h1>
