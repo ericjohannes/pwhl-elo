@@ -1,14 +1,13 @@
 import "./App.css"
-import {convertAndCapitalize, pubDateString} from "./utils"
 import {projectionTable} from "./projectionTable"
 import {eloHistoryChart} from "./eloHistoryChart"
-import {ratingTable} from "./eloRatingTable"
+import {eloRatingTable} from "./eloRatingTable"
 
 function App() {
 
   return (
     <>
-      {ratingTable()}
+      {eloRatingTable()}
       {projectionTable()}
       {eloHistoryChart()}
 
