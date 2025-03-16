@@ -167,7 +167,7 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2025-03-09,Final OT,minnesota,2,toronto,1,Coca-Cola Coliseum,2025,regular,1308.0,1321.0,1311.0,1318.0,0.561567938973646,0.438432061026354
 2025-03-11,Final,minnesota,2,ottawa,3,TD Place,2025,regular,1280.0,1319.0,1278.0,1321.0,0.5100724469274382,0.48992755307256175
 2025-03-12,Final OT,montréal,2,new_york,3,Prudential Center,2025,regular,1272.0,1318.0,1270.0,1320.0,0.5,0.5
-2025-03-15,2:00 pm EDT,boston,0,ottawa,0,TD Place,2025,regular,,,,,,
+2025-03-15,Final,boston,5,ottawa,2,TD Place,2025,regular,1275.0,1309.0,1280.0,1304.0,0.537347317166493,0.462652682833507
 2025-03-16,7:30 pm EDT,minnesota,0,new_york,0,Little Caesars Arena,2025,regular,,,,,,
 2025-03-18,7:00 pm EDT,montréal,0,boston,0,Tsongas Center,2025,regular,,,,,,
 2025-03-19,7:00 pm EDT,new_york,0,toronto,0,Coca-Cola Coliseum,2025,regular,,,,,,
