@@ -1,5 +1,5 @@
 #!/bin/bash
-pwhlelo getseason 5
+pwhlelo getseason 6
 pwhlelo cleandata
 pwhlelo calculate
 pwhlelo projections
