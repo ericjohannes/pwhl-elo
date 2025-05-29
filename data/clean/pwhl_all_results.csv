@@ -1,4 +1,13 @@
 date,time,away_team,away_score,home_team,home_score,venue,season,type
+2023-12-04,Final OT,Toronto,5,Boston,2,Utica University Nexus Center - Mastrovito Hyundai,2024,pre
+2023-12-04,Final SO,Ottawa,4,Minnesota,8,Utica University Nexus Center - Mastrovito Hyundai,2024,pre
+2023-12-04,Final SO,Montreal,0,New York,4,Utica University Nexus Center - Mastrovito Hyundai,2024,pre
+2023-12-05,Final OT,Minnesota,5,Toronto,4,Utica University Nexus Center - Mastrovito Hyundai,2024,pre
+2023-12-05,Final OT,Boston,1,Montreal,3,Utica University Nexus Center - Mastrovito Hyundai,2024,pre
+2023-12-05,Final SO,New York,2,Ottawa,1,Utica University Nexus Center - Mastrovito Hyundai,2024,pre
+2023-12-07,Final,Montreal,3,Minnesota,4,Utica University Nexus Center - Mastrovito Hyundai,2024,pre
+2023-12-07,Final OT,New York,6,Toronto,4,Utica University Nexus Center - Mastrovito Hyundai,2024,pre
+2023-12-07,Final OT,Ottawa,1,Boston,3,Utica University Nexus Center - Mastrovito Hyundai,2024,pre
 2024-05-08,Final,Minnesota,0,Toronto,4,Coca-Cola Coliseum,2024,post
 2024-05-09,Final OT,Boston,2,Montreal,1,Place Bell,2024,post
 2024-05-10,Final,Minnesota,0,Toronto,2,Coca-Cola Coliseum,2024,post
@@ -12,6 +21,24 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type
 2024-05-24,Final,Boston,1,Minnesota,4,Xcel Energy Center,2024,post
 2024-05-26,Final OT2,Boston,1,Minnesota,0,Xcel Energy Center,2024,post
 2024-05-29,Final,Minnesota,3,Boston,0,Tsongas Center,2024,post
+2024-11-20,Final,Montréal,1,Boston,3,Verdun Auditorium,2025,pre
+2024-11-20,Final,Toronto,1,Minnesota,3,Ford Performance Centre,2025,pre
+2024-11-21,Final,Boston,1,Ottawa,6,Verdun Auditorium,2025,pre
+2024-11-21,Final OT,Minnesota,4,New York,3,Ford Performance Centre,2025,pre
+2024-11-22,Final,Ottawa,3,Montréal,6,Verdun Auditorium,2025,pre
+2024-11-22,Final,New York,5,Toronto,2,Ford Performance Centre,2025,pre
+2025-05-07,Final,Minnesota,2,Toronto,3,Coca-Cola Coliseum,2025,post
+2025-05-08,Final,Ottawa,3,Montréal,2,Place Bell,2025,post
+2025-05-09,Final,Minnesota,5,Toronto,3,Coca-Cola Coliseum,2025,post
+2025-05-11,Final OT4,Ottawa,2,Montréal,3,Place Bell,2025,post
+2025-05-11,Final,Toronto,5,Minnesota,7,Xcel Energy Center,2025,post
+2025-05-13,Final,Montréal,0,Ottawa,1,TD Place,2025,post
+2025-05-14,Final OT,Toronto,3,Minnesota,4,Xcel Energy Center,2025,post
+2025-05-16,Final,Montréal,1,Ottawa,2,TD Place,2025,post
+2025-05-20,Final OT,Minnesota,1,Ottawa,2,TD Place,2025,post
+2025-05-22,Final OT,Minnesota,2,Ottawa,1,TD Place,2025,post
+2025-05-24,Final OT3,Ottawa,1,Minnesota,2,Xcel Energy Center,2025,post
+2025-05-26,Final OT,Ottawa,1,Minnesota,2,Xcel Energy Center,2025,post
 2024-01-01,Final,New York,4,Toronto,0,Mattamy Athletic Centre,2024,regular
 2024-01-02,Final OT,Montreal,3,Ottawa,2,TD Place,2024,regular
 2024-01-03,Final,Minnesota,3,Boston,2,Tsongas Center,2024,regular
@@ -174,30 +201,3 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type
 2025-05-03,Final OT,Ottawa,2,Toronto,1,Coca-Cola Coliseum,2025,regular
 2025-05-03,Final,Minnesota,8,Boston,1,Tsongas Center,2025,regular
 2025-05-03,Final,Montréal,3,New York,2,Prudential Center,2025,regular
-2025-05-07,Final,Minnesota,2,Toronto,3,Coca-Cola Coliseum,2025,post
-2025-05-08,Final,Ottawa,3,Montréal,2,Place Bell,2025,post
-2025-05-09,Final,Minnesota,5,Toronto,3,Coca-Cola Coliseum,2025,post
-2025-05-11,Final OT4,Ottawa,2,Montréal,3,Place Bell,2025,post
-2025-05-11,Final,Toronto,5,Minnesota,7,Xcel Energy Center,2025,post
-2025-05-13,Final,Montréal,0,Ottawa,1,TD Place,2025,post
-2025-05-14,Final OT,Toronto,3,Minnesota,4,Xcel Energy Center,2025,post
-2025-05-16,Final,Montréal,1,Ottawa,2,TD Place,2025,post
-2025-05-20,Final OT,Minnesota,1,Ottawa,2,TD Place,2025,post
-2025-05-22,Final OT,Minnesota,2,Ottawa,1,TD Place,2025,post
-2025-05-24,Final OT3,Ottawa,1,Minnesota,2,Xcel Energy Center,2025,post
-2025-05-26,Final OT,Ottawa,1,Minnesota,2,Xcel Energy Center,2025,post
-2024-11-20,Final,Montréal,1,Boston,3,Verdun Auditorium,2025,pre
-2024-11-20,Final,Toronto,1,Minnesota,3,Ford Performance Centre,2025,pre
-2024-11-21,Final,Boston,1,Ottawa,6,Verdun Auditorium,2025,pre
-2024-11-21,Final OT,Minnesota,4,New York,3,Ford Performance Centre,2025,pre
-2024-11-22,Final,Ottawa,3,Montréal,6,Verdun Auditorium,2025,pre
-2024-11-22,Final,New York,5,Toronto,2,Ford Performance Centre,2025,pre
-2023-12-04,Final OT,Toronto,5,Boston,2,Utica University Nexus Center - Mastrovito Hyundai,2024,pre
-2023-12-04,Final SO,Ottawa,4,Minnesota,8,Utica University Nexus Center - Mastrovito Hyundai,2024,pre
-2023-12-04,Final SO,Montreal,0,New York,4,Utica University Nexus Center - Mastrovito Hyundai,2024,pre
-2023-12-05,Final OT,Minnesota,5,Toronto,4,Utica University Nexus Center - Mastrovito Hyundai,2024,pre
-2023-12-05,Final OT,Boston,1,Montreal,3,Utica University Nexus Center - Mastrovito Hyundai,2024,pre
-2023-12-05,Final SO,New York,2,Ottawa,1,Utica University Nexus Center - Mastrovito Hyundai,2024,pre
-2023-12-07,Final,Montreal,3,Minnesota,4,Utica University Nexus Center - Mastrovito Hyundai,2024,pre
-2023-12-07,Final OT,New York,6,Toronto,4,Utica University Nexus Center - Mastrovito Hyundai,2024,pre
-2023-12-07,Final OT,Ottawa,1,Boston,3,Utica University Nexus Center - Mastrovito Hyundai,2024,pre
