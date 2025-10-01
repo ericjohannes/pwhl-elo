@@ -185,7 +185,7 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type
 2025-05-20,Final OT,Minnesota,1,Ottawa,2,TD Place,2025,post
 2025-05-22,Final OT,Minnesota,2,Ottawa,1,TD Place,2025,post
 2025-05-24,Final OT3,Ottawa,1,Minnesota,2,Xcel Energy Center,2025,post
-2025-05-26,Final OT,Ottawa,1,Minnesota,2,Xcel Energy Center,2025,post
+2025-05-26,Final OT,Ottawa,1,Minnesota,2,,2025,post
 2024-11-20,Final,Montréal,1,Boston,3,Verdun Auditorium,2025,pre
 2024-11-20,Final,Toronto,1,Minnesota,3,Ford Performance Centre,2025,pre
 2024-11-21,Final,Boston,1,Ottawa,6,Verdun Auditorium,2025,pre
