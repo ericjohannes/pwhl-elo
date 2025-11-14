@@ -174,16 +174,16 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type
 2024-05-04,Final,Minnesota,2,New York,5,UBS Arena,2024,regular
 2024-05-04,Final,Montreal,3,Boston,4,Tsongas Center,2024,regular
 2024-05-05,Final,Ottawa,2,Toronto,5,Mattamy Athletic Centre,2024,regular
-2025-05-07,Final,Minnesota,2,Toronto,3,Coca-Cola Coliseum,2025,post
-2025-05-08,Final,Ottawa,3,Montréal,2,Place Bell,2025,post
-2025-05-09,Final,Minnesota,5,Toronto,3,Coca-Cola Coliseum,2025,post
-2025-05-11,Final OT4,Ottawa,2,Montréal,3,Place Bell,2025,post
+2025-05-07,Final,Minnesota,2,Toronto,3,Coca-Cola Coliseum | Toronto,2025,post
+2025-05-08,Final,Ottawa,3,Montréal,2,Place Bell | Laval,2025,post
+2025-05-09,Final,Minnesota,5,Toronto,3,Coca-Cola Coliseum | Toronto,2025,post
+2025-05-11,Final OT4,Ottawa,2,Montréal,3,Place Bell | Laval,2025,post
 2025-05-11,Final,Toronto,5,Minnesota,7,Xcel Energy Center,2025,post
-2025-05-13,Final,Montréal,0,Ottawa,1,TD Place,2025,post
+2025-05-13,Final,Montréal,0,Ottawa,1,TD Place | Ottawa,2025,post
 2025-05-14,Final OT,Toronto,3,Minnesota,4,Xcel Energy Center,2025,post
-2025-05-16,Final,Montréal,1,Ottawa,2,TD Place,2025,post
-2025-05-20,Final OT,Minnesota,1,Ottawa,2,TD Place,2025,post
-2025-05-22,Final OT,Minnesota,2,Ottawa,1,TD Place,2025,post
+2025-05-16,Final,Montréal,1,Ottawa,2,TD Place | Ottawa,2025,post
+2025-05-20,Final OT,Minnesota,1,Ottawa,2,TD Place | Ottawa,2025,post
+2025-05-22,Final OT,Minnesota,2,Ottawa,1,TD Place | Ottawa,2025,post
 2025-05-24,Final OT3,Ottawa,1,Minnesota,2,Xcel Energy Center,2025,post
 2025-05-26,Final OT,Ottawa,1,Minnesota,2,,2025,post
 2024-11-20,Final,Montréal,1,Boston,3,Verdun Auditorium,2025,pre
