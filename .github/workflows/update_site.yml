@@ -27,7 +27,7 @@ jobs:
         pip install poetry==1.8.4
         cd app
         poetry install
-        poetry run pwhlelo getseason 7
+        poetry run pwhlelo getseason 8
         poetry run pwhlelo cleandata
         poetry run pwhlelo calculate
         poetry run pwhlelo projections
