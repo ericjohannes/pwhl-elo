@@ -209,3 +209,123 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type
 2023-12-07,Final,Montreal,3,Minnesota,4,Utica University Nexus Center - Mastrovito Hyundai,2024,pre
 2023-12-07,Final OT,New York,6,Toronto,4,Utica University Nexus Center - Mastrovito Hyundai,2024,pre
 2023-12-07,Final OT,Ottawa,1,Boston,3,Utica University Nexus Center - Mastrovito Hyundai,2024,pre
+2025-11-21,Final,Toronto,2,Minnesota,1,Grand Casino Arena | St. Paul,2026,regular
+2025-11-21,Final OT,Seattle,3,Vancouver,4,Pacific Coliseum | Vancouver,2026,regular
+2025-11-22,Final,New York,4,Ottawa,0,TD Place | Ottawa,2026,regular
+2025-11-23,Final,Montréal,0,Boston,2,Tsongas Center | Lowell,2026,regular
+2025-11-25,Final,New York,0,Montréal,4,Place Bell | Laval,2026,regular
+2025-11-26,Final,Vancouver,1,Ottawa,5,TD Place | Ottawa,2026,regular
+2025-11-28,Final,Minnesota,3,Seattle,0,Climate Pledge Arena | Seattle,2026,regular
+2025-11-29,Final,Vancouver,1,New York,5,Prudential Center | Newark,2026,regular
+2025-11-29,Final,Boston,3,Toronto,1,Coca-Cola Coliseum | Toronto,2026,regular
+2025-12-02,Final,Minnesota,5,Ottawa,1,TD Place | Ottawa,2026,regular
+2025-12-03,Final,Vancouver,0,Boston,2,Agganis Arena | Boston,2026,regular
+2025-12-03,Final,New York,1,Seattle,2,Climate Pledge Arena | Seattle,2026,regular
+2025-12-04,7:00 pm EST,Ottawa,0,Toronto,0,Coca-Cola Coliseum | Toronto,2026,regular
+2025-12-06,3:00 pm EST,New York,0,Vancouver,0,Pacific Coliseum | Vancouver,2026,regular
+2025-12-07,12:00 pm EST,Toronto,0,Montréal,0,Place Bell | Laval,2026,regular
+2025-12-07,3:00 pm EST,Minnesota,0,Boston,0,Agganis Arena | Boston,2026,regular
+2025-12-16,7:00 pm PST,Ottawa,0,Vancouver,0,Pacific Coliseum | Vancouver,2026,regular
+2025-12-17,6:30 pm EST,Montréal,0,Toronto,0,Scotiabank Centre | Halifax,2026,regular
+2025-12-17,7:00 pm EST,Boston,0,New York,0,Prudential Center | Newark,2026,regular
+2025-12-17,10:00 pm EST,Ottawa,0,Seattle,0,Climate Pledge Arena | Seattle,2026,regular
+2025-12-19,8:00 pm EST,Boston,0,Minnesota,0,Grand Casino Arena | St. Paul,2026,regular
+2025-12-20,3:00 pm EST,Montréal,0,Vancouver,0,Pacific Coliseum | Vancouver,2026,regular
+2025-12-21,12:00 pm EST,Toronto,0,New York,0,Prudential Center | Newark,2026,regular
+2025-12-21,2:00 pm EST,Ottawa,0,Minnesota,0,Allstate Arena | Chicago,2026,regular
+2025-12-21,5:00 pm EST,Boston,0,Seattle,0,Climate Pledge Arena | Seattle,2026,regular
+2025-12-23,7:00 pm EST,Ottawa,0,Toronto,0,Coca-Cola Coliseum | Toronto,2026,regular
+2025-12-23,10:00 pm EST,Montréal,0,Seattle,0,Climate Pledge Arena | Seattle,2026,regular
+2025-12-27,12:00 pm EST,Boston,0,Ottawa,0,TD Place | Ottawa,2026,regular
+2025-12-27,2:00 pm EST,Toronto,0,Montréal,0,Bell Centre | Montréal,2026,regular
+2025-12-27,3:00 pm EST,Minnesota,0,Vancouver,0,Rogers Place | Edmonton,2026,regular
+2025-12-28,6:00 pm EST,Seattle,0,New York,0,American Airlines Center | Dallas,2026,regular
+2025-12-30,7:00 pm EST,Minnesota,0,Toronto,0,Coca-Cola Coliseum | Toronto,2026,regular
+2025-12-31,1:00 pm EST,Vancouver,0,New York,0,Prudential Center | Newark,2026,regular
+2026-01-02,1:00 pm EST,Montréal,0,New York,0,Prudential Center | Newark,2026,regular
+2026-01-03,1:00 pm EST,Minnesota,0,Ottawa,0,TD Place | Ottawa,2026,regular
+2026-01-03,2:00 pm EST,Seattle,0,Toronto,0,TD Coliseum | Hamilton,2026,regular
+2026-01-03,7:00 pm EST,Vancouver,0,Boston,0,Little Caesars Arena | Detroit,2026,regular
+2026-01-04,2:00 pm EST,Minnesota,0,Montréal,0,Place Bell | Laval,2026,regular
+2026-01-06,7:00 pm EST,New York,0,Toronto,0,Coca-Cola Coliseum | Toronto,2026,regular
+2026-01-07,7:00 pm EST,Seattle,0,Boston,0,Agganis Arena | Boston,2026,regular
+2026-01-09,7:00 pm EST,Vancouver,0,Ottawa,0,TD Place | Ottawa,2026,regular
+2026-01-11,12:00 pm EST,Ottawa,0,Boston,0,Scotiabank Centre | Halifax,2026,regular
+2026-01-11,2:00 pm EST,Seattle,0,Minnesota,0,Grand Casino Arena | St. Paul,2026,regular
+2026-01-11,2:00 pm EST,Vancouver,0,Montréal,0,Videotron Centre | Quebec City,2026,regular
+2026-01-13,7:00 pm EST,Ottawa,0,Montréal,0,Place Bell | Laval,2026,regular
+2026-01-14,7:00 pm EST,Toronto,0,Boston,0,Tsongas Center | Lowell,2026,regular
+2026-01-16,7:00 pm EST,Minnesota,0,New York,0,Prudential Center | Newark,2026,regular
+2026-01-17,3:00 pm EST,Vancouver,0,Toronto,0,Scotiabank Arena | Toronto,2026,regular
+2026-01-18,2:00 pm EST,Montréal,0,New York,0,Capital One Arena | Washington,2026,regular
+2026-01-18,10:00 pm EST,Boston,0,Seattle,0,Climate Pledge Arena | Seattle,2026,regular
+2026-01-20,7:00 pm EST,Ottawa,0,New York,0,Prudential Center | Newark,2026,regular
+2026-01-20,10:00 pm EST,Toronto,0,Seattle,0,Climate Pledge Arena | Seattle,2026,regular
+2026-01-21,7:00 pm EST,Montréal,0,Minnesota,0,Grand Casino Arena | St. Paul,2026,regular
+2026-01-22,10:00 pm EST,Toronto,0,Vancouver,0,Pacific Coliseum | Vancouver,2026,regular
+2026-01-24,2:00 pm EST,Ottawa,0,Montréal,0,Place Bell | Laval,2026,regular
+2026-01-25,3:00 pm EST,New York,0,Minnesota,0,Grand Casino Arena | St. Paul,2026,regular
+2026-01-25,6:00 pm EST,Vancouver,0,Seattle,0,Ball Arena | Denver,2026,regular
+2026-01-28,6:30 pm EST,Toronto,0,Montréal,0,Place Bell | Laval,2026,regular
+2026-01-28,7:00 pm EST,New York,0,Boston,0,Tsongas Center | Lowell,2026,regular
+2026-01-28,7:00 pm EST,Seattle,0,Ottawa,0,TD Place | Ottawa,2026,regular
+2026-01-28,9:00 pm EST,Vancouver,0,Minnesota,0,Grand Casino Arena | St. Paul,2026,regular
+2026-02-26,7:00 pm EST,Montréal,0,New York,0,Prudential Center | Newark,2026,regular
+2026-02-27,10:00 pm EST,Toronto,0,Seattle,0,Climate Pledge Arena | Seattle,2026,regular
+2026-02-28,2:00 pm EST,Boston,0,Ottawa,0,TD Place | Ottawa,2026,regular
+2026-03-01,1:00 pm EST,Minnesota,0,Montréal,0,Place Bell | Laval,2026,regular
+2026-03-01,4:00 pm EST,Toronto,0,Vancouver,0,Pacific Coliseum | Vancouver,2026,regular
+2026-03-03,7:00 pm EST,Montréal,0,Toronto,0,Coca-Cola Coliseum | Toronto,2026,regular
+2026-03-04,7:00 pm EST,Seattle,0,Ottawa,0,TD Place | Ottawa,2026,regular
+2026-03-05,7:00 pm EST,Boston,0,New York,0,Prudential Center | Newark,2026,regular
+2026-03-08,12:00 pm EDT,Ottawa,0,New York,0,Prudential Center | Newark,2026,regular
+2026-03-08,12:00 pm EDT,Minnesota,0,Toronto,0,Coca-Cola Coliseum | Toronto,2026,regular
+2026-03-10,10:00 pm EDT,Boston,0,Vancouver,0,Pacific Coliseum | Vancouver,2026,regular
+2026-03-11,7:00 pm EDT,Montréal,0,Ottawa,0,TD Place | Ottawa,2026,regular
+2026-03-11,10:00 pm EDT,Boston,0,Seattle,0,Climate Pledge Arena | Seattle,2026,regular
+2026-03-13,8:00 pm EDT,Seattle,0,Minnesota,0,Grand Casino Arena | St. Paul,2026,regular
+2026-03-14,3:00 pm EDT,Ottawa,0,Vancouver,0,Pacific Coliseum | Vancouver,2026,regular
+2026-03-15,1:00 pm EDT,Boston,0,Montréal,0,Place Bell | Laval,2026,regular
+2026-03-15,1:00 pm EDT,Seattle,0,Toronto,0,Coca-Cola Coliseum | Toronto,2026,regular
+2026-03-15,4:00 pm EDT,New York,0,Minnesota,0,Ball Arena | Denver,2026,regular
+2026-03-17,7:00 pm EDT,Toronto,0,Boston,0,Agganis Arena | Boston,2026,regular
+2026-03-18,7:00 pm EDT,Ottawa,0,Minnesota,0,Grand Casino Arena | St. Paul,2026,regular
+2026-03-18,10:00 pm EDT,New York,0,Vancouver,0,Pacific Coliseum | Vancouver,2026,regular
+2026-03-19,7:00 pm EDT,Seattle,0,Montréal,0,Place Bell | Laval,2026,regular
+2026-03-21,3:00 pm EDT,Minnesota,0,Vancouver,0,Pacific Coliseum | Vancouver,2026,regular
+2026-03-21,4:00 pm EDT,Seattle,0,Boston,0,Tsongas Center | Lowell,2026,regular
+2026-03-22,7:00 pm EDT,Montréal,0,Ottawa,0,Canada Life Centre | Winnipeg,2026,regular
+2026-03-24,7:00 pm EDT,Vancouver,0,Boston,0,Tsongas Center | Lowell,2026,regular
+2026-03-25,7:00 pm EDT,Montréal,0,Minnesota,0,Grand Casino Arena | St. Paul,2026,regular
+2026-03-25,8:00 pm EDT,New York,0,Seattle,0,Allstate Arena | Chicago,2026,regular
+2026-03-27,7:00 pm EDT,Boston,0,Toronto,0,Coca-Cola Coliseum | Toronto,2026,regular
+2026-03-28,1:00 pm EDT,New York,0,Montréal,0,Little Caesars Arena | Detroit,2026,regular
+2026-03-29,1:00 pm EDT,Vancouver,0,Toronto,0,Coca-Cola Coliseum | Toronto,2026,regular
+2026-03-29,4:00 pm EDT,Boston,0,Minnesota,0,Grand Casino Arena | St. Paul,2026,regular
+2026-03-29,7:00 pm EDT,Ottawa,0,Seattle,0,Climate Pledge Arena | Seattle,2026,regular
+2026-04-01,7:00 pm EDT,Vancouver,0,Montréal,0,Place Bell | Laval,2026,regular
+2026-04-01,7:00 pm EDT,Minnesota,0,New York,0,Prudential Center | Newark,2026,regular
+2026-04-01,9:30 pm EDT,Toronto,0,Ottawa,0,Scotiabank Saddledome | Calgary,2026,regular
+2026-04-04,TBD,Seattle,0,New York,0,TBD,2026,regular
+2026-04-04,2:00 pm EDT,Vancouver,0,Minnesota,0,Grand Casino Arena | St. Paul,2026,regular
+2026-04-07,7:00 pm EDT,Seattle,0,Montréal,0,Place Bell | Laval,2026,regular
+2026-04-07,9:30 pm EDT,Boston,0,Vancouver,0,Rogers Place | Edmonton,2026,regular
+2026-04-08,7:00 pm EDT,Seattle,0,Ottawa,0,TD Place | Ottawa,2026,regular
+2026-04-11,1:00 pm EDT,New York,0,Minnesota,0,Grand Casino Arena | St. Paul,2026,regular
+2026-04-11,2:00 pm EDT,Ottawa,0,Toronto,0,Coca-Cola Coliseum | Toronto,2026,regular
+2026-04-11,7:00 pm EDT,Montréal,0,Boston,0,TD Garden | Boston,2026,regular
+2026-04-14,10:00 pm EDT,Seattle,0,Vancouver,0,Pacific Coliseum | Vancouver,2026,regular
+2026-04-15,7:00 pm EDT,Minnesota,0,Boston,0,Tsongas Center | Lowell,2026,regular
+2026-04-15,7:00 pm EDT,Toronto,0,New York,0,Prudential Center | Newark,2026,regular
+2026-04-17,7:00 pm EDT,Boston,0,Montréal,0,Place Bell | Laval,2026,regular
+2026-04-18,TBD,Vancouver,0,Seattle,0,Climate Pledge Arena | Seattle,2026,regular
+2026-04-18,2:00 pm EDT,New York,0,Ottawa,0,TD Place | Ottawa,2026,regular
+2026-04-19,1:30 pm EDT,Toronto,0,Minnesota,0,Grand Casino Arena | St. Paul,2026,regular
+2026-04-21,7:00 pm EDT,New York,0,Toronto,0,Coca-Cola Coliseum | Toronto,2026,regular
+2026-04-21,10:00 pm EDT,Montréal,0,Vancouver,0,Pacific Coliseum | Vancouver,2026,regular
+2026-04-22,7:00 pm EDT,Ottawa,0,Boston,0,Tsongas Center | Lowell,2026,regular
+2026-04-22,10:00 pm EDT,Minnesota,0,Seattle,0,Climate Pledge Arena | Seattle,2026,regular
+2026-04-25,TBD,New York,0,Boston,0,Tsongas Center | Lowell,2026,regular
+2026-04-25,TBD,Toronto,0,Ottawa,0,TD Place | Ottawa,2026,regular
+2026-04-25,TBD,Montréal,0,Seattle,0,Climate Pledge Arena | Seattle,2026,regular
+2026-04-25,TBD,Minnesota,0,Vancouver,0,Pacific Coliseum | Vancouver,2026,regular
