@@ -102,6 +102,14 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type
 2024-05-24,Final,Boston,1,Minnesota,4,Xcel Energy Center,2024,post
 2024-05-26,Final OT2,Boston,1,Minnesota,0,Xcel Energy Center,2024,post
 2024-05-29,Final,Minnesota,3,Boston,0,Tsongas Center,2024,post
+2025-11-13,Final,Minnesota,5,New York,2,Codey Arena,2026,pre
+2025-11-14,Final,Minnesota,2,New York,6,Codey Arena,2026,pre
+2025-11-15,Final OT,Boston,2,Montréal,3,Verdun Auditorium | Montreal,2026,pre
+2025-11-15,Final,Seattle,0,Vancouver,3,Pacific Coliseum | Vancouver,2026,pre
+2025-11-16,Final OT,Toronto,3,Ottawa,2,TD Place | Ottawa,2026,pre
+2025-11-16,Final,Seattle,4,Vancouver,2,Pacific Coliseum | Vancouver,2026,pre
+2025-11-17,Final,Toronto,3,Ottawa,0,TD Place | Ottawa,2026,pre
+2025-11-17,Final,Boston,2,Montréal,3,Verdun Auditorium | Montreal,2026,pre
 2024-01-01,Final,New York,4,Toronto,0,Mattamy Athletic Centre,2024,regular
 2024-01-02,Final OT,Montreal,3,Ottawa,2,TD Place,2024,regular
 2024-01-03,Final,Minnesota,3,Boston,2,Tsongas Center,2024,regular
