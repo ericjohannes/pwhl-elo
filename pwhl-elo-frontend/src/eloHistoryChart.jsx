@@ -53,29 +53,21 @@ const LineChart = ({ width, height, data }) => {
 
     const offseasonBuffer = 10;
     const offseasonStart = new Date(2024, 4, 30);
-    const offseasonEnd = new Date(2024, 10, 20);
+    const offseasonEnd = new Date(2024, 10, 19);
     const offseasonStartBuffed = new Date(offseasonStart.getTime());
     offseasonStartBuffed.setDate(offseasonStartBuffed.getDate() + offseasonBuffer);
 
     const offseasonEndBuffed = new Date(offseasonEnd.getTime());
     offseasonEndBuffed.setDate(offseasonEndBuffed.getDate() - offseasonBuffer);
     
-    const offseasonStart1 = new Date(2025, 5, 8);
-    const offseasonEnd1 = new Date(2025, 11, 12);
+    const offseasonStart1 = new Date(2025, 4, 27);
+    const offseasonEnd1 = new Date(2025, 10, 12);
 
     const offseasonStartBuffed1 =  new Date(offseasonStart1.getTime());
     offseasonStartBuffed1.setDate(offseasonStartBuffed1.getDate() + offseasonBuffer);
     
     const offseasonEndBuffed1 = new Date(offseasonEnd1.getTime());
     offseasonEndBuffed1.setDate(offseasonEndBuffed1.getDate() - offseasonBuffer);
-
-
-    console.log({
-        start,
-        end,
-        offseasonStartBuffed1,
-        offseasonEndBuffed1
-    });
 
     const domain =[data.min_elo, data.max_elo] // should be [dataMin, dataMax]
     const axesRef = useRef(null);
@@ -92,7 +84,6 @@ const LineChart = ({ width, height, data }) => {
     const xDiscontinuousScale = scaleDiscontinuous(d3.scaleTime())
         .discontinuityProvider(
             discontinuityRange(
-                
                 [offseasonStartBuffed, offseasonEndBuffed],    // first gap
                 [offseasonStartBuffed1, offseasonEndBuffed1]   // second gap
             )
