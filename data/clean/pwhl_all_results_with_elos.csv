@@ -221,7 +221,7 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2025-12-02,Final,minnesota,5,ottawa,1,TD Place | Ottawa,2026,regular,1275.0,1328.0,1280.0,1323.0,0.5100724469274385,0.48992755307256153
 2025-12-03,Final,vancouver,0,boston,2,Agganis Arena | Boston,2026,regular,1302.0,1289.0,1299.0,1292.0,0.581301478368915,0.418698521631085
 2025-12-03,Final,new_york,1,seattle,2,Climate Pledge Arena | Seattle,2026,regular,1295.0,1290.0,1293.0,1292.0,0.5728722513945044,0.4271277486054956
-2025-12-04,7:00 pm EST,ottawa,0,toronto,0,Coca-Cola Coliseum | Toronto,2026,regular,,,,,,
+2025-12-04,Final,ottawa,1,toronto,3,Coca-Cola Coliseum | Toronto,2026,regular,1310.0,1272.0,1307.0,1275.0,0.615864104253756,0.38413589574624396
 2025-12-06,3:00 pm EST,new_york,0,vancouver,0,Pacific Coliseum | Vancouver,2026,regular,,,,,,
 2025-12-07,12:00 pm EST,toronto,0,montréal,0,Place Bell | Laval,2026,regular,,,,,,
 2025-12-07,3:00 pm EST,minnesota,0,boston,0,Agganis Arena | Boston,2026,regular,,,,,,
