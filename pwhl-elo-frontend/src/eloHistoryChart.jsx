@@ -21,6 +21,8 @@ const colors = {
     "new_york": "#0BC5EA",
     "toronto": "#fcc60d",
     "ottawa": "#ee2f09",
+    "seattle": "#8cb7c9",
+    "vancouver": "#af6c45",
 }
 
 const legendItem = (key, color, i) =>{
