@@ -7,9 +7,9 @@ function App() {
 
   return (
     <>
+      {eloHistoryChart()}
       {eloRatingTable()}
       {projectionTable()}
-      {eloHistoryChart()}
 
       <p className="quattrocento-regular">See the <a href="https://github.com/ericjohannes/pwhl-elo">code for this project</a>.</p>
       <p className="quattrocento-regular">Created with 🧮 by <a href="https://ericjblom.com/">Eric Blom</a>.</p>
