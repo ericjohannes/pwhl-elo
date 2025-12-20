@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import * as d3 from "d3";
 import { scaleDiscontinuous, discontinuityRange } from "@d3fc/d3fc-discontinuous-scale";
 
@@ -159,14 +159,35 @@ const LineChart = ({ width, height, data }) => {
 };
 
 export const eloHistoryChart = () => {
-    const width = 500;
-    const height = 300;
+    const [dimensions, setDimensions] = useState({ width: 500, height: 300 });
+    const containerRef = useRef(null);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (containerRef.current) {
+                const containerWidth = containerRef.current.offsetWidth;
+                // Use container width but cap at a maximum for desktop
+                const width = Math.min(containerWidth - 40, 800); // 40px for padding, max 800px
+                const height = Math.max(300, width * 0.6); // Maintain aspect ratio, min 300px
+                setDimensions({ width, height });
+            }
+        };
+
+        // Initial size
+        handleResize();
+
+        // Add resize listener
+        window.addEventListener('resize', handleResize);
+        
+        // Cleanup
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     return (
-        <section>
-            <h1 className="oswald-bold">History of WPHL Elo Ratings</h1>
+        <section ref={containerRef}>
+            <h1 className="oswald-bold">History of PWHL Elo Ratings</h1>
 
-            {LineChart({width:width, height:height, data:chartableWphlElos})}
+            {LineChart({width: dimensions.width, height: dimensions.height, data: chartableWphlElos})}
         </section>
-    )
+    );
 }
