@@ -231,9 +231,9 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type
 2025-12-17,Final,Ottawa,1,Seattle,4,Climate Pledge Arena | Seattle,2026,regular
 2025-12-19,Final,Boston,2,Minnesota,5,Grand Casino Arena | St. Paul,2026,regular
 2025-12-20,Final,Montréal,4,Vancouver,2,Pacific Coliseum | Vancouver,2026,regular
-2025-12-21,12:00 pm EST,Toronto,0,New York,0,Prudential Center | Newark,2026,regular
-2025-12-21,2:00 pm EST,Ottawa,0,Minnesota,0,Allstate Arena | Chicago,2026,regular
-2025-12-21,5:00 pm EST,Boston,0,Seattle,0,Climate Pledge Arena | Seattle,2026,regular
+2025-12-21,Final,Toronto,4,New York,3,Prudential Center | Newark,2026,regular
+2025-12-21,Final OT,Ottawa,3,Minnesota,2,Allstate Arena | Chicago,2026,regular
+2025-12-21,Final,Boston,3,Seattle,1,Climate Pledge Arena | Seattle,2026,regular
 2025-12-23,7:00 pm EST,Ottawa,0,Toronto,0,Coca-Cola Coliseum | Toronto,2026,regular
 2025-12-23,10:00 pm EST,Montréal,0,Seattle,0,Climate Pledge Arena | Seattle,2026,regular
 2025-12-27,12:00 pm EST,Boston,0,Ottawa,0,TD Place | Ottawa,2026,regular
