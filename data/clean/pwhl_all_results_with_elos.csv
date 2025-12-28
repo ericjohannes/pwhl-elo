@@ -236,9 +236,9 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2025-12-21,Final,boston,3,seattle,1,Climate Pledge Arena | Seattle,2026,regular,1295.0,1310.0,1299.0,1306.0,0.5615679389736461,0.4384320610263539
 2025-12-23,Final OT,ottawa,4,toronto,3,Coca-Cola Coliseum | Toronto,2026,regular,1304.0,1272.0,1307.0,1269.0,0.6240017586176673,0.37599824138233273
 2025-12-23,Final,montréal,1,seattle,2,Climate Pledge Arena | Seattle,2026,regular,1297.0,1322.0,1295.0,1324.0,0.5301846800039018,0.46981531999609816
-2025-12-27,12:00 pm EST,boston,0,ottawa,0,TD Place | Ottawa,2026,regular,,,,,,
-2025-12-27,2:00 pm EST,toronto,0,montréal,0,Bell Centre | Montréal,2026,regular,,,,,,
-2025-12-27,3:00 pm EST,minnesota,0,vancouver,0,Rogers Place | Edmonton,2026,regular,,,,,,
+2025-12-27,Final SO,boston,2,ottawa,3,TD Place | Ottawa,2026,regular,1274.0,1308.0,1272.0,1310.0,0.5172625244323764,0.4827374755676236
+2025-12-27,Final,toronto,2,montréal,1,Bell Centre | Montréal,2026,regular,1319.0,1307.0,1322.0,1304.0,0.5966291733057741,0.40337082669422586
+2025-12-27,Final OT,minnesota,2,vancouver,1,Rogers Place | Edmonton,2026,regular,1288.0,1328.0,1291.0,1325.0,0.5230095872975623,0.4769904127024377
 2025-12-28,6:00 pm EST,seattle,0,new_york,0,American Airlines Center | Dallas,2026,regular,,,,,,
 2025-12-30,7:00 pm EST,minnesota,0,toronto,0,Coca-Cola Coliseum | Toronto,2026,regular,,,,,,
 2025-12-31,1:00 pm EST,vancouver,0,new_york,0,Prudential Center | Newark,2026,regular,,,,,,
