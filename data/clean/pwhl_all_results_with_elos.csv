@@ -241,7 +241,7 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2025-12-27,Final OT,minnesota,2,vancouver,1,Rogers Place | Edmonton,2026,regular,1288.0,1328.0,1291.0,1325.0,0.5230095872975623,0.4769904127024377
 2025-12-28,Final,seattle,3,new_york,4,American Airlines Center | Dallas,2026,regular,1281.0,1295.0,1279.0,1297.0,0.5459219227804836,0.45407807721951643
 2025-12-30,Final,minnesota,5,toronto,1,Coca-Cola Coliseum | Toronto,2026,regular,1301.0,1334.0,1307.0,1328.0,0.5416377027147635,0.4583622972852365
-2025-12-31,1:00 pm EST,vancouver,0,new_york,0,Prudential Center | Newark,2026,regular,,,,,,
+2025-12-31,Final,vancouver,0,new_york,2,Prudential Center | Newark,2026,regular,1284.0,1285.0,1281.0,1288.0,0.561567938973646,0.438432061026354
 2026-01-02,1:00 pm EST,montréal,0,new_york,0,Prudential Center | Newark,2026,regular,,,,,,
 2026-01-03,1:00 pm EST,minnesota,0,ottawa,0,TD Place | Ottawa,2026,regular,,,,,,
 2026-01-03,2:00 pm EST,seattle,0,toronto,0,TD Coliseum | Hamilton,2026,regular,,,,,,
