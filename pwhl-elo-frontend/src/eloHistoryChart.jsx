@@ -69,7 +69,9 @@ const LineChart = ({ width, height, data }) => {
             start: new Date(2025, 4, 27),
             end:  new Date(2025, 10, 12),
         }
-    ].map((offseason)=>convertToBufferedArray(offseason));
+    ]
+    
+    const offSeasonsGaps = offSeasons.map((offseason)=>convertToBufferedArray(offseason));
 
     const domain =[data.min_elo, data.max_elo] // should be [dataMin, dataMax]
     const axesRef = useRef(null);
@@ -80,7 +82,7 @@ const LineChart = ({ width, height, data }) => {
     // build the scales and axes
     const xDiscontinuousScale = scaleDiscontinuous(d3.scaleTime())
         .discontinuityProvider(
-            discontinuityRange(...offSeasons)
+            discontinuityRange(...offSeasonsGaps)
         )
         .domain([start, end])
         .range([0, boundsWidth]);
