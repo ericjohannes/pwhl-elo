@@ -78,8 +78,36 @@ const createXScales = (data, offSeasons, boundsWidth)=>{
         )
         .domain([start, end])
         .range([0, boundsWidth]);
+
+    const xScales = {
+        all: xDiscontinuousScale,
+        seasons: [],
+    }
+    // loop through offseasons and use start end to make 
+    if(offSeasons.length > 0){
+        for(let i=0; i<=offSeasons.length; i++){
+            let domain = []
+            if(i==0){
+                // uses start and offSeasons[0].start
+                domain =[start, offSeasons[i].start] 
+            }
+            else if(i==offSeasons.length){
+                // if i == 2, uses offSeasons[1].end and end
+                domain =[offSeasons[i - 1].end, end] 
+            } else { 
+                // if i == 1, uses offSeasons[0].end and offSeasons[1].start
+                domain =[offSeasons[i - 1].end, offSeasons[i].start] 
+            }
+            
+            xScales.seasons.push(d3.scaleLinear().domain(domain).range([0, boundsWidth]));
+
+        }
+        
+                    
+    }
     
-    return xDiscontinuousScale;
+    
+    return xScales;
 
 }
 const LineChart = ({ width, height, data }) => {
@@ -89,7 +117,7 @@ const LineChart = ({ width, height, data }) => {
     const boundsHeight = height - MARGIN.top - MARGIN.bottom;
 
     // build the scales and axes
-    const xDiscontinuousScale = createXScales(data, offSeasons, boundsWidth);
+    const xDiscontinuousScale = createXScales(data, offSeasons, boundsWidth).all;
 
     // Y axis
     const yScale = useMemo(() => {
