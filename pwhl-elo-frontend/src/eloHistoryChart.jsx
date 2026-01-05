@@ -47,6 +47,14 @@ const legend = (colorMap)=>{
     )
 }
 
+const convertToBufferedArray = (offseason) =>{
+    const buffer = 10; // days
+    const startBuffed = new Date(offseason.start.getTime());
+    startBuffed.setDate(startBuffed.getDate() + buffer);
+    const endBuffed = new Date(offseason.end.getTime());
+    endBuffed.setDate(endBuffed.getDate() - buffer);
+    return [startBuffed, endBuffed]
+}
 const LineChart = ({ width, height, data }) => {
 
     // TODO: should be max of data
@@ -54,41 +62,28 @@ const LineChart = ({ width, height, data }) => {
     const start = new Date(data.min_date); // make this the min of the data
 
     const offseasonBuffer = 10;
-    const offseasonStart = new Date(2024, 4, 30);
-    const offseasonEnd = new Date(2024, 10, 19);
-    const offseasonStartBuffed = new Date(offseasonStart.getTime());
-    offseasonStartBuffed.setDate(offseasonStartBuffed.getDate() + offseasonBuffer);
 
-    const offseasonEndBuffed = new Date(offseasonEnd.getTime());
-    offseasonEndBuffed.setDate(offseasonEndBuffed.getDate() - offseasonBuffer);
-    
-    const offseasonStart1 = new Date(2025, 4, 27);
-    const offseasonEnd1 = new Date(2025, 10, 12);
-
-    const offseasonStartBuffed1 =  new Date(offseasonStart1.getTime());
-    offseasonStartBuffed1.setDate(offseasonStartBuffed1.getDate() + offseasonBuffer);
-    
-    const offseasonEndBuffed1 = new Date(offseasonEnd1.getTime());
-    offseasonEndBuffed1.setDate(offseasonEndBuffed1.getDate() - offseasonBuffer);
+    const offSeasons = [
+        { // between seasons 1 and 2
+            start: new Date(2024, 4, 30),
+            end: new Date(2024, 10, 19),
+        },
+        { // between seasons 2 and 3
+            start: new Date(2025, 4, 27),
+            end:  new Date(2025, 10, 12),
+        }
+    ].map((offseason)=>convertToBufferedArray(offseason));
 
     const domain =[data.min_elo, data.max_elo] // should be [dataMin, dataMax]
     const axesRef = useRef(null);
     const boundsWidth = width - MARGIN.right - MARGIN.left;
     const boundsHeight = height - MARGIN.top - MARGIN.bottom;
-    // const boundsWidth = width;
-    // const boundsHeight = height;
+
     // read the data
     // build the scales and axes
-    const xScale = d3.scaleTime()
-        .domain([start, end])
-        .range([0, boundsWidth]);
-
     const xDiscontinuousScale = scaleDiscontinuous(d3.scaleTime())
         .discontinuityProvider(
-            discontinuityRange(
-                [offseasonStartBuffed, offseasonEndBuffed],    // first gap
-                [offseasonStartBuffed1, offseasonEndBuffed1]   // second gap
-            )
+            discontinuityRange(...offSeasons)
         )
         .domain([start, end])
         .range([0, boundsWidth]);
