@@ -57,11 +57,8 @@ const convertToBufferedArray = (offseason) =>{
 }
 const LineChart = ({ width, height, data }) => {
 
-    // TODO: should be max of data
     const end = new Date(data.max_date);
     const start = new Date(data.min_date); // make this the min of the data
-
-    const offseasonBuffer = 10;
 
     const offSeasons = [
         { // between seasons 1 and 2
