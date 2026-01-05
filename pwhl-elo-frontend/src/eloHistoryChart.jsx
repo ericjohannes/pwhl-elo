@@ -25,6 +25,17 @@ const colors = {
     "vancouver": "#af6c45",
 }
 
+const offSeasons = [
+    { // between seasons 1 and 2
+        start: new Date(2024, 4, 30),
+        end: new Date(2024, 10, 19),
+    },
+    { // between seasons 2 and 3
+        start: new Date(2025, 4, 27),
+        end:  new Date(2025, 10, 12),
+    }
+]
+
 const legendItem = (key, color, i) =>{
     // returns one item for a legend. color should be a hex code
     return (
@@ -55,37 +66,30 @@ const convertToBufferedArray = (offseason) =>{
     endBuffed.setDate(endBuffed.getDate() - buffer);
     return [startBuffed, endBuffed]
 }
-const LineChart = ({ width, height, data }) => {
 
+const createXScales = (data, offSeasons, boundsWidth)=>{
     const end = new Date(data.max_date);
     const start = new Date(data.min_date); // make this the min of the data
 
-    const offSeasons = [
-        { // between seasons 1 and 2
-            start: new Date(2024, 4, 30),
-            end: new Date(2024, 10, 19),
-        },
-        { // between seasons 2 and 3
-            start: new Date(2025, 4, 27),
-            end:  new Date(2025, 10, 12),
-        }
-    ]
-    
     const offSeasonsGaps = offSeasons.map((offseason)=>convertToBufferedArray(offseason));
-
-    const domain =[data.min_elo, data.max_elo] // should be [dataMin, dataMax]
-    const axesRef = useRef(null);
-    const boundsWidth = width - MARGIN.right - MARGIN.left;
-    const boundsHeight = height - MARGIN.top - MARGIN.bottom;
-
-    // read the data
-    // build the scales and axes
     const xDiscontinuousScale = scaleDiscontinuous(d3.scaleTime())
         .discontinuityProvider(
             discontinuityRange(...offSeasonsGaps)
         )
         .domain([start, end])
         .range([0, boundsWidth]);
+    
+    return xDiscontinuousScale;
+
+}
+const LineChart = ({ width, height, data }) => {
+    const domain =[data.min_elo, data.max_elo] // should be [dataMin, dataMax]
+    const axesRef = useRef(null);
+    const boundsWidth = width - MARGIN.right - MARGIN.left;
+    const boundsHeight = height - MARGIN.top - MARGIN.bottom;
+
+    // build the scales and axes
+    const xDiscontinuousScale = createXScales(data, offSeasons, boundsWidth);
 
     // Y axis
     const yScale = useMemo(() => {
