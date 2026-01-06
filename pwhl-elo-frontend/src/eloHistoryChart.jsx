@@ -99,7 +99,7 @@ const createXScales = (data, offSeasons, boundsWidth)=>{
                 domain =[offSeasons[i - 1].end, offSeasons[i].start] 
             }
             
-            xScales.seasons.push(d3.scaleLinear().domain(domain).range([0, boundsWidth]));
+            xScales.seasons.push(d3.scaleTime().domain(domain).range([0, boundsWidth]));
 
         }
         
@@ -110,14 +110,16 @@ const createXScales = (data, offSeasons, boundsWidth)=>{
     return xScales;
 
 }
-const LineChart = ({ width, height, data }) => {
+const LineChart = ({ width, height, data, selectedSeason, xScales }) => {
     const domain =[data.min_elo, data.max_elo] // should be [dataMin, dataMax]
     const axesRef = useRef(null);
     const boundsWidth = width - MARGIN.right - MARGIN.left;
     const boundsHeight = height - MARGIN.top - MARGIN.bottom;
 
-    // build the scales and axes
-    const xDiscontinuousScale = createXScales(data, offSeasons, boundsWidth).all;
+    // Get the appropriate scale based on selected season
+    const xScale = selectedSeason === 'all' 
+        ? xScales.all 
+        : xScales.seasons[parseInt(selectedSeason) - 1];
 
     // Y axis
     const yScale = useMemo(() => {
@@ -127,7 +129,7 @@ const LineChart = ({ width, height, data }) => {
     const lineBuilder = d3
         .line()
         .x((d) => {
-            return xDiscontinuousScale(new Date(d.date))
+            return xScale(new Date(d.date))
         }).y((d) => {
             return yScale(d.elo)
         });
@@ -137,7 +139,7 @@ const LineChart = ({ width, height, data }) => {
     useEffect(() => {
         const svgElement = d3.select(axesRef.current);
         svgElement.selectAll("*").remove();
-        const xAxisGenerator = d3.axisBottom(xDiscontinuousScale);
+        const xAxisGenerator = d3.axisBottom(xScale);
         svgElement
             .append("g")
             .attr("transform", "translate(0," + boundsHeight + ")")
@@ -150,7 +152,7 @@ const LineChart = ({ width, height, data }) => {
 
         const yAxisGenerator = d3.axisLeft(yScale);
         svgElement.append("g").call(yAxisGenerator.ticks(NUMTICKSV));
-    }, [xDiscontinuousScale, yScale, boundsHeight]);
+    }, [xScale, yScale, boundsHeight]);
 
     // build the lines
 
@@ -186,7 +188,14 @@ const LineChart = ({ width, height, data }) => {
 
 export const eloHistoryChart = () => {
     const [dimensions, setDimensions] = useState({ width: 500, height: 300 });
+    const [selectedSeason, setSelectedSeason] = useState('all');
     const containerRef = useRef(null);
+
+    // Calculate xScales based on dimensions
+    const xScales = useMemo(() => {
+        const boundsWidth = dimensions.width - MARGIN.right - MARGIN.left;
+        return createXScales(chartableWphlElos, offSeasons, boundsWidth);
+    }, [dimensions.width]);
 
     useEffect(() => {
         const handleResize = () => {
@@ -212,8 +221,40 @@ export const eloHistoryChart = () => {
     return (
         <section ref={containerRef}>
             <h1 className="oswald-bold">History of PWHL Elo Ratings</h1>
+            
+            {xScales.seasons.length > 0 && (
+                <div style={{ marginBottom: '20px' }}>
+                    <label htmlFor="season-select" style={{ marginRight: '10px' }}>
+                        Select Season:
+                    </label>
+                    <select 
+                        id="season-select"
+                        value={selectedSeason} 
+                        onChange={(e) => setSelectedSeason(e.target.value)}
+                        style={{ 
+                            padding: '5px 10px', 
+                            fontSize: '14px',
+                            borderRadius: '4px',
+                            border: '1px solid #ccc'
+                        }}
+                    >
+                        <option value="all">All Seasons</option>
+                        {xScales.seasons.map((_, index) => (
+                            <option key={index} value={index + 1}>
+                                Season {index + 1}
+                            </option>
+                        ))}
+                    </select>
+                </div>
+            )}
 
-            {LineChart({width: dimensions.width, height: dimensions.height, data: chartableWphlElos})}
+            {LineChart({
+                width: dimensions.width, 
+                height: dimensions.height, 
+                data: chartableWphlElos,
+                selectedSeason,
+                xScales
+            })}
         </section>
     );
 }
