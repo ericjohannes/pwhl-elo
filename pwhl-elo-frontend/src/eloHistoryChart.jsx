@@ -110,11 +110,53 @@ const createXScales = (data, offSeasons, boundsWidth)=>{
     return xScales;
 
 }
+
+const Tooltip = ({ tooltip }) => {
+    if (!tooltip) return null;
+
+    return (
+        <div
+            style={{
+                position: 'absolute',
+                left: tooltip.x + 10,
+                top: tooltip.y - 10,
+                backgroundColor: 'white',
+                border: '2px solid #333',
+                borderRadius: '4px',
+                padding: '8px 12px',
+                pointerEvents: 'none',
+                fontSize: '14px',
+                boxShadow: '0 2px 4px rgba(0,0,0,0.2)',
+                zIndex: 1000,
+                textAlign: 'left',
+            }}
+        >
+            <div style={{ fontWeight: 'bold', marginBottom: '4px' }}>
+                {convertAndCapitalize(tooltip.team)}
+            </div>
+            <div><strong>Date:</strong> {new Date(tooltip.date).toLocaleDateString()}</div>
+            <div><strong>Elo:</strong> {Math.round(tooltip.elo)}</div>
+        </div>
+    );
+};
+
 const LineChart = ({ width, height, data, selectedSeason, xScales }) => {
     const domain =[data.min_elo, data.max_elo] // should be [dataMin, dataMax]
     const axesRef = useRef(null);
+    const [tooltip, setTooltip] = useState(null);
+    const [isMobile, setIsMobile] = useState(false);
     const boundsWidth = width - MARGIN.right - MARGIN.left;
     const boundsHeight = height - MARGIN.top - MARGIN.bottom;
+
+    // Detect if mobile
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth <= 768 || 'ontouchstart' in window);
+        };
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
 
     // Get the appropriate scale based on selected season
     const xScale = selectedSeason === 'all' 
@@ -133,6 +175,92 @@ const LineChart = ({ width, height, data, selectedSeason, xScales }) => {
         }).y((d) => {
             return yScale(d.elo)
         });
+
+    // Function to find closest point on a line to mouse position
+    const findClosestPoint = (mouseX, mouseY, teamData) => {
+        let closestPoint = null;
+        let minDistance = Infinity;
+
+        teamData.games.forEach((game) => {
+            const x = xScale(new Date(game.date));
+            const y = yScale(game.elo);
+            const distance = Math.sqrt(Math.pow(x - mouseX, 2) + Math.pow(y - mouseY, 2));
+            
+            if (distance < minDistance && distance < 20) { // 20px threshold
+                minDistance = distance;
+                closestPoint = {
+                    ...game,
+                    team: teamData.team,
+                    x: x + MARGIN.left,
+                    y: y + MARGIN.top,
+                };
+            }
+        });
+
+        return closestPoint;
+    };
+
+    const handleMouseMove = (e) => {
+        if (isMobile) return; // Don't handle mouse events on mobile
+
+        const svg = e.currentTarget;
+        const rect = svg.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left - MARGIN.left;
+        const mouseY = e.clientY - rect.top - MARGIN.top;
+
+        let closest = null;
+        let minDist = Infinity;
+
+        data.data.forEach((team) => {
+            const point = findClosestPoint(mouseX, mouseY, team);
+            if (point) {
+                const dist = Math.sqrt(
+                    Math.pow(point.x - mouseX - MARGIN.left, 2) + 
+                    Math.pow(point.y - mouseY - MARGIN.top, 2)
+                );
+                if (dist < minDist) {
+                    minDist = dist;
+                    closest = point;
+                }
+            }
+        });
+
+        setTooltip(closest);
+    };
+
+    const handleClick = (e) => {
+        if (!isMobile) return; // Only handle clicks on mobile
+
+        const svg = e.currentTarget;
+        const rect = svg.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left - MARGIN.left;
+        const mouseY = e.clientY - rect.top - MARGIN.top;
+
+        let closest = null;
+        let minDist = Infinity;
+
+        data.data.forEach((team) => {
+            const point = findClosestPoint(mouseX, mouseY, team);
+            if (point) {
+                const dist = Math.sqrt(
+                    Math.pow(point.x - mouseX - MARGIN.left, 2) + 
+                    Math.pow(point.y - mouseY - MARGIN.top, 2)
+                );
+                if (dist < minDist) {
+                    minDist = dist;
+                    closest = point;
+                }
+            }
+        });
+
+        setTooltip(closest);
+    };
+
+    const handleMouseLeave = () => {
+        if (!isMobile) {
+            setTooltip(null);
+        }
+    };
         
 
     // Render the X and Y axis using d3.js, not react
@@ -157,8 +285,15 @@ const LineChart = ({ width, height, data, selectedSeason, xScales }) => {
     // build the lines
 
     return (
-        <div>
-            <svg width={width} height={height}>
+        <div style={{ position: 'relative' }}>
+            <svg 
+                width={width} 
+                height={height}
+                onMouseMove={handleMouseMove}
+                onMouseLeave={handleMouseLeave}
+                onClick={handleClick}
+                style={{ cursor: isMobile ? 'pointer' : 'default' }}
+            >
                 <g
                     width={boundsWidth}
                     height={boundsHeight}
@@ -176,11 +311,13 @@ const LineChart = ({ width, height, data, selectedSeason, xScales }) => {
                                 fill="none"
                                 strokeWidth={2}
                                 transform={`translate(${[MARGIN.left, MARGIN.top].join(",")})`}
+                                style={{ pointerEvents: 'none' }}
                             />
                         )
                     })
                 }
             </svg>
+            <Tooltip tooltip={tooltip} />
             {legend(colors)}
         </div>
     );
