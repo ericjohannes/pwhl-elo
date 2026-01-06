@@ -25,6 +25,17 @@ const colors = {
     "vancouver": "#af6c45",
 }
 
+const offSeasons = [
+    { // between seasons 1 and 2
+        start: new Date(2024, 4, 30),
+        end: new Date(2024, 10, 19),
+    },
+    { // between seasons 2 and 3
+        start: new Date(2025, 4, 27),
+        end:  new Date(2025, 10, 12),
+    }
+]
+
 const legendItem = (key, color, i) =>{
     // returns one item for a legend. color should be a hex code
     return (
@@ -47,51 +58,110 @@ const legend = (colorMap)=>{
     )
 }
 
-const LineChart = ({ width, height, data }) => {
+const convertToBufferedArray = (offseason) =>{
+    const buffer = 10; // days
+    const startBuffed = new Date(offseason.start.getTime());
+    startBuffed.setDate(startBuffed.getDate() + buffer);
+    const endBuffed = new Date(offseason.end.getTime());
+    endBuffed.setDate(endBuffed.getDate() - buffer);
+    return [startBuffed, endBuffed]
+}
 
-    // TODO: should be max of data
+const createXScales = (data, offSeasons, boundsWidth)=>{
     const end = new Date(data.max_date);
     const start = new Date(data.min_date); // make this the min of the data
 
-    const offseasonBuffer = 10;
-    const offseasonStart = new Date(2024, 4, 30);
-    const offseasonEnd = new Date(2024, 10, 19);
-    const offseasonStartBuffed = new Date(offseasonStart.getTime());
-    offseasonStartBuffed.setDate(offseasonStartBuffed.getDate() + offseasonBuffer);
-
-    const offseasonEndBuffed = new Date(offseasonEnd.getTime());
-    offseasonEndBuffed.setDate(offseasonEndBuffed.getDate() - offseasonBuffer);
-    
-    const offseasonStart1 = new Date(2025, 4, 27);
-    const offseasonEnd1 = new Date(2025, 10, 12);
-
-    const offseasonStartBuffed1 =  new Date(offseasonStart1.getTime());
-    offseasonStartBuffed1.setDate(offseasonStartBuffed1.getDate() + offseasonBuffer);
-    
-    const offseasonEndBuffed1 = new Date(offseasonEnd1.getTime());
-    offseasonEndBuffed1.setDate(offseasonEndBuffed1.getDate() - offseasonBuffer);
-
-    const domain =[data.min_elo, data.max_elo] // should be [dataMin, dataMax]
-    const axesRef = useRef(null);
-    const boundsWidth = width - MARGIN.right - MARGIN.left;
-    const boundsHeight = height - MARGIN.top - MARGIN.bottom;
-    // const boundsWidth = width;
-    // const boundsHeight = height;
-    // read the data
-    // build the scales and axes
-    const xScale = d3.scaleTime()
-        .domain([start, end])
-        .range([0, boundsWidth]);
-
+    const offSeasonsGaps = offSeasons.map((offseason)=>convertToBufferedArray(offseason));
     const xDiscontinuousScale = scaleDiscontinuous(d3.scaleTime())
         .discontinuityProvider(
-            discontinuityRange(
-                [offseasonStartBuffed, offseasonEndBuffed],    // first gap
-                [offseasonStartBuffed1, offseasonEndBuffed1]   // second gap
-            )
+            discontinuityRange(...offSeasonsGaps)
         )
         .domain([start, end])
         .range([0, boundsWidth]);
+
+    const xScales = {
+        all: xDiscontinuousScale,
+        seasons: [],
+    }
+    // loop through offseasons and use start end to make 
+    if(offSeasons.length > 0){
+        for(let i=0; i<=offSeasons.length; i++){
+            let domain = []
+            if(i==0){
+                // uses start and offSeasons[0].start
+                domain =[start, offSeasons[i].start] 
+            }
+            else if(i==offSeasons.length){
+                // if i == 2, uses offSeasons[1].end and end
+                domain =[offSeasons[i - 1].end, end] 
+            } else { 
+                // if i == 1, uses offSeasons[0].end and offSeasons[1].start
+                domain =[offSeasons[i - 1].end, offSeasons[i].start] 
+            }
+            
+            xScales.seasons.push(d3.scaleTime().domain(domain).range([0, boundsWidth]));
+
+        }
+        
+                    
+    }
+    
+    
+    return xScales;
+
+}
+
+const Tooltip = ({ tooltip }) => {
+    if (!tooltip) return null;
+
+    return (
+        <div
+            style={{
+                position: 'absolute',
+                left: tooltip.x + 10,
+                top: tooltip.y - 10,
+                backgroundColor: 'white',
+                border: '2px solid #333',
+                borderRadius: '4px',
+                padding: '8px 12px',
+                pointerEvents: 'none',
+                fontSize: '14px',
+                boxShadow: '0 2px 4px rgba(0,0,0,0.2)',
+                zIndex: 1000,
+                textAlign: 'left',
+            }}
+        >
+            <div style={{ fontWeight: 'bold', marginBottom: '4px' }}>
+                {convertAndCapitalize(tooltip.team)}
+            </div>
+            <div><strong>Date:</strong> {new Date(tooltip.date).toLocaleDateString()}</div>
+            <div><strong>Elo:</strong> {Math.round(tooltip.elo)}</div>
+        </div>
+    );
+};
+
+const LineChart = ({ width, height, data, selectedSeason, xScales }) => {
+    const domain =[data.min_elo, data.max_elo] // should be [dataMin, dataMax]
+    const axesRef = useRef(null);
+    const [tooltip, setTooltip] = useState(null);
+    const [isMobile, setIsMobile] = useState(false);
+    const boundsWidth = width - MARGIN.right - MARGIN.left;
+    const boundsHeight = height - MARGIN.top - MARGIN.bottom;
+
+    // Detect if mobile
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth <= 768 || 'ontouchstart' in window);
+        };
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
+    // Get the appropriate scale based on selected season
+    const xScale = selectedSeason === 'all' 
+        ? xScales.all 
+        : xScales.seasons[parseInt(selectedSeason) - 1];
 
     // Y axis
     const yScale = useMemo(() => {
@@ -101,17 +171,103 @@ const LineChart = ({ width, height, data }) => {
     const lineBuilder = d3
         .line()
         .x((d) => {
-            return xDiscontinuousScale(new Date(d.date))
+            return xScale(new Date(d.date))
         }).y((d) => {
             return yScale(d.elo)
         });
+
+    // Function to find closest point on a line to mouse position
+    const findClosestPoint = (mouseX, mouseY, teamData) => {
+        let closestPoint = null;
+        let minDistance = Infinity;
+
+        teamData.games.forEach((game) => {
+            const x = xScale(new Date(game.date));
+            const y = yScale(game.elo);
+            const distance = Math.sqrt(Math.pow(x - mouseX, 2) + Math.pow(y - mouseY, 2));
+            
+            if (distance < minDistance && distance < 20) { // 20px threshold
+                minDistance = distance;
+                closestPoint = {
+                    ...game,
+                    team: teamData.team,
+                    x: x + MARGIN.left,
+                    y: y + MARGIN.top,
+                };
+            }
+        });
+
+        return closestPoint;
+    };
+
+    const handleMouseMove = (e) => {
+        if (isMobile) return; // Don't handle mouse events on mobile
+
+        const svg = e.currentTarget;
+        const rect = svg.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left - MARGIN.left;
+        const mouseY = e.clientY - rect.top - MARGIN.top;
+
+        let closest = null;
+        let minDist = Infinity;
+
+        data.data.forEach((team) => {
+            const point = findClosestPoint(mouseX, mouseY, team);
+            if (point) {
+                const dist = Math.sqrt(
+                    Math.pow(point.x - mouseX - MARGIN.left, 2) + 
+                    Math.pow(point.y - mouseY - MARGIN.top, 2)
+                );
+                if (dist < minDist) {
+                    minDist = dist;
+                    closest = point;
+                }
+            }
+        });
+
+        setTooltip(closest);
+    };
+
+    const handleClick = (e) => {
+        if (!isMobile) return; // Only handle clicks on mobile
+
+        const svg = e.currentTarget;
+        const rect = svg.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left - MARGIN.left;
+        const mouseY = e.clientY - rect.top - MARGIN.top;
+
+        let closest = null;
+        let minDist = Infinity;
+
+        data.data.forEach((team) => {
+            const point = findClosestPoint(mouseX, mouseY, team);
+            if (point) {
+                const dist = Math.sqrt(
+                    Math.pow(point.x - mouseX - MARGIN.left, 2) + 
+                    Math.pow(point.y - mouseY - MARGIN.top, 2)
+                );
+                if (dist < minDist) {
+                    minDist = dist;
+                    closest = point;
+                }
+            }
+        });
+
+        setTooltip(closest);
+    };
+
+    const handleMouseLeave = () => {
+        if (!isMobile) {
+            setTooltip(null);
+        }
+    };
         
 
     // Render the X and Y axis using d3.js, not react
     useEffect(() => {
         const svgElement = d3.select(axesRef.current);
         svgElement.selectAll("*").remove();
-        const xAxisGenerator = d3.axisBottom(xDiscontinuousScale);
+        const xAxisGenerator = d3.axisBottom(xScale);
         svgElement
             .append("g")
             .attr("transform", "translate(0," + boundsHeight + ")")
@@ -124,13 +280,20 @@ const LineChart = ({ width, height, data }) => {
 
         const yAxisGenerator = d3.axisLeft(yScale);
         svgElement.append("g").call(yAxisGenerator.ticks(NUMTICKSV));
-    }, [xDiscontinuousScale, yScale, boundsHeight]);
+    }, [xScale, yScale, boundsHeight]);
 
     // build the lines
 
     return (
-        <div>
-            <svg width={width} height={height}>
+        <div style={{ position: 'relative' }}>
+            <svg 
+                width={width} 
+                height={height}
+                onMouseMove={handleMouseMove}
+                onMouseLeave={handleMouseLeave}
+                onClick={handleClick}
+                style={{ cursor: isMobile ? 'pointer' : 'default' }}
+            >
                 <g
                     width={boundsWidth}
                     height={boundsHeight}
@@ -148,11 +311,13 @@ const LineChart = ({ width, height, data }) => {
                                 fill="none"
                                 strokeWidth={2}
                                 transform={`translate(${[MARGIN.left, MARGIN.top].join(",")})`}
+                                style={{ pointerEvents: 'none' }}
                             />
                         )
                     })
                 }
             </svg>
+            <Tooltip tooltip={tooltip} />
             {legend(colors)}
         </div>
     );
@@ -160,7 +325,14 @@ const LineChart = ({ width, height, data }) => {
 
 export const eloHistoryChart = () => {
     const [dimensions, setDimensions] = useState({ width: 500, height: 300 });
+    const [selectedSeason, setSelectedSeason] = useState('all');
     const containerRef = useRef(null);
+
+    // Calculate xScales based on dimensions
+    const xScales = useMemo(() => {
+        const boundsWidth = dimensions.width - MARGIN.right - MARGIN.left;
+        return createXScales(chartableWphlElos, offSeasons, boundsWidth);
+    }, [dimensions.width]);
 
     useEffect(() => {
         const handleResize = () => {
@@ -186,8 +358,40 @@ export const eloHistoryChart = () => {
     return (
         <section ref={containerRef}>
             <h1 className="oswald-bold">History of PWHL Elo Ratings</h1>
+            
+            {xScales.seasons.length > 0 && (
+                <div style={{ marginBottom: '20px' }}>
+                    <label htmlFor="season-select" style={{ marginRight: '10px' }}>
+                        Select Season:
+                    </label>
+                    <select 
+                        id="season-select"
+                        value={selectedSeason} 
+                        onChange={(e) => setSelectedSeason(e.target.value)}
+                        style={{ 
+                            padding: '5px 10px', 
+                            fontSize: '14px',
+                            borderRadius: '4px',
+                            border: '1px solid #ccc'
+                        }}
+                    >
+                        <option value="all">All Seasons</option>
+                        {xScales.seasons.map((_, index) => (
+                            <option key={index} value={index + 1}>
+                                Season {index + 1}
+                            </option>
+                        ))}
+                    </select>
+                </div>
+            )}
 
-            {LineChart({width: dimensions.width, height: dimensions.height, data: chartableWphlElos})}
+            {LineChart({
+                width: dimensions.width, 
+                height: dimensions.height, 
+                data: chartableWphlElos,
+                selectedSeason,
+                xScales
+            })}
         </section>
     );
 }
