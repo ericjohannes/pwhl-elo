@@ -250,9 +250,9 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2026-01-06,Final,new_york,2,toronto,0,Coca-Cola Coliseum | Toronto,2026,regular,1294.0,1290.0,1298.0,1286.0,0.588289971863163,0.411710028136837
 2026-01-07,Final,seattle,1,boston,2,Agganis Arena | Boston,2026,regular,1307.0,1296.0,1305.0,1298.0,0.581301478368915,0.418698521631085
 2026-01-09,Final,vancouver,2,ottawa,4,TD Place | Ottawa,2026,regular,1282.0,1285.0,1279.0,1288.0,0.5587313693247608,0.44126863067523925
-2026-01-11,12:00 pm EST,ottawa,0,boston,0,Scotiabank Centre | Halifax,2026,regular,,,,,,
-2026-01-11,2:00 pm EST,seattle,0,minnesota,0,Grand Casino Arena | St. Paul,2026,regular,,,,,,
-2026-01-11,2:00 pm EST,vancouver,0,montréal,0,Videotron Centre | Quebec City,2026,regular,,,,,,
+2026-01-11,Final SO,ottawa,2,boston,1,Scotiabank Centre | Halifax,2026,regular,1304.0,1285.0,1307.0,1282.0,0.6062878237854281,0.3937121762145719
+2026-01-11,Final,seattle,2,minnesota,6,Grand Casino Arena | St. Paul,2026,regular,1331.0,1292.0,1327.0,1296.0,0.6145013610085576,0.38549863899144243
+2026-01-11,Final,vancouver,0,montréal,1,Videotron Centre | Quebec City,2026,regular,1321.0,1283.0,1319.0,1285.0,0.6185841220890308,0.3814158779109692
 2026-01-13,7:00 pm EST,ottawa,0,montréal,0,Place Bell | Laval,2026,regular,,,,,,
 2026-01-14,7:00 pm EST,toronto,0,boston,0,Tsongas Center | Lowell,2026,regular,,,,,,
 2026-01-16,7:00 pm EST,minnesota,0,new_york,0,Prudential Center | Newark,2026,regular,,,,,,
