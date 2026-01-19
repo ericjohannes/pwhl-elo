@@ -111,15 +111,47 @@ const createXScales = (data, offSeasons, boundsWidth)=>{
 
 }
 
-const Tooltip = ({ tooltip }) => {
+const Tooltip = ({ tooltip, containerWidth }) => {
+    const tooltipRef = useRef(null);
+    const [position, setPosition] = useState({ left: 0, top: 0 });
+
+    useEffect(() => {
+        if (!tooltip || !tooltipRef.current) return;
+
+        const tooltipRect = tooltipRef.current.getBoundingClientRect();
+        const actualWidth = tooltipRect.width;
+        
+        // Default position to the right of the cursor
+        let left = tooltip.x + 20;
+        let top = tooltip.y - 10;
+        
+        // If tooltip would go off the right edge, position it to the left of the cursor
+        if (left + actualWidth > containerWidth) {
+            left = tooltip.x - actualWidth + 15;
+        }
+        
+        // If tooltip would go off the top edge, position it below the point
+        if (top < 0) {
+            top = tooltip.y + 20;
+        }
+        
+        // Ensure left edge doesn't go negative
+        if (left < 0) {
+            left = 10;
+        }
+
+        setPosition({ left, top });
+    }, [tooltip, containerWidth]);
+
     if (!tooltip) return null;
 
     return (
         <div
+            ref={tooltipRef}
             style={{
                 position: 'absolute',
-                left: tooltip.x + 10,
-                top: tooltip.y - 10,
+                left: position.left,
+                top: position.top,
                 backgroundColor: 'white',
                 border: '2px solid #333',
                 borderRadius: '4px',
@@ -129,6 +161,7 @@ const Tooltip = ({ tooltip }) => {
                 boxShadow: '0 2px 4px rgba(0,0,0,0.2)',
                 zIndex: 1000,
                 textAlign: 'left',
+                whiteSpace: 'nowrap',
             }}
         >
             <div style={{ fontWeight: 'bold', marginBottom: '4px' }}>
@@ -317,7 +350,7 @@ const LineChart = ({ width, height, data, selectedSeason, xScales }) => {
                     })
                 }
             </svg>
-            <Tooltip tooltip={tooltip} />
+            <Tooltip tooltip={tooltip} containerWidth={width} />
             {legend(colors)}
         </div>
     );
