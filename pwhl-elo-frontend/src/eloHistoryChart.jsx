@@ -127,7 +127,7 @@ const Tooltip = ({ tooltip, containerWidth }) => {
         
         // If tooltip would go off the right edge, position it to the left of the cursor
         if (left + actualWidth > containerWidth) {
-            left = tooltip.x - actualWidth + 10;
+            left = tooltip.x - actualWidth + 15;
         }
         
         // If tooltip would go off the top edge, position it below the point
