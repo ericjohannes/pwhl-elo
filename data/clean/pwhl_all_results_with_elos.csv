@@ -262,7 +262,7 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2026-01-20,Final OT,ottawa,4,new_york,3,Prudential Center | Newark,2026,regular,1287.0,1286.0,1290.0,1283.0,0.581301478368915,0.418698521631085
 2026-01-20,Final,toronto,4,seattle,6,Climate Pledge Arena | Seattle,2026,regular,1292.0,1291.0,1289.0,1294.0,0.5644004902404214,0.4355995097595786
 2026-01-21,Final OT,montréal,2,minnesota,1,Grand Casino Arena | St. Paul,2026,regular,1330.0,1324.0,1333.0,1321.0,0.5882899718631628,0.4117100281368372
-2026-01-22,10:00 pm EST,toronto,0,vancouver,0,Pacific Coliseum | Vancouver,2026,regular,,,,,,
+2026-01-22,Final,toronto,0,vancouver,5,Pacific Coliseum | Vancouver,2026,regular,1286.0,1286.0,1281.0,1291.0,0.5573116337622928,0.44268836623770724
 2026-01-24,2:00 pm EST,ottawa,0,montréal,0,Place Bell | Laval,2026,regular,,,,,,
 2026-01-25,3:00 pm EST,new_york,0,minnesota,0,Grand Casino Arena | St. Paul,2026,regular,,,,,,
 2026-01-25,6:00 pm EST,vancouver,0,seattle,0,Ball Arena | Denver,2026,regular,,,,,,
