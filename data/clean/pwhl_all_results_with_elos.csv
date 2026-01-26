@@ -264,8 +264,8 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2026-01-21,Final OT,montréal,2,minnesota,1,Grand Casino Arena | St. Paul,2026,regular,1330.0,1324.0,1333.0,1321.0,0.5882899718631628,0.4117100281368372
 2026-01-22,Final,toronto,0,vancouver,5,Pacific Coliseum | Vancouver,2026,regular,1286.0,1286.0,1281.0,1291.0,0.5573116337622928,0.44268836623770724
 2026-01-24,Final,ottawa,1,montréal,3,Place Bell | Laval,2026,regular,1327.0,1283.0,1324.0,1286.0,0.6240017586176673,0.37599824138233273
-2026-01-25,3:00 pm EST,new_york,0,minnesota,0,Grand Casino Arena | St. Paul,2026,regular,,,,,,
-2026-01-25,6:00 pm EST,vancouver,0,seattle,0,Ball Arena | Denver,2026,regular,,,,,,
+2026-01-25,Final,new_york,2,minnesota,6,Grand Casino Arena | St. Paul,2026,regular,1334.0,1283.0,1330.0,1287.0,0.6307302886162024,0.3692697113837976
+2026-01-25,Final,vancouver,3,seattle,1,Ball Arena | Denver,2026,regular,1288.0,1290.0,1292.0,1286.0,0.5798997603578816,0.4201002396421184
 2026-01-28,6:30 pm EST,toronto,0,montréal,0,Place Bell | Laval,2026,regular,,,,,,
 2026-01-28,7:00 pm EST,new_york,0,boston,0,Tsongas Center | Lowell,2026,regular,,,,,,
 2026-01-28,7:00 pm EST,seattle,0,ottawa,0,TD Place | Ottawa,2026,regular,,,,,,

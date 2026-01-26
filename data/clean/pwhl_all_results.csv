@@ -264,8 +264,8 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type
 2026-01-21,Final OT,Montréal,2,Minnesota,1,Grand Casino Arena | St. Paul,2026,regular
 2026-01-22,Final,Toronto,0,Vancouver,5,Pacific Coliseum | Vancouver,2026,regular
 2026-01-24,Final,Ottawa,1,Montréal,3,Place Bell | Laval,2026,regular
-2026-01-25,3:00 pm EST,New York,0,Minnesota,0,Grand Casino Arena | St. Paul,2026,regular
-2026-01-25,6:00 pm EST,Vancouver,0,Seattle,0,Ball Arena | Denver,2026,regular
+2026-01-25,Final,New York,2,Minnesota,6,Grand Casino Arena | St. Paul,2026,regular
+2026-01-25,Final,Vancouver,3,Seattle,1,Ball Arena | Denver,2026,regular
 2026-01-28,6:30 pm EST,Toronto,0,Montréal,0,Place Bell | Laval,2026,regular
 2026-01-28,7:00 pm EST,New York,0,Boston,0,Tsongas Center | Lowell,2026,regular
 2026-01-28,7:00 pm EST,Seattle,0,Ottawa,0,TD Place | Ottawa,2026,regular
