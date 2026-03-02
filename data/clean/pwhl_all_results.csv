@@ -239,8 +239,8 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type
 2026-02-26,Final,Montréal,4,New York,1,Prudential Center | Newark,2026,regular
 2026-02-27,Final,Toronto,5,Seattle,2,Climate Pledge Arena | Seattle,2026,regular
 2026-02-28,Final SO,Boston,3,Ottawa,2,TD Place | Ottawa,2026,regular
-2026-03-01,1:00 pm EST,Minnesota,0,Montréal,0,Place Bell | Laval,2026,regular
-2026-03-01,4:00 pm EST,Toronto,0,Vancouver,0,Pacific Coliseum | Vancouver,2026,regular
+2026-03-01,Final,Minnesota,0,Montréal,4,Place Bell | Laval,2026,regular
+2026-03-01,Final,Toronto,2,Vancouver,1,Pacific Coliseum | Vancouver,2026,regular
 2026-03-03,7:00 pm EST,Montréal,0,Toronto,0,Coca-Cola Coliseum | Toronto,2026,regular
 2026-03-04,7:00 pm EST,Seattle,0,Ottawa,0,TD Place | Ottawa,2026,regular
 2026-03-05,7:00 pm EST,Boston,0,New York,0,Prudential Center | Newark,2026,regular

@@ -273,8 +273,8 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2026-02-26,Final,montréal,4,new_york,1,Prudential Center | Newark,2026,regular,1276.0,1335.0,1281.0,1330.0,0.5014391117091527,0.4985608882908473
 2026-02-27,Final,toronto,5,seattle,2,Climate Pledge Arena | Seattle,2026,regular,1280.0,1288.0,1285.0,1283.0,0.5742802036545244,0.42571979634547563
 2026-02-28,Final SO,boston,3,ottawa,2,TD Place | Ottawa,2026,regular,1283.0,1314.0,1286.0,1311.0,0.5359159269451023,0.46408407305489774
-2026-03-01,1:00 pm EST,minnesota,0,montréal,0,Place Bell | Laval,2026,regular,,,,,,
-2026-03-01,4:00 pm EST,toronto,0,vancouver,0,Pacific Coliseum | Vancouver,2026,regular,,,,,,
+2026-03-01,Final,minnesota,0,montréal,4,Place Bell | Laval,2026,regular,1339.0,1333.0,1335.0,1337.0,0.5686413918836677,0.4313586081163323
+2026-03-01,Final,toronto,2,vancouver,1,Pacific Coliseum | Vancouver,2026,regular,1284.0,1291.0,1287.0,1288.0,0.570052823583988,0.429947176416012
 2026-03-03,7:00 pm EST,montréal,0,toronto,0,Coca-Cola Coliseum | Toronto,2026,regular,,,,,,
 2026-03-04,7:00 pm EST,seattle,0,ottawa,0,TD Place | Ottawa,2026,regular,,,,,,
 2026-03-05,7:00 pm EST,boston,0,new_york,0,Prudential Center | Newark,2026,regular,,,,,,
