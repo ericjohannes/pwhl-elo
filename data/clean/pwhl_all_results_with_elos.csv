@@ -294,7 +294,7 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2026-03-21,Final,minnesota,3,vancouver,1,Pacific Coliseum | Vancouver,2026,regular,1278.0,1348.0,1282.0,1344.0,0.48273747556762386,0.5172625244323761
 2026-03-21,Final,seattle,0,boston,3,Tsongas Center | Lowell,2026,regular,1318.0,1268.0,1315.0,1271.0,0.6320700121000734,0.3679299878999266
 2026-03-22,Final OT,montréal,1,ottawa,2,Canada Life Centre | Winnipeg,2026,regular,1281.0,1339.0,1279.0,1341.0,0.4827374755676236,0.5172625244323764
-2026-03-24,7:00 pm EDT,vancouver,0,boston,0,Tsongas Center | Lowell,2026,regular,,,,,,
+2026-03-24,Final,vancouver,0,boston,2,Tsongas Center | Lowell,2026,regular,1321.0,1275.0,1318.0,1278.0,0.626699081666732,0.37330091833326795
 2026-03-25,7:00 pm EDT,montréal,0,minnesota,0,Grand Casino Arena | St. Paul,2026,regular,,,,,,
 2026-03-25,8:00 pm EDT,new_york,0,seattle,0,Allstate Arena | Chicago,2026,regular,,,,,,
 2026-03-27,7:00 pm EDT,boston,0,toronto,0,Coca-Cola Coliseum | Toronto,2026,regular,,,,,,
