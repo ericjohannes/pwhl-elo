@@ -1,13 +1,13 @@
 date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_home,elo_after_away,elo_before_home,elo_before_away,expected_win_home,expected_win_away
+2023-12-04,Final OT,toronto,5,boston,2,Utica University Nexus Center - Mastrovito Hyundai,2024,pre,1295.0,1305.0,1300.0,1300.0,0.5714631174083815,0.4285368825916185
 2023-12-04,Final SO,ottawa,4,minnesota,8,Utica University Nexus Center - Mastrovito Hyundai,2024,pre,1304.0,1296.0,1300.0,1300.0,0.5714631174083815,0.4285368825916185
 2023-12-04,Final SO,montréal,0,new_york,4,Utica University Nexus Center - Mastrovito Hyundai,2024,pre,1304.0,1296.0,1300.0,1300.0,0.5714631174083815,0.4285368825916185
-2023-12-04,Final OT,toronto,5,boston,2,Utica University Nexus Center - Mastrovito Hyundai,2024,pre,1295.0,1305.0,1300.0,1300.0,0.5714631174083815,0.4285368825916185
 2023-12-05,Final OT,minnesota,5,toronto,4,Utica University Nexus Center - Mastrovito Hyundai,2024,pre,1302.0,1307.0,1305.0,1304.0,0.5728722513945046,0.4271277486054954
 2023-12-05,Final OT,boston,1,montréal,3,Utica University Nexus Center - Mastrovito Hyundai,2024,pre,1299.0,1292.0,1296.0,1295.0,0.5728722513945046,0.4271277486054954
 2023-12-05,Final SO,new_york,2,ottawa,1,Utica University Nexus Center - Mastrovito Hyundai,2024,pre,1293.0,1307.0,1296.0,1304.0,0.5601501452319031,0.4398498547680969
-2023-12-07,Final OT,ottawa,1,boston,3,Utica University Nexus Center - Mastrovito Hyundai,2024,pre,1295.0,1290.0,1292.0,1293.0,0.5700528235839882,0.42994717641601177
 2023-12-07,Final,montréal,3,minnesota,4,Utica University Nexus Center - Mastrovito Hyundai,2024,pre,1309.0,1297.0,1307.0,1299.0,0.58270188496423,0.41729811503576997
 2023-12-07,Final OT,new_york,6,toronto,4,Utica University Nexus Center - Mastrovito Hyundai,2024,pre,1298.0,1311.0,1302.0,1307.0,0.5644004902404212,0.43559950975957884
+2023-12-07,Final OT,ottawa,1,boston,3,Utica University Nexus Center - Mastrovito Hyundai,2024,pre,1295.0,1290.0,1292.0,1293.0,0.5700528235839882,0.42994717641601177
 2024-01-01,Final,new_york,4,toronto,0,Mattamy Athletic Centre,2024,regular,1292.0,1317.0,1298.0,1311.0,0.5530468951694627,0.4469531048305373
 2024-01-02,Final OT,montréal,3,ottawa,2,TD Place,2024,regular,1287.0,1300.0,1290.0,1297.0,0.561567938973646,0.438432061026354
 2024-01-03,Final,minnesota,3,boston,2,Tsongas Center,2024,regular,1292.0,1312.0,1295.0,1309.0,0.5516235473109605,0.4483764526890395
@@ -27,8 +27,8 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2024-01-24,Final,montréal,2,minnesota,1,Xcel Energy Center,2024,regular,1316.0,1301.0,1319.0,1298.0,0.6007782458900108,0.39922175410998917
 2024-01-24,Final,boston,3,ottawa,2,TD Place,2024,regular,1290.0,1296.0,1293.0,1293.0,0.5714631174083814,0.4285368825916186
 2024-01-26,Final,new_york,0,toronto,2,Mattamy Athletic Centre,2024,regular,1287.0,1310.0,1283.0,1314.0,0.5273159730064928,0.4726840269935072
-2024-01-27,Final OT,minnesota,3,boston,4,Tsongas Center,2024,regular,1298.0,1314.0,1296.0,1316.0,0.5430664920222119,0.4569335079777881
 2024-01-27,Final OT,ottawa,1,montréal,2,Place Bell,2024,regular,1303.0,1288.0,1301.0,1290.0,0.5868950233791,0.41310497662089996
+2024-01-27,Final OT,minnesota,3,boston,4,Tsongas Center,2024,regular,1298.0,1314.0,1296.0,1316.0,0.5430664920222119,0.4569335079777881
 2024-01-28,Final OT,minnesota,2,new_york,1,Total Mortgage Arena,2024,regular,1307.0,1317.0,1310.0,1314.0,0.565815203069233,0.43418479693076695
 2024-02-03,Final,minnesota,1,toronto,4,Mattamy Athletic Centre,2024,regular,1291.0,1313.0,1287.0,1317.0,0.5287505638922686,0.4712494361077314
 2024-02-04,Final OT,new_york,4,ottawa,3,TD Place,2024,regular,1285.0,1310.0,1288.0,1307.0,0.5444945730830081,0.4555054269169919
@@ -47,15 +47,15 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2024-02-25,Final,boston,2,minnesota,0,Xcel Energy Center,2024,regular,1311.0,1292.0,1316.0,1287.0,0.6117705007810644,0.38822949921893557
 2024-02-27,Final OT,toronto,4,minnesota,3,3M Arena at Mariucci,2024,regular,1308.0,1304.0,1311.0,1301.0,0.5854986786718095,0.4145013213281905
 2024-02-28,Final,new_york,2,ottawa,4,TD Place,2024,regular,1281.0,1309.0,1277.0,1313.0,0.5201367220358163,0.4798632779641837
-2024-03-02,Final,boston,1,montréal,3,Verdun Auditorium,2024,regular,1309.0,1289.0,1306.0,1292.0,0.5910755963149436,0.40892440368505645
 2024-03-02,Final,toronto,5,ottawa,2,TD Place,2024,regular,1276.0,1309.0,1281.0,1304.0,0.5387780920571718,0.46122190794282825
+2024-03-02,Final,boston,1,montréal,3,Verdun Auditorium,2024,regular,1309.0,1289.0,1306.0,1292.0,0.5910755963149436,0.40892440368505645
 2024-03-03,Final,minnesota,2,new_york,0,UBS Arena,2024,regular,1305.0,1312.0,1309.0,1308.0,0.5728722513945044,0.4271277486054956
 2024-03-05,Final SO,ottawa,3,minnesota,4,Xcel Energy Center,2024,regular,1314.0,1274.0,1312.0,1276.0,0.6212967231224544,0.37870327687754557
 2024-03-06,Final,montréal,4,new_york,3,Total Mortgage Arena,2024,regular,1302.0,1312.0,1305.0,1309.0,0.5658152030692334,0.4341847969307666
 2024-03-06,Final,boston,1,toronto,3,Mattamy Athletic Centre,2024,regular,1312.0,1286.0,1309.0,1289.0,0.5993967967092566,0.4006032032907434
 2024-03-08,Final,montréal,0,toronto,3,Mattamy Athletic Centre,2024,regular,1316.0,1308.0,1312.0,1312.0,0.5714631174083815,0.4285368825916185
-2024-03-10,Final,ottawa,4,montréal,2,Place Bell,2024,regular,1303.0,1279.0,1308.0,1274.0,0.6185841220890308,0.3814158779109692
 2024-03-10,Final OT,new_york,2,boston,3,Tsongas Center,2024,regular,1288.0,1300.0,1286.0,1302.0,0.5487743358597418,0.4512256641402582
+2024-03-10,Final,ottawa,4,montréal,2,Place Bell,2024,regular,1303.0,1279.0,1308.0,1274.0,0.6185841220890308,0.3814158779109692
 2024-03-13,Final,boston,0,minnesota,4,Xcel Energy Center,2024,regular,1318.0,1284.0,1314.0,1288.0,0.6076610641268197,0.39233893587318025
 2024-03-16,Final,new_york,1,minnesota,5,Xcel Energy Center,2024,regular,1322.0,1296.0,1318.0,1300.0,0.596629173305774,0.40337082669422597
 2024-03-16,Final SO,ottawa,1,boston,2,Little Caesars Arena,2024,regular,1286.0,1277.0,1284.0,1279.0,0.5784967523447428,0.42150324765525715
@@ -97,14 +97,14 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2024-11-20,Final,toronto,1,minnesota,3,Ford Performance Centre,2025,pre,1316.0,1314.0,1313.0,1317.0,0.5658152030692333,0.4341847969307667
 2024-11-21,Final,boston,1,ottawa,6,Verdun Auditorium,2025,pre,1295.0,1291.0,1290.0,1296.0,0.5629847281035957,0.4370152718964043
 2024-11-21,Final OT,minnesota,4,new_york,3,Ford Performance Centre,2025,pre,1288.0,1319.0,1291.0,1316.0,0.5359159269451023,0.46408407305489774
-2024-11-22,Final,ottawa,3,montréal,6,Verdun Auditorium,2025,pre,1298.0,1291.0,1294.0,1295.0,0.5700528235839882,0.42994717641601177
 2024-11-22,Final,new_york,5,toronto,2,Ford Performance Centre,2025,pre,1308.0,1294.0,1314.0,1288.0,0.6076610641268197,0.39233893587318025
-2024-11-30,Final,boston,1,toronto,3,Coca-Cola Coliseum,2025,regular,1311.0,1288.0,1308.0,1291.0,0.5952430396515719,0.4047569603484281
+2024-11-22,Final,ottawa,3,montréal,6,Verdun Auditorium,2025,pre,1298.0,1291.0,1294.0,1295.0,0.5700528235839882,0.42994717641601177
 2024-11-30,Final SO,ottawa,3,montréal,4,Place Bell,2025,regular,1300.0,1289.0,1298.0,1291.0,0.581301478368915,0.418698521631085
+2024-11-30,Final,boston,1,toronto,3,Coca-Cola Coliseum,2025,regular,1311.0,1288.0,1308.0,1291.0,0.5952430396515719,0.4047569603484281
 2024-12-01,Final OT,new_york,4,minnesota,3,Xcel Energy Center,2025,regular,1316.0,1297.0,1319.0,1294.0,0.6062878237854282,0.3937121762145718
 2024-12-03,Final,toronto,2,ottawa,3,TD Place,2025,regular,1291.0,1309.0,1289.0,1311.0,0.5402082283237458,0.4597917716762542
-2024-12-04,Final,minnesota,2,boston,1,Tsongas Center,2025,regular,1285.0,1319.0,1288.0,1316.0,0.5316182978281073,0.4683817021718927
 2024-12-04,Final,new_york,4,montréal,1,Place Bell,2025,regular,1295.0,1302.0,1300.0,1297.0,0.5756869523764295,0.42431304762357047
+2024-12-04,Final,minnesota,2,boston,1,Tsongas Center,2025,regular,1285.0,1319.0,1288.0,1316.0,0.5316182978281073,0.4683817021718927
 2024-12-06,Final,montréal,2,ottawa,1,Canadian Tire Centre,2025,regular,1288.0,1298.0,1291.0,1295.0,0.5658152030692333,0.4341847969307667
 2024-12-07,Final,minnesota,6,toronto,3,Coca-Cola Coliseum,2025,regular,1304.0,1324.0,1309.0,1319.0,0.5573116337622928,0.44268836623770724
 2024-12-08,Final,new_york,2,boston,4,Tsongas Center,2025,regular,1288.0,1299.0,1285.0,1302.0,0.5473485180458647,0.4526514819541353
@@ -186,14 +186,14 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2025-04-28,Final OT,boston,2,montréal,3,Place Bell,2025,regular,1315.0,1300.0,1313.0,1302.0,0.5868950233791003,0.41310497662089973
 2025-04-29,Final SO,new_york,1,toronto,2,Coca-Cola Coliseum,2025,regular,1311.0,1281.0,1309.0,1283.0,0.6076610641268197,0.39233893587318025
 2025-04-30,Final,minnesota,3,ottawa,0,TD Place,2025,regular,1281.0,1313.0,1286.0,1308.0,0.5402082283237456,0.4597917716762544
-2025-05-03,Final,montréal,3,new_york,2,Prudential Center,2025,regular,1278.0,1318.0,1281.0,1315.0,0.5230095872975623,0.4769904127024377
-2025-05-03,Final,minnesota,8,boston,1,Tsongas Center,2025,regular,1293.0,1320.0,1300.0,1313.0,0.5530468951694624,0.44695310483053763
 2025-05-03,Final OT,ottawa,2,toronto,1,Coca-Cola Coliseum,2025,regular,1308.0,1284.0,1311.0,1281.0,0.613136820153143,0.38686317984685703
+2025-05-03,Final,minnesota,8,boston,1,Tsongas Center,2025,regular,1293.0,1320.0,1300.0,1313.0,0.5530468951694624,0.44695310483053763
+2025-05-03,Final,montréal,3,new_york,2,Prudential Center,2025,regular,1278.0,1318.0,1281.0,1315.0,0.5230095872975623,0.4769904127024377
 2025-05-07,Final,minnesota,2,toronto,3,Coca-Cola Coliseum | Toronto,2025,post,1310.0,1318.0,1308.0,1320.0,0.5544693740216761,0.44553062597832394
 2025-05-08,Final,ottawa,3,montréal,2,Place Bell | Laval,2025,post,1315.0,1287.0,1318.0,1284.0,0.6185841220890307,0.3814158779109693
 2025-05-09,Final,minnesota,5,toronto,3,Coca-Cola Coliseum | Toronto,2025,post,1306.0,1322.0,1310.0,1318.0,0.5601501452319029,0.4398498547680971
-2025-05-11,Final OT4,ottawa,2,montréal,3,Place Bell | Laval,2025,post,1317.0,1285.0,1315.0,1287.0,0.6104024220946892,0.3895975779053108
 2025-05-11,Final,toronto,5,minnesota,7,Xcel Energy Center,2025,post,1325.0,1303.0,1322.0,1306.0,0.5938553852361778,0.40614461476382224
+2025-05-11,Final OT4,ottawa,2,montréal,3,Place Bell | Laval,2025,post,1317.0,1285.0,1315.0,1287.0,0.6104024220946892,0.3895975779053108
 2025-05-13,Final,montréal,0,ottawa,1,TD Place | Ottawa,2025,post,1287.0,1315.0,1285.0,1317.0,0.525880930891169,0.47411906910883095
 2025-05-14,Final OT,toronto,3,minnesota,4,Xcel Energy Center,2025,post,1327.0,1301.0,1325.0,1303.0,0.602158093174717,0.397841906825283
 2025-05-16,Final,montréal,1,ottawa,2,TD Place | Ottawa,2025,post,1289.0,1313.0,1287.0,1315.0,0.5316182978281071,0.4683817021718929
@@ -205,8 +205,8 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2025-11-14,Final,minnesota,2,new_york,6,Codey Arena,2026,pre,1285.0,1321.0,1280.0,1326.0,0.505756208411145,0.494243791588855
 2025-11-15,Final OT,boston,2,montréal,3,Verdun Auditorium | Montreal,2026,pre,1311.0,1293.0,1309.0,1295.0,0.5910755963149434,0.40892440368505656
 2025-11-15,Final,seattle,0,vancouver,3,Pacific Coliseum | Vancouver,2026,pre,1304.0,1296.0,1300.0,1300.0,0.5714631174083815,0.4285368825916185
-2025-11-16,Final OT,toronto,3,ottawa,2,TD Place | Ottawa,2026,pre,1286.0,1304.0,1289.0,1301.0,0.5544693740216761,0.44553062597832394
 2025-11-16,Final,seattle,4,vancouver,2,Pacific Coliseum | Vancouver,2026,pre,1300.0,1300.0,1304.0,1296.0,0.5827018849642299,0.4172981150357701
+2025-11-16,Final OT,toronto,3,ottawa,2,TD Place | Ottawa,2026,pre,1286.0,1304.0,1289.0,1301.0,0.5544693740216761,0.44553062597832394
 2025-11-17,Final,boston,2,montréal,3,Verdun Auditorium | Montreal,2026,pre,1313.0,1291.0,1311.0,1293.0,0.5966291733057739,0.4033708266942261
 2025-11-17,Final,toronto,3,ottawa,0,TD Place | Ottawa,2026,pre,1281.0,1309.0,1286.0,1304.0,0.5459219227804837,0.4540780772195163
 2025-11-21,Final,toronto,2,minnesota,1,Grand Casino Arena | St. Paul,2026,regular,1318.0,1312.0,1321.0,1309.0,0.5882899718631629,0.4117100281368371
@@ -219,8 +219,8 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2025-11-29,Final,vancouver,1,new_york,5,Prudential Center | Newark,2026,regular,1292.0,1292.0,1287.0,1297.0,0.5573116337622925,0.44268836623770746
 2025-11-29,Final,boston,3,toronto,1,Coca-Cola Coliseum | Toronto,2026,regular,1307.0,1299.0,1312.0,1294.0,0.5966291733057739,0.4033708266942261
 2025-12-02,Final,minnesota,5,ottawa,1,TD Place | Ottawa,2026,regular,1275.0,1328.0,1280.0,1323.0,0.5100724469274385,0.48992755307256153
-2025-12-03,Final,new_york,1,seattle,2,Climate Pledge Arena | Seattle,2026,regular,1295.0,1290.0,1293.0,1292.0,0.5728722513945044,0.4271277486054956
 2025-12-03,Final,vancouver,0,boston,2,Agganis Arena | Boston,2026,regular,1302.0,1289.0,1299.0,1292.0,0.581301478368915,0.418698521631085
+2025-12-03,Final,new_york,1,seattle,2,Climate Pledge Arena | Seattle,2026,regular,1295.0,1290.0,1293.0,1292.0,0.5728722513945044,0.4271277486054956
 2025-12-04,Final,ottawa,1,toronto,3,Coca-Cola Coliseum | Toronto,2026,regular,1310.0,1272.0,1307.0,1275.0,0.615864104253756,0.38413589574624396
 2025-12-06,Final,new_york,0,vancouver,4,Pacific Coliseum | Vancouver,2026,regular,1293.0,1286.0,1289.0,1290.0,0.5700528235839882,0.42994717641601177
 2025-12-07,Final,toronto,1,montréal,3,Place Bell | Laval,2026,regular,1317.0,1307.0,1314.0,1310.0,0.5770924758253292,0.4229075241746708
@@ -236,40 +236,40 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2025-12-21,Final,toronto,4,new_york,3,Prudential Center | Newark,2026,regular,1279.0,1307.0,1282.0,1304.0,0.5402082283237458,0.4597917716762542
 2025-12-23,Final OT,ottawa,4,toronto,3,Coca-Cola Coliseum | Toronto,2026,regular,1304.0,1272.0,1307.0,1269.0,0.6240017586176673,0.37599824138233273
 2025-12-23,Final,montréal,1,seattle,2,Climate Pledge Arena | Seattle,2026,regular,1297.0,1322.0,1295.0,1324.0,0.5301846800039018,0.46981531999609816
-2025-12-27,Final SO,boston,2,ottawa,3,TD Place | Ottawa,2026,regular,1274.0,1308.0,1272.0,1310.0,0.5172625244323764,0.4827374755676236
-2025-12-27,Final,toronto,2,montréal,1,Bell Centre | Montréal,2026,regular,1319.0,1307.0,1322.0,1304.0,0.5966291733057741,0.40337082669422586
 2025-12-27,Final OT,minnesota,2,vancouver,1,Rogers Place | Edmonton,2026,regular,1288.0,1328.0,1291.0,1325.0,0.5230095872975623,0.4769904127024377
+2025-12-27,Final,toronto,2,montréal,1,Bell Centre | Montréal,2026,regular,1319.0,1307.0,1322.0,1304.0,0.5966291733057741,0.40337082669422586
+2025-12-27,Final SO,boston,2,ottawa,3,TD Place | Ottawa,2026,regular,1274.0,1308.0,1272.0,1310.0,0.5172625244323764,0.4827374755676236
 2025-12-28,Final,seattle,3,new_york,4,American Airlines Center | Dallas,2026,regular,1281.0,1295.0,1279.0,1297.0,0.5459219227804836,0.45407807721951643
 2025-12-30,Final,minnesota,5,toronto,1,Coca-Cola Coliseum | Toronto,2026,regular,1301.0,1334.0,1307.0,1328.0,0.5416377027147635,0.4583622972852365
 2025-12-31,Final,vancouver,0,new_york,2,Prudential Center | Newark,2026,regular,1284.0,1285.0,1281.0,1288.0,0.561567938973646,0.438432061026354
 2026-01-02,Final,montréal,3,new_york,4,Prudential Center | Newark,2026,regular,1286.0,1317.0,1284.0,1319.0,0.5215733330511456,0.4784266669488544
-2026-01-03,Final,vancouver,4,boston,3,Little Caesars Arena | Detroit,2026,regular,1305.0,1288.0,1308.0,1285.0,0.6035363185261781,0.39646368147382194
-2026-01-03,Final SO,seattle,3,toronto,2,TD Coliseum | Hamilton,2026,regular,1298.0,1298.0,1301.0,1295.0,0.5798997603578815,0.4201002396421185
 2026-01-03,Final,minnesota,2,ottawa,5,TD Place | Ottawa,2026,regular,1279.0,1329.0,1274.0,1334.0,0.48561281583400145,0.5143871841659986
+2026-01-03,Final SO,seattle,3,toronto,2,TD Coliseum | Hamilton,2026,regular,1298.0,1298.0,1301.0,1295.0,0.5798997603578815,0.4201002396421185
+2026-01-03,Final,vancouver,4,boston,3,Little Caesars Arena | Detroit,2026,regular,1305.0,1288.0,1308.0,1285.0,0.6035363185261781,0.39646368147382194
 2026-01-04,Final OT,minnesota,2,montréal,3,Place Bell | Laval,2026,regular,1319.0,1327.0,1317.0,1329.0,0.5544693740216762,0.4455306259783238
 2026-01-06,Final,new_york,2,toronto,0,Coca-Cola Coliseum | Toronto,2026,regular,1294.0,1290.0,1298.0,1286.0,0.588289971863163,0.411710028136837
 2026-01-07,Final,seattle,1,boston,2,Agganis Arena | Boston,2026,regular,1307.0,1296.0,1305.0,1298.0,0.581301478368915,0.418698521631085
 2026-01-09,Final,vancouver,2,ottawa,4,TD Place | Ottawa,2026,regular,1282.0,1285.0,1279.0,1288.0,0.5587313693247608,0.44126863067523925
-2026-01-11,Final,vancouver,0,montréal,1,Videotron Centre | Quebec City,2026,regular,1321.0,1283.0,1319.0,1285.0,0.6185841220890308,0.3814158779109692
-2026-01-11,Final,seattle,2,minnesota,6,Grand Casino Arena | St. Paul,2026,regular,1331.0,1292.0,1327.0,1296.0,0.6145013610085576,0.38549863899144243
 2026-01-11,Final SO,ottawa,2,boston,1,Scotiabank Centre | Halifax,2026,regular,1304.0,1285.0,1307.0,1282.0,0.6062878237854281,0.3937121762145719
+2026-01-11,Final,seattle,2,minnesota,6,Grand Casino Arena | St. Paul,2026,regular,1331.0,1292.0,1327.0,1296.0,0.6145013610085576,0.38549863899144243
+2026-01-11,Final,vancouver,0,montréal,1,Videotron Centre | Quebec City,2026,regular,1321.0,1283.0,1319.0,1285.0,0.6185841220890308,0.3814158779109692
 2026-01-13,Final,ottawa,1,montréal,2,Place Bell | Laval,2026,regular,1323.0,1283.0,1321.0,1285.0,0.6212967231224548,0.37870327687754524
 2026-01-14,Final,toronto,1,boston,2,Tsongas Center | Lowell,2026,regular,1306.0,1292.0,1304.0,1294.0,0.5854986786718094,0.4145013213281906
 2026-01-16,Final OT,minnesota,3,new_york,2,Prudential Center | Newark,2026,regular,1288.0,1333.0,1290.0,1331.0,0.5129491448928637,0.4870508551071363
 2026-01-17,Final OT,vancouver,1,toronto,2,Scotiabank Arena | Toronto,2026,regular,1294.0,1281.0,1292.0,1283.0,0.584100958813678,0.41589904118632204
-2026-01-18,Final SO,boston,2,seattle,1,Climate Pledge Arena | Seattle,2026,regular,1289.0,1309.0,1292.0,1306.0,0.5516235473109605,0.4483764526890395
 2026-01-18,Final,montréal,1,new_york,2,Capital One Arena | Washington,2026,regular,1290.0,1321.0,1288.0,1323.0,0.5215733330511455,0.4784266669488545
-2026-01-20,Final,toronto,4,seattle,6,Climate Pledge Arena | Seattle,2026,regular,1292.0,1291.0,1289.0,1294.0,0.5644004902404214,0.4355995097595786
+2026-01-18,Final SO,boston,2,seattle,1,Climate Pledge Arena | Seattle,2026,regular,1289.0,1309.0,1292.0,1306.0,0.5516235473109605,0.4483764526890395
 2026-01-20,Final OT,ottawa,4,new_york,3,Prudential Center | Newark,2026,regular,1287.0,1286.0,1290.0,1283.0,0.581301478368915,0.418698521631085
+2026-01-20,Final,toronto,4,seattle,6,Climate Pledge Arena | Seattle,2026,regular,1292.0,1291.0,1289.0,1294.0,0.5644004902404214,0.4355995097595786
 2026-01-21,Final OT,montréal,2,minnesota,1,Grand Casino Arena | St. Paul,2026,regular,1330.0,1324.0,1333.0,1321.0,0.5882899718631628,0.4117100281368372
 2026-01-22,Final,toronto,0,vancouver,5,Pacific Coliseum | Vancouver,2026,regular,1286.0,1286.0,1281.0,1291.0,0.5573116337622928,0.44268836623770724
 2026-01-24,Final,ottawa,1,montréal,3,Place Bell | Laval,2026,regular,1327.0,1283.0,1324.0,1286.0,0.6240017586176673,0.37599824138233273
 2026-01-25,Final,new_york,2,minnesota,6,Grand Casino Arena | St. Paul,2026,regular,1334.0,1283.0,1330.0,1287.0,0.6307302886162024,0.3692697113837976
 2026-01-25,Final,vancouver,3,seattle,1,Ball Arena | Denver,2026,regular,1288.0,1290.0,1292.0,1286.0,0.5798997603578816,0.4201002396421184
+2026-01-28,Final,toronto,0,montréal,3,Place Bell | Laval,2026,regular,1330.0,1283.0,1327.0,1286.0,0.6280448056219418,0.37195519437805824
+2026-01-28,Final SO,new_york,3,boston,4,Tsongas Center | Lowell,2026,regular,1311.0,1281.0,1309.0,1283.0,0.6076610641268197,0.39233893587318025
 2026-01-28,Final,vancouver,1,minnesota,4,Grand Casino Arena | St. Paul,2026,regular,1337.0,1287.0,1334.0,1290.0,0.6320700121000736,0.36792998789992637
 2026-01-28,Final,seattle,2,ottawa,4,TD Place | Ottawa,2026,regular,1286.0,1285.0,1283.0,1288.0,0.5644004902404212,0.43559950975957884
-2026-01-28,Final SO,new_york,3,boston,4,Tsongas Center | Lowell,2026,regular,1311.0,1281.0,1309.0,1283.0,0.6076610641268197,0.39233893587318025
-2026-01-28,Final,toronto,0,montréal,3,Place Bell | Laval,2026,regular,1330.0,1283.0,1327.0,1286.0,0.6280448056219418,0.37195519437805824
 2026-02-26,Final,montréal,4,new_york,1,Prudential Center | Newark,2026,regular,1276.0,1335.0,1281.0,1330.0,0.5014391117091527,0.4985608882908473
 2026-02-27,Final,toronto,5,seattle,2,Climate Pledge Arena | Seattle,2026,regular,1280.0,1288.0,1285.0,1283.0,0.5742802036545244,0.42571979634547563
 2026-02-28,Final SO,boston,3,ottawa,2,TD Place | Ottawa,2026,regular,1283.0,1314.0,1286.0,1311.0,0.5359159269451023,0.46408407305489774
@@ -278,29 +278,29 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2026-03-03,Final SO,montréal,4,toronto,3,Coca-Cola Coliseum | Toronto,2026,regular,1289.0,1341.0,1291.0,1339.0,0.502878199574811,0.49712180042518905
 2026-03-04,Final,seattle,3,ottawa,4,TD Place | Ottawa,2026,regular,1285.0,1278.0,1283.0,1280.0,0.5756869523764294,0.4243130476235706
 2026-03-05,Final,boston,1,new_york,0,Prudential Center | Newark,2026,regular,1274.0,1316.0,1276.0,1314.0,0.5172625244323762,0.4827374755676238
-2026-03-08,Final OT,minnesota,3,toronto,2,Coca-Cola Coliseum | Toronto,2026,regular,1287.0,1335.0,1289.0,1333.0,0.5086338358210827,0.4913661641789173
 2026-03-08,Final,ottawa,2,new_york,6,Prudential Center | Newark,2026,regular,1279.0,1280.0,1274.0,1285.0,0.5558909611168532,0.4441090388831468
+2026-03-08,Final OT,minnesota,3,toronto,2,Coca-Cola Coliseum | Toronto,2026,regular,1287.0,1335.0,1289.0,1333.0,0.5086338358210827,0.4913661641789173
 2026-03-10,Final OT,boston,2,vancouver,1,Pacific Coliseum | Vancouver,2026,regular,1281.0,1319.0,1284.0,1316.0,0.525880930891169,0.47411906910883095
 2026-03-11,Final,boston,2,seattle,3,Climate Pledge Arena | Seattle,2026,regular,1280.0,1317.0,1278.0,1319.0,0.5129491448928637,0.4870508551071363
 2026-03-13,Final,seattle,1,minnesota,4,Grand Casino Arena | St. Paul,2026,regular,1338.0,1277.0,1335.0,1280.0,0.6466688423256145,0.3533311576743855
 2026-03-14,Final OT,ottawa,3,vancouver,2,Pacific Coliseum | Vancouver,2026,regular,1278.0,1283.0,1281.0,1280.0,0.5728722513945045,0.4271277486054955
-2026-03-15,Final,new_york,3,minnesota,4,Ball Arena | Denver,2026,regular,1340.0,1277.0,1338.0,1279.0,0.6519120398746638,0.34808796012533616
-2026-03-15,Final,seattle,0,toronto,2,Coca-Cola Coliseum | Toronto,2026,regular,1290.0,1274.0,1287.0,1277.0,0.5854986786718095,0.4145013213281905
 2026-03-15,Final OT,boston,4,montréal,3,Place Bell | Laval,2026,regular,1338.0,1320.0,1341.0,1317.0,0.6049129020079569,0.3950870979920431
+2026-03-15,Final,seattle,0,toronto,2,Coca-Cola Coliseum | Toronto,2026,regular,1290.0,1274.0,1287.0,1277.0,0.5854986786718095,0.4145013213281905
+2026-03-15,Final,new_york,3,minnesota,4,Ball Arena | Denver,2026,regular,1340.0,1277.0,1338.0,1279.0,0.6519120398746638,0.34808796012533616
 2026-03-17,Final,toronto,2,boston,0,Agganis Arena | Boston,2026,regular,1315.0,1295.0,1320.0,1290.0,0.6131368201531429,0.38686317984685714
-2026-03-18,Final,new_york,2,vancouver,5,Pacific Coliseum | Vancouver,2026,regular,1282.0,1273.0,1278.0,1277.0,0.5728722513945044,0.4271277486054956
 2026-03-18,Final,ottawa,0,minnesota,5,Grand Casino Arena | St. Paul,2026,regular,1344.0,1279.0,1340.0,1283.0,0.6492949471109636,0.3507050528890364
+2026-03-18,Final,new_york,2,vancouver,5,Pacific Coliseum | Vancouver,2026,regular,1282.0,1273.0,1278.0,1277.0,0.5728722513945044,0.4271277486054956
 2026-03-19,Final,seattle,1,montréal,4,Place Bell | Laval,2026,regular,1341.0,1271.0,1338.0,1274.0,0.6584145209169125,0.34158547908308745
 2026-03-21,Final,minnesota,3,vancouver,1,Pacific Coliseum | Vancouver,2026,regular,1278.0,1348.0,1282.0,1344.0,0.48273747556762386,0.5172625244323761
 2026-03-21,Final,seattle,0,boston,3,Tsongas Center | Lowell,2026,regular,1318.0,1268.0,1315.0,1271.0,0.6320700121000734,0.3679299878999266
 2026-03-22,Final OT,montréal,1,ottawa,2,Canada Life Centre | Winnipeg,2026,regular,1281.0,1339.0,1279.0,1341.0,0.4827374755676236,0.5172625244323764
 2026-03-24,Final,vancouver,0,boston,2,Tsongas Center | Lowell,2026,regular,1321.0,1275.0,1318.0,1278.0,0.626699081666732,0.37330091833326795
-2026-03-25,7:00 pm EDT,montréal,0,minnesota,0,Grand Casino Arena | St. Paul,2026,regular,,,,,,
-2026-03-25,8:00 pm EDT,new_york,0,seattle,0,Allstate Arena | Chicago,2026,regular,,,,,,
+2026-03-25,Final,montréal,3,minnesota,0,Grand Casino Arena | St. Paul,2026,regular,1343.0,1344.0,1348.0,1339.0,0.584100958813678,0.41589904118632204
+2026-03-25,Final,new_york,1,seattle,4,Allstate Arena | Chicago,2026,regular,1272.0,1269.0,1268.0,1273.0,0.5644004902404212,0.43559950975957884
 2026-03-27,7:00 pm EDT,boston,0,toronto,0,Coca-Cola Coliseum | Toronto,2026,regular,,,,,,
 2026-03-28,1:00 pm EDT,new_york,0,montréal,0,Little Caesars Arena | Detroit,2026,regular,,,,,,
-2026-03-29,1:00 pm EDT,vancouver,0,toronto,0,Coca-Cola Coliseum | Toronto,2026,regular,,,,,,
 2026-03-29,7:00 pm EDT,ottawa,0,seattle,0,Climate Pledge Arena | Seattle,2026,regular,,,,,,
+2026-03-29,1:00 pm EDT,vancouver,0,toronto,0,Coca-Cola Coliseum | Toronto,2026,regular,,,,,,
 2026-03-29,4:00 pm EDT,boston,0,minnesota,0,Grand Casino Arena | St. Paul,2026,regular,,,,,,
 2026-04-01,7:00 pm EDT,vancouver,0,montréal,0,Place Bell | Laval,2026,regular,,,,,,
 2026-04-01,7:00 pm EDT,minnesota,0,new_york,0,Prudential Center | Newark,2026,regular,,,,,,
@@ -308,8 +308,8 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2026-04-03,7:00 pm EDT,montréal,0,ottawa,0,Canadian Tire Centre | Ottawa,2026,regular,,,,,,
 2026-04-04,2:00 pm EDT,vancouver,0,minnesota,0,Grand Casino Arena | St. Paul,2026,regular,,,,,,
 2026-04-04,8:00 pm EDT,seattle,0,new_york,0,Madison Square Garden | New York,2026,regular,,,,,,
-2026-04-07,9:30 pm EDT,boston,0,vancouver,0,Rogers Place | Edmonton,2026,regular,,,,,,
 2026-04-07,7:00 pm EDT,seattle,0,montréal,0,Place Bell | Laval,2026,regular,,,,,,
+2026-04-07,9:30 pm EDT,boston,0,vancouver,0,Rogers Place | Edmonton,2026,regular,,,,,,
 2026-04-08,7:00 pm EDT,seattle,0,ottawa,0,TD Place | Ottawa,2026,regular,,,,,,
 2026-04-11,1:00 pm EDT,new_york,0,minnesota,0,Grand Casino Arena | St. Paul,2026,regular,,,,,,
 2026-04-11,2:00 pm EDT,ottawa,0,toronto,0,Coca-Cola Coliseum | Toronto,2026,regular,,,,,,
@@ -325,7 +325,7 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2026-04-21,10:00 pm EDT,montréal,0,vancouver,0,Pacific Coliseum | Vancouver,2026,regular,,,,,,
 2026-04-22,7:00 pm EDT,ottawa,0,boston,0,Tsongas Center | Lowell,2026,regular,,,,,,
 2026-04-22,10:00 pm EDT,minnesota,0,seattle,0,Climate Pledge Arena | Seattle,2026,regular,,,,,,
-2026-04-25,TBD,minnesota,0,vancouver,0,Pacific Coliseum | Vancouver,2026,regular,,,,,,
 2026-04-25,TBD,montréal,0,seattle,0,Climate Pledge Arena | Seattle,2026,regular,,,,,,
 2026-04-25,TBD,new_york,0,boston,0,Tsongas Center | Lowell,2026,regular,,,,,,
+2026-04-25,TBD,minnesota,0,vancouver,0,Pacific Coliseum | Vancouver,2026,regular,,,,,,
 2026-04-25,TBD,toronto,0,ottawa,0,TD Place | Ottawa,2026,regular,,,,,,
