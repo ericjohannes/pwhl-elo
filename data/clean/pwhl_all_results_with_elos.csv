@@ -308,8 +308,8 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2026-04-03,Final,montréal,3,ottawa,0,Canadian Tire Centre | Ottawa,2026,regular,1278.0,1353.0,1282.0,1349.0,0.4755545388793385,0.5244454611206615
 2026-04-04,Final,vancouver,5,minnesota,6,Grand Casino Arena | St. Paul,2026,regular,1337.0,1273.0,1335.0,1275.0,0.6532171672188698,0.3467828327811302
 2026-04-04,Final SO,seattle,1,new_york,2,Madison Square Garden | New York,2026,regular,1272.0,1266.0,1270.0,1268.0,0.5742802036545244,0.42571979634547563
-2026-04-07,7:00 pm EDT,seattle,0,montréal,0,Place Bell | Laval,2026,regular,,,,,,
-2026-04-07,9:30 pm EDT,boston,0,vancouver,0,Rogers Place | Edmonton,2026,regular,,,,,,
+2026-04-07,Final,seattle,1,montréal,4,Place Bell | Laval,2026,regular,1356.0,1263.0,1353.0,1266.0,0.6875382482123417,0.31246175178765834
+2026-04-07,Final,boston,5,vancouver,1,Rogers Place | Edmonton,2026,regular,1268.0,1337.0,1273.0,1332.0,0.4870508551071362,0.5129491448928638
 2026-04-08,7:00 pm EDT,seattle,0,ottawa,0,TD Place | Ottawa,2026,regular,,,,,,
 2026-04-11,1:00 pm EDT,new_york,0,minnesota,0,Grand Casino Arena | St. Paul,2026,regular,,,,,,
 2026-04-11,2:00 pm EDT,ottawa,0,toronto,0,Coca-Cola Coliseum | Toronto,2026,regular,,,,,,

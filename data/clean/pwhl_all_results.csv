@@ -216,8 +216,8 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type
 2026-04-03,Final,Montréal,3,Ottawa,0,Canadian Tire Centre | Ottawa,2026,regular
 2026-04-04,Final,Vancouver,5,Minnesota,6,Grand Casino Arena | St. Paul,2026,regular
 2026-04-04,Final SO,Seattle,1,New York,2,Madison Square Garden | New York,2026,regular
-2026-04-07,7:00 pm EDT,Seattle,0,Montréal,0,Place Bell | Laval,2026,regular
-2026-04-07,9:30 pm EDT,Boston,0,Vancouver,0,Rogers Place | Edmonton,2026,regular
+2026-04-07,Final,Seattle,1,Montréal,4,Place Bell | Laval,2026,regular
+2026-04-07,Final,Boston,5,Vancouver,1,Rogers Place | Edmonton,2026,regular
 2026-04-08,7:00 pm EDT,Seattle,0,Ottawa,0,TD Place | Ottawa,2026,regular
 2026-04-11,1:00 pm EDT,New York,0,Minnesota,0,Grand Casino Arena | St. Paul,2026,regular
 2026-04-11,2:00 pm EDT,Ottawa,0,Toronto,0,Coca-Cola Coliseum | Toronto,2026,regular
