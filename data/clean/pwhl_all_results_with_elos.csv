@@ -317,7 +317,7 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2026-04-14,Final,seattle,1,vancouver,4,Pacific Coliseum | Vancouver,2026,regular,1272.0,1264.0,1268.0,1268.0,0.5714631174083814,0.4285368825916186
 2026-04-15,Final,minnesota,2,boston,3,Tsongas Center | Lowell,2026,regular,1336.0,1338.0,1334.0,1340.0,0.5629847281035958,0.4370152718964042
 2026-04-15,Final,toronto,2,new_york,3,Prudential Center | Newark,2026,regular,1271.0,1282.0,1269.0,1284.0,0.5501993532535369,0.44980064674646314
-2026-04-17,7:00 pm EDT,boston,0,montréal,0,Place Bell | Laval,2026,regular,,,,,,
+2026-04-17,Final OT,boston,2,montréal,3,Place Bell | Laval,2026,regular,1361.0,1334.0,1359.0,1336.0,0.6035363185261782,0.3964636814738218
 2026-04-18,2:00 pm EDT,new_york,0,ottawa,0,TD Place | Ottawa,2026,regular,,,,,,
 2026-04-18,5:00 pm EDT,vancouver,0,seattle,0,Climate Pledge Arena | Seattle,2026,regular,,,,,,
 2026-04-19,1:30 pm EDT,toronto,0,minnesota,0,Grand Casino Arena | St. Paul,2026,regular,,,,,,
@@ -325,7 +325,7 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2026-04-21,10:00 pm EDT,montréal,0,vancouver,0,Pacific Coliseum | Vancouver,2026,regular,,,,,,
 2026-04-22,7:00 pm EDT,ottawa,0,boston,0,Tsongas Center | Lowell,2026,regular,,,,,,
 2026-04-22,10:00 pm EDT,minnesota,0,seattle,0,Climate Pledge Arena | Seattle,2026,regular,,,,,,
-2026-04-25,TBD,toronto,0,ottawa,0,TD Place | Ottawa,2026,regular,,,,,,
 2026-04-25,12:00 pm EDT,new_york,0,boston,0,Tsongas Center | Lowell,2026,regular,,,,,,
+2026-04-25,2:00 pm EDT,toronto,0,ottawa,0,TD Place | Ottawa,2026,regular,,,,,,
 2026-04-25,7:00 pm EDT,minnesota,0,vancouver,0,Pacific Coliseum | Vancouver,2026,regular,,,,,,
 2026-04-25,10:00 pm EDT,montréal,0,seattle,0,Climate Pledge Arena | Seattle,2026,regular,,,,,,
