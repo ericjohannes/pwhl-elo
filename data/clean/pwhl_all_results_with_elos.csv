@@ -278,8 +278,8 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2026-03-03,Final SO,montréal,4,toronto,3,Coca-Cola Coliseum | Toronto,2026,regular,1289,1341,1291,1339,0.502878199574811,0.49712180042518905
 2026-03-04,Final,seattle,3,ottawa,4,TD Place | Ottawa,2026,regular,1285,1278,1283,1280,0.5756869523764294,0.4243130476235706
 2026-03-05,Final,boston,1,new_york,0,Prudential Center | Newark,2026,regular,1274,1316,1276,1314,0.5172625244323762,0.4827374755676238
-2026-03-08,Final OT,minnesota,3,toronto,2,Coca-Cola Coliseum | Toronto,2026,regular,1287,1335,1289,1333,0.5086338358210827,0.4913661641789173
 2026-03-08,Final,ottawa,2,new_york,6,Prudential Center | Newark,2026,regular,1279,1280,1274,1285,0.5558909611168532,0.4441090388831468
+2026-03-08,Final OT,minnesota,3,toronto,2,Coca-Cola Coliseum | Toronto,2026,regular,1287,1335,1289,1333,0.5086338358210827,0.4913661641789173
 2026-03-10,Final OT,boston,2,vancouver,1,Pacific Coliseum | Vancouver,2026,regular,1281,1319,1284,1316,0.525880930891169,0.47411906910883095
 2026-03-11,Final,boston,2,seattle,3,Climate Pledge Arena | Seattle,2026,regular,1280,1317,1278,1319,0.5129491448928637,0.4870508551071363
 2026-03-13,Final,seattle,1,minnesota,4,Grand Casino Arena | St. Paul,2026,regular,1338,1277,1335,1280,0.6466688423256145,0.3533311576743855
@@ -303,8 +303,8 @@ date,time,away_team,away_score,home_team,home_score,venue,season,type,elo_after_
 2026-03-29,Final,boston,4,minnesota,2,Grand Casino Arena | St. Paul,2026,regular,1338,1332,1343,1327,0.5938553852361779,0.40614461476382213
 2026-03-29,Final,ottawa,2,seattle,0,Climate Pledge Arena | Seattle,2026,regular,1268,1285,1272,1281,0.558731369324761,0.441268630675239
 2026-04-01,Final,toronto,2,ottawa,1,Scotiabank Saddledome | Calgary,2026,regular,1282,1289,1285,1286,0.5700528235839882,0.42994717641601177
-2026-04-01,Final OT,minnesota,3,new_york,4,Prudential Center | Newark,2026,regular,1270,1335,1267,1338,0.4698153199960979,0.5301846800039021
 2026-04-01,Final,vancouver,0,montréal,3,Place Bell | Laval,2026,regular,1349,1275,1346,1278,0.6635740980412956,0.33642590195870437
+2026-04-01,Final OT,minnesota,3,new_york,4,Prudential Center | Newark,2026,regular,1270,1335,1267,1338,0.4698153199960979,0.5301846800039021
 2026-04-03,Final,montréal,3,ottawa,0,Canadian Tire Centre | Ottawa,2026,regular,1278,1353,1282,1349,0.4755545388793385,0.5244454611206615
 2026-04-04,Final,vancouver,5,minnesota,6,Grand Casino Arena | St. Paul,2026,regular,1337,1273,1335,1275,0.6532171672188698,0.3467828327811302
 2026-04-04,Final SO,seattle,1,new_york,2,Madison Square Garden | New York,2026,regular,1272,1266,1270,1268,0.5742802036545244,0.42571979634547563
